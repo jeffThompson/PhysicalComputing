@@ -19,9 +19,9 @@ For a list of required materials, including URLs to where you can buy them, see 
 **WEEK 1: INTRODUCTIONS**  
 **In-class:** Syllabus, intro, materials to order  
 **Homework:** Ideation drawings, install Arduino drivers if necessary  
-**Reading:** Programming primer  
+**Reading:** [Programming primer](https://github.com/jeffThompson/PhysicalComputing/blob/master/Readings/ProgrammingPrimer_ProgrammingInteractivity_JoshuaNoble.pdf) from Joshua Noble's book *Programming Interactivity*  
 
-**WEEK 2: LED + BUTTONS #1**  
+**[WEEK 2: BUTTONS + LEDs #1](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
 **Feedback:** Small-group feedback on ideation drawings  
 **Demos:** Arduino IDE, `println()`, uploading sketches, digital pins, pin setup, `HIGH/LOW`, `delay()`, PWM, button input, input pullup, basic control structures  
 **Homework:** Refined sketches and breadboard prototype  
@@ -30,13 +30,15 @@ For a list of required materials, including URLs to where you can buy them, see 
 **In-class:** Visit John Driscoll’s *Slight Perturbations* show   
 **Homework:** Continue working on project prototype  
 
-**WEEK 4: LED + BUTTONS #2**  
+**[WEEK 4: LED + BUTTONS #2](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
 **Feedback:** Small-group feedback on prototypes  
 **Demos:** Variables, `if/else`, button state change, soldering basics, CAD design in Illustrator, laser-cutter demo  
-**Homework:** Finish `LED + Buttons` project, be sure your other parts arrive by the next class!  
+**Homework:** Finish `Buttons + LEDs` project, be sure your other parts arrive by the next class!  
 
-**FEB 19: Monday schedule, no class!**  **WEEK 5: LED + BUTTONS DUE / ANALOG SENSORS #1**  
-**Critique:** Group crit of `LED + Button` projects  
+**FEB 19: Monday schedule, no class!**  
+
+**WEEK 5: [BUTTONS + LEDs](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md) DUE / ANALOG SENSORS #1**  
+**Critique:** Group crit of `Buttons + LEDs` projects  
 **In-class:** Documenting projects with video  
 **Demos:** Reading analog sensors, basic voltage dividers, mapping values to another range  
 **Homework:** Ideation drawings for project  
