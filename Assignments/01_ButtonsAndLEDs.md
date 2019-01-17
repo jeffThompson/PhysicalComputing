@@ -15,6 +15,8 @@ Over the course of the next few weeks you'll develop a simple breadboard prototy
 * **Jan 29:** Feedback session, create refined sketches and breadboard prototype  
 * **Feb 5:** Visit Fridman Gallery to see John Driscoll's show *Slight Perturbations*, continue working on project  
 * **Feb 12:** Feedback session, finish project, **make sure the rest of your parts are here for next week!**  
+* **Feb 19:** Monday schedule, no class!  
+* **Feb 26:** Project due, critique  
 
 ## DELIVERABLES  
 
