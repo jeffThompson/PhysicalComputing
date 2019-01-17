@@ -83,10 +83,10 @@ For a list of required materials, including URLs to where you can buy them, see 
 **In-class:** Work day, demos as needed
 **Homework:** Finish Final Project
 
-### WEEK 14: FINAL PROJECT DUE
+**WEEK 14: FINAL PROJECT DUE**  
 **Critique:** Group crit of `Final Projects`
 **Homework:** Record documentation of your project
 
-### EXAM PERIOD: DOCUMENTATION DUE
+**EXAM PERIOD: DOCUMENTATION DUE**  
 **Online:** Turn in documentation of your finished project
 
