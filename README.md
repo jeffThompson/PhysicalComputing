@@ -79,12 +79,12 @@ For a list of required materials, including URLs to where you can buy them, see 
 **Homework:** Working prototype  
 
 **WEEK 13: FINAL PROJECT #4**  
-**Feedback:** Small-group feedback on prototypes
-**In-class:** Work day, demos as needed
-**Homework:** Finish Final Project
+**Feedback:** Small-group feedback on prototypes  
+**In-class:** Work day, demos as needed  
+**Homework:** Finish Final Project  
 
 **WEEK 14: FINAL PROJECT DUE**  
-**Critique:** Group crit of `Final Projects`
+**Critique:** Group crit of `Final Projects`  
 **Homework:** Record documentation of your project
 
 **EXAM PERIOD: DOCUMENTATION DUE**  
