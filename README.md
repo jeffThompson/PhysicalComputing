@@ -27,6 +27,7 @@ For a list of required materials, including URLs to where you can buy them, see 
 **Homework:** Refined sketches and breadboard prototype  
 
 **WEEK 3: CLASS VISIT TO FRIDMAN GALLERY**  
+**[ [Map to the gallery](https://goo.gl/maps/oKTKUezQHjy) ]**  
 **In-class:** Visit John Driscoll’s *Slight Perturbations* show   
 **Homework:** Continue working on project prototype  
 
