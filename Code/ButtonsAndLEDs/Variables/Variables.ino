@@ -9,7 +9,7 @@
   course, you can skim this for Arduino-specific info.)
 
   Variables are placeholders for different values. They let us
-  store numbers or text so we can later recall, updaet, or 
+  store numbers or text so we can later recall, updaet, or
   manipulate them.
 
   TYPES:
@@ -32,7 +32,7 @@
   Other:
   boolean   true or false, similar to 0/1 and LOW/HIGH
 
-  * In Arduino examples, you may see "unsigned" applied in front
+    In Arduino examples, you may see "unsigned" applied in front
     of some variables. This means no negative numbers and is used
     to save memory. For example, "unsigned byte" would be 0-255.
 
@@ -54,7 +54,7 @@ boolean printCount = true;
 
 void setup() {
   Serial.begin(9600);
-  
+
   // we can reference the led and button pin numbers here
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT_PULLUP);
@@ -69,13 +69,15 @@ void loop() {
   // for example, we can temporarily read in the state of a button
   int state = digitalRead(buttonPin);
 
-  // update the count value
-  count += 1;
+  // if button is pressed, update the count value
+  if (state == LOW) {
+    count += 1;
 
-  // if the "printCount" variable is true, write the current
-  // number of button presses to the Serial Monitor
-  if (printCount) {
-    Serial.println(count);
+    // if the "printCount" variable is true, write the current
+    // number of button presses to the Serial Monitor
+    if (printCount) {
+      Serial.println(count);
+    }
   }
 }
 

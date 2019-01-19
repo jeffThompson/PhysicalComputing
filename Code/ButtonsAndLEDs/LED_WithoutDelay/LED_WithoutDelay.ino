@@ -58,7 +58,7 @@ void setup() {
 void loop() {
 
   // read the current time using the millis() command
-  unsigned long millis = millis();
+  unsigned long currentMillis = millis();
 
   // if the current time is greater than the previous time
   // plus the interval (ie enough time has elapsed) turn

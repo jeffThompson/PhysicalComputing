@@ -21,6 +21,10 @@
   We'll use this technique later to control the speed
   of a motor too :)
 
+  ONLY CERTAIN PINS!
+  Not all pins on the Arduino are capable of PWM
+  output! Look for pins marked with ~
+
   CHALLENGES:
   1. Can you use the for-loop to make the LED get
      slowly dimmer, then brighter, then dimmer again?
@@ -31,37 +35,37 @@
 */
 
 void setup() {
-  pinMode(13, OUTPUT);
-}
+  pinMode(9, OUTPUT);   // not all pins can do PWM!
+}                       // only ones marked with ~
 
 
 void loop() {
 
   // turn on the LED at different brightnesses
-  analogWrite(13, 255);   // full strength
-  delay(100);
-  analogWrite(13, 200);   // ...a little dimmer
-  delay(100);
-  analogWrite(13, 150);   // ...halfway
-  delay(100);
-  analogWrite(13, 100);   // ...dimmer still
-  delay(100);
-  analogWrite(13, 50);    // ...really dim
-  delay(100);
+  analogWrite(9, 255);   // full strength
+  delay(500);
+  analogWrite(9, 200);   // ...a little dimmer
+  delay(500);
+  analogWrite(9, 150);   // ...halfway
+  delay(500);
+  analogWrite(9, 100);   // ...dimmer still
+  delay(500);
+  analogWrite(9, 50);    // ...really dim
+  delay(500);
 
   // turn off the LED
-  // (could use analogWrite(13, 0) too)
-  digitalWrite(13, LOW);
-  delay(100);
+  // (could use analogWrite(9, 0) too)
+  digitalWrite(9, LOW);
+  delay(500);
 
   // fancier version
   // the version above works ok, but it doesn't
   // really let us do a smooth fade without tons
   // of redundant code – a for-loop would work
   // much better!
-  // for (int i=255; i<=0; i-=1) {
-  //   analogWrite(13, i);
-  //   delay(5);
+  // for (int i=0; i<255; i++) {
+  //   analogWrite(9, i);
+  //   delay(15);
   // }
 }
 

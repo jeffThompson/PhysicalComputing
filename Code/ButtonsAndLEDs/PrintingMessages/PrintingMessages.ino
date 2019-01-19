@@ -61,8 +61,8 @@ void loop() {
   // we can also format our messages a little nicer
   // using the print() command (which doesn't include
   // a line-break)
-  Serial.print("- state: ");
-  Serial.println(state);
+  // Serial.print("- state: ");
+  // Serial.println(state);
 
   // note: unlike programming languages like Java, we
   // can't combine values in the println() command using
