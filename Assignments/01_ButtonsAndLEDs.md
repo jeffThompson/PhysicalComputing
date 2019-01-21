@@ -1,6 +1,8 @@
+![](https://raw.githubusercontent.com/jeffThompson/PhysicalComputing/master/Images/01_ButtonsAndLEDs/RetroGameCabinets.jpg)
+
 # BUTTONS AND LEDs
 
->> "Calculation and reasoning, like weaving and ploughing, are work, not for human souls, but for clever combinations of iron and wood" — Mary Everest Boole
+> "Calculation and reasoning, like weaving and ploughing, are work, not for human souls, but for clever combinations of iron and wood" — Mary Everest Boole
 
 For our first project, we'll limit ourselves to just buttons and LEDs. No fancy sensors, motors, or screens. This kind of limitation can drive creativity: the goal is to create something novel, interesting, fun, meaningful, and/or surprising from such simple means.
 
@@ -42,6 +44,7 @@ Finally, please also read the *Programming Primer* PDF, found in the `Readings` 
 
 *Historical comupter interface devices, and other means of encoding information:*  
 * Douglass Engelbart's [*Mother of All Demos*](https://www.youtube.com/watch?v=M5PgQS3ZBWA), a public demonstration in 1968 of many firsts: the first computer mouse, interactive computing, and video teleconferencing  
+* Mattel's 1977 handheld game [*Football*](http://www.handheldmuseum.com/Mattel/FB.htm), notable for having just size buttons and some LEDs ([see it in action here](https://www.youtube.com/watch?v=fuEbVy6iTJ0))  
 * [A cool site from Microsoft](https://www.microsoft.com/buxtoncollection/browse.aspx?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fbibuxton%2Fbuxtoncollection%2Fbrowse.aspx) showing historical computer input devices  
 * Centre for Computing History's online collection, including [computer mice](http://www.computinghistory.org.uk/pages/49753/site-search/?q=mouse&type[0]=Accessory), [keyboards](http://www.computinghistory.org.uk/sec/12268/Keyboards/), and [other input devices](http://www.computinghistory.org.uk/sec/2674/Input-Devices/)  
 * [Morse Code](https://en.wikipedia.org/wiki/Morse_code), remarkable for using just two values (a short and long pulse) to encode letters to be sent via [telegraph](https://en.wikipedia.org/wiki/Telegraphy) (which in itself has an intersting history: smoke, fires, and reflected light have all been used to send messages over great distances)  
@@ -52,7 +55,7 @@ Finally, please also read the *Programming Primer* PDF, found in the `Readings` 
 * Rafael Lozano-Hemmer's work has intersected art, code, and electronics for many years: a great example is [*Last Breath*](http://www.lozano-hemmer.com/last_breath.php)  
 * Tim Hawkinson's lower-tech [*Drip*](https://art21.org/watch/art-in-the-twenty-first-century/s2/tim-hawkinson-in-time-segment) and [*Signature*](https://www.format.com/magazine/galleries/art/tim-hawkinson-pace-gallery-portfolio)  
 * David Bowen's project where external forces control objects: [*Cloud Piano*](http://www.dwbowen.com/cloud-piano) and [*Fly Carving Device*](http://www.dwbowen.com/fly-carving-device)  
-* Juliusn Von Bismark's work, such as (this device for seeing from another perspective)[http://juliusvonbismarck.com/bank/index.php?/projects/topshot-helmet] and (this device that looks like a camera but injects an image into a scene)[http://juliusvonbismarck.com/bank/index.php?/projects/image-fulgurator/2]  
+* Juliusn Von Bismark's work, such as [this device for seeing from another perspective](http://juliusvonbismarck.com/bank/index.php?/projects/topshot-helmet) and [this device that looks like a camera but injects an image into a scene](http://juliusvonbismarck.com/bank/index.php?/projects/image-fulgurator/2)  
 * Arom Bartholl's projects such as [*Pan, Tilt, and Zoom*](https://arambartholl.com/pan-tilt-and-zoom), a set of motorized CCTV cameras on the floor that attempt to follow motion, and [*Keep Alive*](https://arambartholl.com/keepalive) an outdoor installation letting you access a local server by lighting a campfire  
 * Beautiful, physical interfaces like Masayuki Kawai's [video feedback machines[(http://masayukikawai.com/feedback)  
 * Ralf Baecker's [*Random Access Memory*](http://www.rlfbckr.org/work/random-access-memory/), an installation that places grains of sand into highly ordered patterns as a way of storing data  
@@ -60,7 +63,7 @@ Finally, please also read the *Programming Primer* PDF, found in the `Readings` 
 * Motors and electronics used to modify existing instruments, such as [this great "pedal steel"](https://hackaday.com/2014/07/09/servobender-the-electronic-pedal-steel/#more-126312) (see also their [excellent process documentation](https://imgur.com/a/a0ZlW)), this [robotified dulcimer](https://hackaday.com/2014/05/15/eerie-robotic-instruments-make-use-of-servos-and-solenoids/#more-122305), a [harmonica](https://hackaday.com/2018/12/13/the-battle-between-robot-harmonica-and-machine-finger-rages-on/), and [this performance by Victor Adan and Jeff Snyder using hacked pen-plotter printers](https://vimeo.com/4611451)  
 * And of course fully custom-built instruments, like [this collaboration between instrument-builder Eric Singer and singer/programmer Dafna Naphtali](http://dafna.info/robotica/)  
 * Graffiti devices such as [*Tag the Pole*](https://vimeo.com/54069507) by Akira Hayasaka and Dtagno's [*Morphogenetic Field Device Little Boy*](https://www.huffingtonpost.com/2011/07/13/berlin-street-artist-dtag_n_894999.html?ir=Weird%20News)  
-* Animatronic projects, like the [*Taxoplasmosis* installation(https://vimeo.com/49759812) by Random Studio and Jordon Wolfson's [*Colored Sculpture*](https://www.davidzwirner.com/exhibitions/jordan-wolfson-0)  
+* Animatronic projects, like the [*Taxoplasmosis* installation](https://vimeo.com/49759812) by Random Studio and Jordon Wolfson's [*Colored Sculpture*](https://www.davidzwirner.com/exhibitions/jordan-wolfson-0)  
 * And robotics stuff in general, such as [this robot that eats slugs and digests them to generate electricity](https://web.archive.org/web/20050908182307/http://www.ias.uwe.ac.uk/Robots/slugbot.htm) and [this lovely CNC machine for batik dyeing](https://hackaday.com/2018/05/08/we-couldnt-resist-this-cnc-batik-bot)  
 * An [anthropomorphized lamp](http://berglondon.com/blog/2012/12/19/lamps)  
 * *inFORM*, a [3D tactile display](https://vimeo.com/79179138) from MIT Media Lab  
