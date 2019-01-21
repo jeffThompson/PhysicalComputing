@@ -21,7 +21,7 @@ For a list of required materials, including URLs to where you can buy them, see 
 **Homework:** Ideation drawings, install Arduino drivers if necessary  
 **Reading:** [Programming primer](https://github.com/jeffThompson/PhysicalComputing/blob/master/Readings/ProgrammingPrimer_ProgrammingInteractivity_JoshuaNoble.pdf) from Joshua Noble's book *Programming Interactivity*  
 
-**[WEEK 2: BUTTONS + LEDs #1](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
+**WEEK 2: [BUTTONS + LEDs #1](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
 **Feedback:** Small-group feedback on ideation drawings  
 **Demos:** Arduino IDE, `println()`, uploading sketches, digital pins, pin setup, `HIGH/LOW`, `delay()`, PWM, button input, input pullup, basic control structures  
 **Homework:** Refined sketches and breadboard prototype  
@@ -30,7 +30,7 @@ For a list of required materials, including URLs to where you can buy them, see 
 **In-class:** Visit John Driscoll’s *Slight Perturbations* show   
 **Homework:** Continue working on project prototype  
 
-**[WEEK 4: LED + BUTTONS #2](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
+**WEEK 4: [LED + BUTTONS #2](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
 **Feedback:** Small-group feedback on prototypes  
 **Demos:** Variables, `if/else`, button state change, soldering basics, CAD design in Illustrator, laser-cutter demo  
 **Homework:** Finish `Buttons + LEDs` project, be sure your other parts arrive by the next class!  
