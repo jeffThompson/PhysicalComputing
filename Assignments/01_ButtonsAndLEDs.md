@@ -14,7 +14,6 @@ A few rules (though creative rule-breaking is encouraged):
 Over the course of the next few weeks you'll develop a simple breadboard prototype, refine it, and eventually make a polished version that we will document with video.
 
 ## DELIVERABLES  
-
 To turn in your project, please upload the following files to Canvas:  
 * Photographs or scans of project sketches     
 * Photograph of breadboard prototype  
@@ -29,6 +28,11 @@ Additionally, we'll shoot a video during class demonstrating your project
 * **Feb 12:** Feedback session, finish project, **make sure the rest of your parts are here for next week!**  
 * **Feb 19:** Monday schedule, no class!  
 * **Feb 26:** Project due, critique  
+
+## FOR TUESDAY, FEBRUARY 5/FEBRUARY 12  
+**NOTE! We will be going to Fridman Gallery that day!** We will leave from the classroom right at 9am, so please be on time and ready to go. If your Metrocard doesn't have enough money on it, please add some this week too.
+
+Since we won't meet in person on Feb 5, your ongoing assignment is to work on a prototype of your project using your breadboard. This should be a working proof-of-concept that you can demo to the class as well as a way to identify what you need help with and what other materials you'll need. On Feb 12 we'll look at the laser-cutter and have work time.
 
 ## FOR TUESDAY, JANUARY 22  
 **Most important!** Please be sure to order your Arduino board and the basic parts required – do this ASAP so it all arrives before class next week. Not having your parts next week will mean you can't participate in class and will be marked absent. The list of parts is in this repository in the `PartsList.xlsx` file.
