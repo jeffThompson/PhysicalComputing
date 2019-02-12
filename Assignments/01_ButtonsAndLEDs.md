@@ -1,7 +1,7 @@
 ![](https://raw.githubusercontent.com/jeffThompson/PhysicalComputing/master/Images/01_ButtonsAndLEDs/RetroGameCabinets.jpg)
 
-# BUTTONS AND LEDs
-**DUE MARCH 5 ~~FEBRUARY 26~~**
+# BUTTONS AND LEDs  
+### DUE MARCH 5 ~~FEBRUARY 26~~  
 
 > "Calculation and reasoning, like weaving and ploughing, are work, not for human souls, but for clever combinations of iron and wood" — Mary Everest Boole
 
@@ -26,13 +26,13 @@ Additionally, we'll shoot a video during class demonstrating your project
 * **Jan 22:** Project assigned, create ideation drawings, read [*Programming Primer*](https://github.com/jeffThompson/PhysicalComputing/blob/master/Readings/ProgrammingPrimer_ProgrammingInteractivity_JoshuaNoble.pdf), and **order your Arduino board and basic supplies!**    
 * **Jan 29:** Feedback session, create refined sketches and breadboard prototype  
 * **Feb 5:** Visit Fridman Gallery to see John Driscoll's show *Slight Perturbations*, continue working on project  
-* **Feb 12:** Snow day! See below for more info, **make sure the rest of your parts are here for next class meeting!**  
+* **Feb 12:** Snow day! See below for more info, **make sure the rest of your parts are here for March 5!**  
 * **Feb 19:** Monday schedule, no class!  
 * **Feb 26:** Prototypes due, laser-cutter and soldering demos, finish projects for next week  
 * **Mar 5:** Project due, critique, must have all other parts by this week  
 
-##FOR TUESDAY, FEBRUARY 26  
-**Snow day!** Since there is no class on Feb 12th and next week is a Monday schedule, we won't see each other for two weeks. For the 26th, please be sure you continue to work on refining your project prototypes to get them as far along as possible. This means working on your code, adding complexity to the interaction, ordering any parts you'll need for the final version, and doing more detailed drawings/prototypes.
+## FOR TUESDAY, FEBRUARY 26  
+**Snow day!** Since there is no class on Feb 12th due to snow and next week is a Monday schedule, we won't see each other for two weeks. For the 26th, please be sure you continue to work on refining your project prototypes to get them as far along as possible. This means working on your code, adding complexity to the interaction, ordering any parts you'll need for the final version, and doing more detailed drawings/prototypes. You should be able to make a lot of progress in the next two weeks, so I hope to see very refined versions of your projects when we meet next.
 
 On the 26th we'll take a look at your prototypes, with the final version due the following week. Since we won't see each other for two weeks, please feel free to email me if you have questions, get stuck, or want feedback.
 
