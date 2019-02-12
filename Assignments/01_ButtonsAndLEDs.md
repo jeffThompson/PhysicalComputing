@@ -1,6 +1,7 @@
 ![](https://raw.githubusercontent.com/jeffThompson/PhysicalComputing/master/Images/01_ButtonsAndLEDs/RetroGameCabinets.jpg)
 
 # BUTTONS AND LEDs
+**DUE MARCH 5 ~~FEBRUARY 26~~**
 
 > "Calculation and reasoning, like weaving and ploughing, are work, not for human souls, but for clever combinations of iron and wood" — Mary Everest Boole
 
@@ -25,12 +26,20 @@ Additionally, we'll shoot a video during class demonstrating your project
 * **Jan 22:** Project assigned, create ideation drawings, read [*Programming Primer*](https://github.com/jeffThompson/PhysicalComputing/blob/master/Readings/ProgrammingPrimer_ProgrammingInteractivity_JoshuaNoble.pdf), and **order your Arduino board and basic supplies!**    
 * **Jan 29:** Feedback session, create refined sketches and breadboard prototype  
 * **Feb 5:** Visit Fridman Gallery to see John Driscoll's show *Slight Perturbations*, continue working on project  
-* **Feb 12:** Feedback session, finish project, **make sure the rest of your parts are here for next week!**  
+* **Feb 12:** Snow day! See below for more info, **make sure the rest of your parts are here for next class meeting!**  
 * **Feb 19:** Monday schedule, no class!  
-* **Feb 26:** Project due, critique  
+* **Feb 26:** Prototypes due, laser-cutter and soldering demos, finish projects for next week  
+* **Mar 5:** Project due, critique, must have all other parts by this week  
+
+##FOR TUESDAY, FEBRUARY 26  
+**Snow day!** Since there is no class on Feb 12th and next week is a Monday schedule, we won't see each other for two weeks. For the 26th, please be sure you continue to work on refining your project prototypes to get them as far along as possible. This means working on your code, adding complexity to the interaction, ordering any parts you'll need for the final version, and doing more detailed drawings/prototypes.
+
+On the 26th we'll take a look at your prototypes, with the final version due the following week. Since we won't see each other for two weeks, please feel free to email me if you have questions, get stuck, or want feedback.
+
+**Please also make sure all your remaining parts are ordered and here by March 5!**
 
 ## FOR TUESDAY, FEBRUARY 5/FEBRUARY 12  
-**NOTE! We will be going to Fridman Gallery that day!** We will leave from the classroom right at 9am, so please be on time and ready to go. If your Metrocard doesn't have enough money on it, please add some this week too.
+**NOTE! We will be going to Fridman Gallery on the 5th!** We will leave from the classroom right at 9am, so please be on time and ready to go. If your Metrocard doesn't have enough money on it, please add some this week too.
 
 Since we won't meet in person on Feb 5, your ongoing assignment is to work on a prototype of your project using your breadboard. This should be a working proof-of-concept that you can demo to the class as well as a way to identify what you need help with and what other materials you'll need. On Feb 12 we'll look at the laser-cutter and have work time.
 

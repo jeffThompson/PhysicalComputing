@@ -30,31 +30,31 @@ For a list of required materials, including URLs to where you can buy them, see 
 **In-class:** Visit John Driscoll’s *Slight Perturbations* show   
 **Homework:** Continue working on project prototype  
 
-**WEEK 4: [LED + BUTTONS #2](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
+**WEEK 4: SNOW DAY, NO CLASS :(**  
+See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md) for an updated schedule for the project  
+
+**FEB 19: MONDAY SCHEDULE, NO CLASS!**  
+
+**WEEK 5: [LED + BUTTONS #2](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md)**  
 **Feedback:** Small-group feedback on prototypes  
 **Demos:** Variables, `if/else`, button state change, soldering basics, CAD design in Illustrator, laser-cutter demo  
 **Homework:** Finish `Buttons + LEDs` project, be sure your other parts arrive by the next class!  
 
-**FEB 19: Monday schedule, no class!**  
-
-**WEEK 5: [BUTTONS + LEDs](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md) DUE / ANALOG SENSORS #1**  
+**WEEK 6: [BUTTONS + LEDs](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md) DUE / ANALOG SENSORS #1**  
 **Critique:** Group crit of `Buttons + LEDs` projects  
 **In-class:** Documenting projects with video  
 **Demos:** Reading analog sensors, basic voltage dividers, mapping values to another range  
-**Homework:** Ideation drawings for project  
+**Homework:** Ideation drawings and working prototype of project  
 
-**WEEK 6: ANALOG SENSORS #2**  
-**Demos:** More voltage dividers, Ohm’s law, sensor calibration, intro to the bandsaw, sander, and chopsaw  
-**In-class:** Work day  
-**Homework:** Working prototype of project  
-
-**WEEK 7: ANALOG SENSORS #3**  
+**WEEK 7: ANALOG SENSORS #2**  
 **Feedback:** Small-group feedback on prototypes  
-**Demos:** Sound and video generation, sending messages to other software  
+**Demos:** More voltage dividers, Ohm’s law, sensor calibration, sound and video generation, sending messages to other software, intro to the bandsaw, sander, and chopsaw
 **In-class:** Work day  
 **Homework:** Finish `Analog Sensors` project  
 
-**MAR 19: Spring break, no class!**  **WEEK 8: ANALOG SENSORS DUE / PASSAGE OF TIME #1**  
+**MAR 19: SPRING BREAK, NO CLASS!**  
+
+**WEEK 8: ANALOG SENSORS DUE / PASSAGE OF TIME #1**  
 **Critique:** Group crit of `Analog Sensor` projects  
 **Demos:** DC motors, driver circuits, servo motors, basic 3D modeling for printing, using the Makerbot  
 **In-class:** Model a 3D-printable bracket for your motor  
