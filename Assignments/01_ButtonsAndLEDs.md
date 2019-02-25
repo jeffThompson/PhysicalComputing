@@ -31,6 +31,18 @@ Additionally, we'll shoot a video during class demonstrating your project
 * **Feb 26:** Prototypes due, laser-cutter and soldering demos, finish projects for next week  
 * **Mar 5:** Project due, critique, must have all other parts by this week  
 
+## FOR TUESDAY, JANUARY 22  
+**Most important!** Please be sure to order your Arduino board and the basic parts required – do this ASAP so it all arrives before class next week. Not having your parts next week will mean you can't participate in class and will be marked absent. The list of parts is in this repository in the `PartsList.xlsx` file.
+
+Your main assignment this week is to start thinking about what you want to make for this project. Think about how the limitations of the assignment can be generative and try to get past initial ideas and into something unique. Either in your sketchbook (if you're ok tearing pages out) or on separate paper, please make drawings of at least 5 possible ideas for the project. Your drawings don't have to be masterpieces but they should communicate your idea: consider adding labels, detail drawings, notes, etc.
+
+Finally, please also read the *Programming Primer* PDF, found in the `Readings` folder. It's a chapter from [Joshua Noble's excellent book *Programming Interactivity*](http://shop.oreilly.com/product/0636920021735.do). (You'll notice some of the sections mention Processing and OpenFramework, which we won't be using this semester, but the ideas are the same across almost all programming languages.)
+
+## FOR TUESDAY, FEBRUARY 5/FEBRUARY 12  
+**NOTE! We will be going to Fridman Gallery on the 5th!** We will leave from the classroom right at 9am, so please be on time and ready to go. If your Metrocard doesn't have enough money on it, please add some this week too.
+
+Since we won't meet in person on Feb 5, your ongoing assignment is to work on a prototype of your project using your breadboard. This should be a working proof-of-concept that you can demo to the class as well as a way to identify what you need help with and what other materials you'll need. On Feb 12 we'll look at the laser-cutter and have work time.
+
 ## FOR TUESDAY, FEBRUARY 26  
 **Snow day!** Since there is no class on Feb 12th due to snow and next week is a Monday schedule, we won't see each other for two weeks. For the 26th, please be sure you continue to work on refining your project prototypes to get them as far along as possible. This means working on your code, adding complexity to the interaction, ordering any parts you'll need for the final version, and doing more detailed drawings/prototypes. You should be able to make a lot of progress in the next two weeks, so I hope to see very refined versions of your projects when we meet next.
 
@@ -38,17 +50,10 @@ On the 26th we'll take a look at your prototypes, with the final version due the
 
 **Please also make sure all your remaining parts are ordered and here by March 5!**
 
-## FOR TUESDAY, FEBRUARY 5/FEBRUARY 12  
-**NOTE! We will be going to Fridman Gallery on the 5th!** We will leave from the classroom right at 9am, so please be on time and ready to go. If your Metrocard doesn't have enough money on it, please add some this week too.
+## FOR TUESDAY, MARCH 5  
+For next week, please continue to refine your project into a finished state. This should address not only the code/electronics but also the overall presentation. Consider what materials and scale your final piece should be, and be picky about getting everything just right! See the `Resources` page for places to buy any last-minute parts you might need.
 
-Since we won't meet in person on Feb 5, your ongoing assignment is to work on a prototype of your project using your breadboard. This should be a working proof-of-concept that you can demo to the class as well as a way to identify what you need help with and what other materials you'll need. On Feb 12 we'll look at the laser-cutter and have work time.
-
-## FOR TUESDAY, JANUARY 22  
-**Most important!** Please be sure to order your Arduino board and the basic parts required – do this ASAP so it all arrives before class next week. Not having your parts next week will mean you can't participate in class and will be marked absent. The list of parts is in this repository in the `PartsList.xlsx` file.
-
-Your main assignment this week is to start thinking about what you want to make for this project. Think about how the limitations of the assignment can be generative and try to get past initial ideas and into something unique. Either in your sketchbook (if you're ok tearing pages out) or on separate paper, please make drawings of at least 5 possible ideas for the project. Your drawings don't have to be masterpieces but they should communicate your idea: consider adding labels, detail drawings, notes, etc.
-
-Finally, please also read the *Programming Primer* PDF, found in the `Readings` folder. It's a chapter from [Joshua Noble's excellent book *Programming Interactivity*](http://shop.oreilly.com/product/0636920021735.do). (You'll notice some of the sections mention Processing and OpenFramework, which we won't be using this semester, but the ideas are the same across almost all programming languages.)
+**Also for next week!** Please be sure the remainder of your parts are here for class. We'll take a look at your buttons project, then talk about electricity and reading analog sensors.
 
 ## PROJECTS AND THINGS SHOWN  
 * A student project that [displays morse code images in the sky](https://hackaday.com/2012/12/12/observe-a-satellites-morse-code-message-today)... from a satellite!  
