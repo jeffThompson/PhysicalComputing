@@ -64,7 +64,7 @@ Your file must be in PDF format (or an image if you're just etching), which can 
 4. Turn on the fume extractor and the air compressor  
 5. Verify everything is correct, then hit the `Play` button in the laser software  
 
-**IMPORTANT!** You must stand by the lasercutter while any cut job is happening! Fire is a real danger and you must watch to be sure everything is ok. A small flare-up while cutting is normal, but if something catches fire, open the door to the lasercutter. It will shut down the cut job. If the fire continues, use the fire extinguisher near the door. If any doubt: call 911.
+**IMPORTANT!** You must stand by the lasercutter while any cut job is happening! Fire is a real danger and you must watch to be sure everything is ok. A small flare-up while cutting is normal, but if something catches fire, open the door to the lasercutter. It will shut down the cut job. If the fire continues, use the fire extinguisher near the door. **If any doubt: call 911.**
 
 6. When done, let the fume extractor run for about a minute to clear all fumes  
 7. Open the door and remove your part!
