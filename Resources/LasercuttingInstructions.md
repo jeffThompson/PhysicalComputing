@@ -55,7 +55,7 @@ Your file must be in PDF format (or an image if you're just etching), which can 
 3. (Our acrylic is under `Plastic > Acrylic > Cast Acrylic > Cast Acrylic, Deep Engrave`)  
 4. Type in the proper material size – acrylic sheets are `0.125"`, for other materials it's best to measure with a calipers  
 5. Depending on your needs, you may want to adjust the engrave settings down – for a standard engrave, try `-40%` or so  
-6. Hit `Ok`, then open the settings again to make sure your choices were saved  
+6. Hit `Apply` then `Ok`, then open the settings again to make sure your choices were saved  
 
 ### CUTTING  
 1. Load your material onto the bed of the laser, making sure it's flat and straight  
