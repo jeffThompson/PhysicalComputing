@@ -28,7 +28,9 @@ Definite no!
 * Delrin, which off-gasses acetone which will melt the guts of the lasercutter  
 
 ### FILE PREP  
-Your file must be in PDF format (or an image if you're just etching), which can be easily made in Adobe Illustrator or a similar tool. The laser software is very picky, so you need to follow these guidelines exactly:
+Your file must be in PDF format (or an image if you're just etching), which can be easily made in Adobe Illustrator. If you're not a VA&T major, you can access Illustrator any time in the lab or via the [Virtual Learning Environment](http://www.stevens.edu/vle). Inkscape might work as an alternative too, as would other CAD software like Rhino or Fusion 360.
+
+The laser software is very picky, so you need to follow these guidelines exactly:
 
 1. File should be set up in RGB color mode  
 2. All stroke weights must be 0.072pt (or 0.001in), thicker lines may be read as raster instead  
