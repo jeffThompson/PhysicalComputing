@@ -48,7 +48,7 @@ See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob
 
 **WEEK 7: ANALOG SENSORS #2**  
 **Feedback:** Small-group feedback on prototypes  
-**Demos:** More voltage dividers, Ohm’s law, sensor calibration, sound and video generation, sending messages to other software, intro to the bandsaw, sander, and chopsaw
+**Demos:** More voltage dividers, Ohm’s law, sensor calibration, sound and video generation, sending messages to other software, intro to the bandsaw, sander, and chopsaw  
 **In-class:** Work day  
 **Homework:** Finish `Analog Sensors` project  
 
