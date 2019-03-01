@@ -34,7 +34,7 @@ Once you've refined your idea, please create a working prototype of your sensor'
 * A gem from the first week: [Terry Crews controlling instruments with his muscles](https://www.youtube.com/watch?v=S9iKC7vb-Ts)  
 * A short doc on Tristan Shone, who performs under the name [Author & Punisher with heavy hand-made instruments](https://www.youtube.com/watch?v=PrOTHl6Tldc)  
 * Rafael Lozanno-Hemmer's [*Pulse Index*](http://www.lozano-hemmer.com/pulse_index.php) and [*Pulse Sprial*](http://www.lozano-hemmer.com/pulse_spiral.php)  
-* tim hawkinson art21  
+* [Tim Hawkinson on Art21](https://art21.org/watch/art-in-the-twenty-first-century/s2/tim-hawkinson-in-time-segment/)  
 * A fun way to build your own sensors with conductive thread: [a wearable zipper sensor](https://itp.nyu.edu/archive/physcomp-spring2014/sensors/Reports/ZipperSensor.html)  
 
 ## RESOURCES  
