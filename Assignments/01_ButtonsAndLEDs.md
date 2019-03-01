@@ -16,8 +16,8 @@ Over the course of the next few weeks you'll develop a simple breadboard prototy
 
 ## DELIVERABLES  
 To turn in your project, please upload the following files to Canvas:  
-* Photographs or scans of project sketches     
-* Photograph of breadboard prototype  
+* 2-3 photographs of your finished project  
+* A short description of your project: what it does, a little bit about how it works, materials used  
 
 Additionally, we'll shoot a video during class demonstrating your project
 
