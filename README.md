@@ -40,13 +40,13 @@ See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob
 **Demos:** Variables, `if/else`, button state change, soldering basics, CAD design in Illustrator, laser-cutter demo  
 **Homework:** Finish `Buttons + LEDs` project, be sure your other parts arrive by the next class!  
 
-**WEEK 6: [BUTTONS + LEDs](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md) DUE / ANALOG SENSORS #1**  
+**WEEK 6: [BUTTONS + LEDs](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/01_ButtonsAndLEDs.md) DUE / [ANALOG SENSORS #1](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/02_AnalogSensors.md)**  
 **Critique:** Group crit of `Buttons + LEDs` projects  
 **In-class:** Documenting projects with video  
 **Demos:** Reading analog sensors, basic voltage dividers, mapping values to another range  
 **Homework:** Ideation drawings and working prototype of project  
 
-**WEEK 7: ANALOG SENSORS #2**  
+**WEEK 7: [ANALOG SENSORS #2](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/02_AnalogSensors.md)**  
 **Feedback:** Small-group feedback on prototypes  
 **Demos:** More voltage dividers, Ohm’s law, sensor calibration, sound and video generation, sending messages to other software, intro to the bandsaw, sander, and chopsaw  
 **In-class:** Work day  
@@ -54,7 +54,7 @@ See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob
 
 **MAR 19: SPRING BREAK, NO CLASS!**  
 
-**WEEK 8: ANALOG SENSORS DUE / PASSAGE OF TIME #1**  
+**WEEK 8: [ANALOG SENSORS](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/02_AnalogSensors.md) DUE / PASSAGE OF TIME #1**  
 **Critique:** Group crit of `Analog Sensor` projects  
 **Demos:** DC motors, driver circuits, servo motors, basic 3D modeling for printing, using the Makerbot  
 **In-class:** Model a 3D-printable bracket for your motor  
