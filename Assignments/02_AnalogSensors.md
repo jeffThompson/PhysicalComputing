@@ -25,6 +25,9 @@ For next week, start by sketching ideas for your project. These should be quick,
 
 Once you've refined your idea, please create a working prototype of your sensor's input on a breadboard. Keep a list of things you don't know how to do or are stuck on so we can address them in class.
 
+## FOR TUESDAY, MARCH 26  
+For next class (in two weeks), please continue to refine and finish your project. Like with the `Buttons and LEDs` project, think about the final presentation: materials, scale, touch, interaction, etc. When it's done, take 2-3 photographs of your project that show what it does, how it's used, etc. These can be with your phone, but consider the location you shoot: documentation is part of the work! Upload your photos to Canvas along with a short description.
+
 ## PROJECTS AND THINGS SHOWN  
 * David Bowen's [*Telepresent Wind*](http://www.dwbowen.com/telepresent-wind)  
 * Marc de Pape's [digital wind chime that uses sensors to score the city](https://www.designboom.com/technology/the-chime-a-digital-wind-chime-by-marc-de-pape/)  
