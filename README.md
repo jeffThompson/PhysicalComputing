@@ -89,6 +89,6 @@ See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob
 **Critique:** Group crit of `Final Projects`  
 **Homework:** Record documentation of your project
 
-**EXAM PERIOD: DOCUMENTATION DUE**  
-**Online:** Turn in documentation of your finished project
+**EXAM PERIOD: MAY 10, 9AM**  
+**DOCUMENTATION DUE ONLINE:** Turn in documentation of your finished project
 
