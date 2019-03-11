@@ -24,7 +24,7 @@
 // to smooth our input, we'll store a set of previous readings and
 // average them – how many values we store will change the overall
 // smoothness of the value we get
-const int numReadings = 10;   // "const" is required so we can use it to create the array
+int numReadings = 100;   // "const" is required so we can use it to create the array
 
 // to store the values, we'll create an array (a list) of values
 // and replace the oldest every time we read the sensor
