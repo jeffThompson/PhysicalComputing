@@ -15,8 +15,8 @@ To turn in your project, please upload the following files to Canvas:
 * A short description of your project: what it does, a little bit about how it works, materials used  
 
 ## PROJECT TIMELINE  
-* **March 5:** Project assigned, analog sensor demos and intro to electricity  
-* **March 12:** Project prototypes due, voltage dividers and Ohm's law, generating sound and video, intro to woodworking tools  
+* **March 5:** Project assigned, analog sensor demos, voltage dividers, and intro to electricity  
+* **March 12:** Project prototypes due, generating sound and video, sending messages to other software, intro to woodworking tools  
 * **March 19:** Spring break, no class! Continue working on your project over break  
 * **March 26:** Projects due, critique
 
