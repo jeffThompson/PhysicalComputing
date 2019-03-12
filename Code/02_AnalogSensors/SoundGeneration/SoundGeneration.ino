@@ -28,7 +28,7 @@
 
 
 int sensorPin =  A0;    // potentiometer (or other analog sensor)
-int speakerPin = 11;    // speaker for audio output
+int speakerPin = 11;    // speaker for audio output (must be pwm)
 
 
 void setup() {
