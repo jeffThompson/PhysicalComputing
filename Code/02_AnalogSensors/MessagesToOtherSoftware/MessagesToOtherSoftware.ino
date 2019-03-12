@@ -54,7 +54,7 @@ void loop() {
   // Serial.println(pot2);         // end of message
 
   // note: this will require fancier parsing on the other
-  // end to parse the individual sensor readings
+  // end to split the individual sensor readings
 }
 
 

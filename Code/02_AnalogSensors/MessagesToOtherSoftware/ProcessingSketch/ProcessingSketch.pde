@@ -3,13 +3,13 @@ import processing.serial.*;
 
 /*
 OSC: ARDUINO TO PROCESSING
- Jeff Thompson | 2019 | jeffreythompson.org
+Jeff Thompson | 2019 | jeffreythompson.org
  
- A simple Processing sketch that receives a sensor reading
- from the Arduino and draws a circle whose diameter is driven
- by that sensor.
+A simple Processing sketch that receives a sensor reading
+from the Arduino and draws a circle whose diameter is driven
+by that sensor.
  
- */
+*/
 
 int sensorReading = 0;    // variable from the potentiometer
 Serial arduino;           // serial connection object from the Arduino
