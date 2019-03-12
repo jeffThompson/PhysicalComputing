@@ -7,6 +7,7 @@ Physical computing projects require weird and unique supplies: raw material like
 * [Adafruit](http://www.adafruit.com): based in NYC, another great supplier of parts, sensors, etc; also not cheap but similar to Sparkfun  
 * [Mouser](http://www.mouser.com): huge inventory of parts, but you will need to know what you want; bulk discounts  
 * [Digikey](http://www.digikey.com): kind of between SparkFun and Mouser; lots of items, easier searching  
+* [Tinkersphere](https://tinkersphere.com): NYC store for electronics; costs a bit more than online but you can go browse and get stuff same-day  
 * [Electronic Goldmine](http://www.goldmine-elec-products.com/): discount electronics parts, mostly surplus; they don't have everything, but what they do have is cheap
 
 ## WOOD/LUMBER  
