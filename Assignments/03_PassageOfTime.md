@@ -28,7 +28,7 @@ Please also print the motor bracket we designed in class in the Fab Lab. You can
 For next week, please finish your project. This is the time to get really picky about materials, scale, and interaction. How do you want us to experience and engage your project? How big should it be? How can your materials choice best communicate your idea? Your piece should be ready to set up in class for critique. We'll have an ideation session for your final project, so you can start thinking about what you might want to make for that as well.
 
 ## PROJECTS AND THINGS SHOWN  
-* Legendary computer scientist (Grace Hopper showing off her physical nanosecond)[https://www.youtube.com/watch?v=JEpsKnWZrJ8]  
+* Legendary computer scientist [Grace Hopper showing off her physical nanosecond](https://www.youtube.com/watch?v=JEpsKnWZrJ8)  
 * The Long Now Foundation's [*10,000 Year Clock*](http://longnow.org/clock/)  
 * Juerg Lehni's [*Moving Picture Show*](http://juerglehni.com/works/moving-picture-show)  
 * Julius von Bismarck's [*Some Pigeons Are More Equal Than Others*](http://juliusvonbismarck.com/bank/index.php?/projects/some-pigeons-are-more-equal-than-others), [*Perpetual Storytelling Apparatus*](http://juliusvonbismarck.com/bank/index.php?/projects/perpetual-storytellin-apparatus), [*Von der Decke zum Boden*](http://juliusvonbismarck.com/bank/index.php?/projects/von-der-decke-zum-boden), and [*Versuch under Kreisen*](http://juliusvonbismarck.com/bank/index.php?/projects/versuch-unter-kreisen)  
