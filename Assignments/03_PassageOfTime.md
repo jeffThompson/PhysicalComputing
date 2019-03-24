@@ -30,7 +30,7 @@ For next week, please finish your project. This is the time to get really picky 
 ## PROJECTS AND THINGS SHOWN  
 * Legendary computer scientist (Grace Hopper showing off her physical nanosecond)[https://www.youtube.com/watch?v=JEpsKnWZrJ8]  
 * The Long Now Foundation's [*10,000 Year Clock*](http://longnow.org/clock/)  
-* http://juerglehni.com/works/moving-picture-show
+* Juerg Lehni's [*Moving Picture Show*](http://juerglehni.com/works/moving-picture-show)  
 * Julius von Bismarck's [*Some Pigeons Are More Equal Than Others*](http://juliusvonbismarck.com/bank/index.php?/projects/some-pigeons-are-more-equal-than-others), [*Perpetual Storytelling Apparatus*](http://juliusvonbismarck.com/bank/index.php?/projects/perpetual-storytellin-apparatus), [*Von der Decke zum Boden*](http://juliusvonbismarck.com/bank/index.php?/projects/von-der-decke-zum-boden), and [*Versuch under Kreisen*](http://juliusvonbismarck.com/bank/index.php?/projects/versuch-unter-kreisen)  
 * [A solar-powered, very slow-cutting saw](https://tinkerlog.com/2012/09/24/the-almost-useless-machine)  
 * Michael Candy's [*Actias Luna*](https://michaelcandy.com/ACTIAS-LUNA)  
