@@ -44,8 +44,13 @@ void draw() {
       
       // convert the string into an integer
       // and convert to screen coords using map()
-      sensorReading = Integer.parseInt(message.trim());      // trim() removes the newline character
-      sensorReading = int( map(sensorReading, 0, 1023, 10, width-10) );
+      try {
+        sensorReading = Integer.parseInt(message.trim());      // trim() removes the newline character
+        sensorReading = int( map(sensorReading, 0, 1023, 10, width-10) );
+      }
+      catch (Exception e) {
+        //
+      }
     }
   }
 

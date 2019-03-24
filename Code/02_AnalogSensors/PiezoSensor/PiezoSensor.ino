@@ -24,10 +24,11 @@
 */
 
 
-int threshold = 100;    // values above this will trigger the led
+int threshold = 30;    // values above this will trigger the led
 
 int sensorPin = A0;     // piezo sensor on analog pin 0
 int ledPin =    13;     // led will turn on/off with piezo
+boolean ledState = false;
 
 
 void setup() {
@@ -46,7 +47,7 @@ void loop() {
   if (value > threshold) {
     
     // toggle the led state variable
-    // (! means "not" -- not true = true, not false = true)
+    // (! means "not" -- not true = false, not false = true)
     ledState = !ledState;
 
     // and write the state to the led
