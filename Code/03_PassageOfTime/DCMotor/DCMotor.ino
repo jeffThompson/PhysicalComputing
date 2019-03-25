@@ -15,7 +15,7 @@
   CIRCUIT
   We can't just turn our motor on and off from the Arduino. This
   is because the motor would likely pull too much current from our
-  board, especialyl when starting up. A motor can also generate
+  board, especially when starting up. A motor can also generate
   electricity when spun (that's how things like wind turbines work!)
   so we need some circuitry to protect the Arduino from receiving
   that current too. To accomplish this, we need a transistor which
@@ -24,6 +24,11 @@
   so it works the way we want it to. (More info in the Adafruit 
   tutorial linked below.)
 
+  Parts needed:
+  + 1x PN2222 transistor
+  + 1x 1N4001 diode
+  + 1x 220-ohm resistor (approx value)
+
   CONTROLLING SPEED
   One of the big challenges with small DC motors is that they
   spin really fast. Like, REALLY fast. Typical DC motors will
@@ -31,6 +36,11 @@
   fast for most things we'll want to do. To solve this, we can
   use PWM just like we did with the LEDs: turn the motor on and
   off really fast which smooths out to be slower motion!
+
+  CHANGING DIRECTION?
+  Super easy: just swap the wires to the motor! If you want your
+  motor to be able to change direction through code though, you'll
+  need a more complex driver circuit.
 
   WHAT ABOUT LARGER MOTORS?
   Larger motors would require considerably more care when designing
