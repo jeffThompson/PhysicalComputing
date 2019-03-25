@@ -15,14 +15,12 @@ To turn in your project, please upload the following files to Canvas:
 * A short description of your project: what it does, a little bit about how it works, materials used  
 
 ## PROJECT TIMELINE  
-* **March 26:** Project assigned, motor demos, CAD basics and 3D-printing  
+* **March 26:** Project assigned, motor demos  
 * **April 2:** Prototypes due, stepper motors and end-stops  
 * **April 9:** Project due, critique, ideation for final project  
 
 ## FOR TUESDAY, APRIL 2  
 This week, start ideating and prototyping your project, with the goal of a work-in-progress prototype for next class. Try to identify things you'll need help with, materials needed, and think about how your piece will be installed and experienced.
-
-Please also print the motor bracket we designed in class in the Fab Lab. You can print the first one for free (be sure to mention you're in this class) but any other printing you'll want to do will be $0.10 per gram.
 
 ## FOR TUESDAY, APRIL 9  
 For next week, please finish your project. This is the time to get really picky about materials, scale, and interaction. How do you want us to experience and engage your project? How big should it be? How can your materials choice best communicate your idea? Your piece should be ready to set up in class for critique. We'll have an ideation session for your final project, so you can start thinking about what you might want to make for that as well.

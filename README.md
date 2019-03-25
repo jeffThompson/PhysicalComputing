@@ -54,20 +54,20 @@ See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob
 
 **MAR 19: SPRING BREAK, NO CLASS!**  
 
-**WEEK 8: [ANALOG SENSORS](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/02_AnalogSensors.md) DUE / PASSAGE OF TIME #1**  
+**WEEK 8: [ANALOG SENSORS](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/02_AnalogSensors.md) DUE / [PASSAGE OF TIME #1](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/03_PassageOfTime.md)**  
 **Critique:** Group crit of `Analog Sensor` projects  
-**Demos:** DC motors, driver circuits, servo motors, basic 3D modeling for printing, using the Makerbot  
-**In-class:** Model a 3D-printable bracket for your motor  
-**Homework:** Print your bracket in the Fab Lab, ideation drawings and breadboard prototype  
+**Demos:** DC motors, driver circuits, servo motors  
+**Homework:** Ideation drawings and breadboard prototype  
 
-**WEEK 9: PASSAGE OF TIME #2**  
+**WEEK 9: [PASSAGE OF TIME #2](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/03_PassageOfTime.md)**  
 **Demos:** Stepper motors, end-stops  
 **Homework:** Finish `Passage of Time` project  
 
-**WEEK 10: PASSAGE OF TIME DUE / FINAL PROJECT #1**  
+**WEEK 10: [PASSAGE OF TIME](https://github.com/jeffThompson/PhysicalComputing/blob/master/Assignments/03_PassageOfTime.md) DUE / FINAL PROJECT #1**  
 **Critique:** Group crit of `Passage of Time` projects  
-**Demos:** Controlling things with relays  
-**Homework:** Ideation drawings and final project proposal  
+**Demos:** Controlling things with relays, basic 3D modeling for printing, using the Makerbot  
+**In-class:** Model a 3D-printable bracket  
+**Homework:** Ideation drawings and final project proposal, print your bracket in the Fab Lab    
 
 **WEEK 11: FINAL PROJECT #2**  
 **Feedback:** Presentation of final project ideas  
