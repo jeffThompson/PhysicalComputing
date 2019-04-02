@@ -25,6 +25,8 @@ This week, start ideating and prototyping your project, with the goal of a work-
 ## FOR TUESDAY, APRIL 9  
 For next week, please finish your project. This is the time to get really picky about materials, scale, and interaction. How do you want us to experience and engage your project? How big should it be? How can your materials choice best communicate your idea? Your piece should be ready to set up in class for critique. We'll have an ideation session for your final project, so you can start thinking about what you might want to make for that as well.
 
+**Please also download and install the [trial version of Rhino CAD](https://www.rhino3d.com/download) for next week. We'll do a short demo on designing objects for 3D printing.**
+
 ## PROJECTS AND THINGS SHOWN  
 * Legendary computer scientist [Grace Hopper showing off her physical nanosecond](https://www.youtube.com/watch?v=JEpsKnWZrJ8)  
 * The Long Now Foundation's [*10,000 Year Clock*](http://longnow.org/clock/)  
