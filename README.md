@@ -67,17 +67,17 @@ See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob
 **Critique:** Group crit of `Passage of Time` projects  
 **Demos:** Controlling things with relays, basic 3D modeling for printing, using the Makerbot  
 **In-class:** Model a 3D-printable bracket  
-**Homework:** Ideation drawings and final project proposal, print your bracket in the Fab Lab    
+**Homework:** Ideation drawings and final project proposal, finish modeling your bracket  
 
 **WEEK 11: FINAL PROJECT #2**  
 **Feedback:** Presentation of final project ideas  
-**Demos:** Circuit design in EagleCAD  
+**Demos:** Preparing files for 3D printing
 **In-class:** Work day  
-**Homework:** Breadboard prototype and refined proposal  
+**Homework:** Breadboard prototype and refined proposal, print your bracket in the Fab Lab  
 
 **WEEK 12: FINAL PROJECT #3**  
 **Feedback:** Small-group feedback on prototypes  
-**In-class:** Work day, demos as needed  
+**In-class:** Work day, circuit design basics in EagleCAD  
 **Homework:** Working prototype  
 
 **WEEK 13: FINAL PROJECT #4**  
@@ -89,6 +89,6 @@ See the [assignment page](https://github.com/jeffThompson/PhysicalComputing/blob
 **Critique:** Group crit of `Final Projects`  
 **Homework:** Record documentation of your project
 
-**EXAM PERIOD: MAY 10, 9AM**  
+**EXAM PERIOD: MAY 10, 5PM**  
 **DOCUMENTATION DUE ONLINE:** Turn in documentation of your finished project
 
