@@ -35,3 +35,10 @@ For next week, please think about what you'd like to make for your final project
 
 Along with your proposal, please also create at least one refined drawing of what you envision your piece will look like. This can be done digitally or by hand and should clearly show how the piece will look, what it does, etc. Feel free to add notes, arrows, labels, etc. **Be sure to print both your drawing and proposal and bring them to class!**
 
+## FOR TUESDAY, APRIL 23  
+Please continue working on your final project this week. The goal should be a working breadboard prototype that works through the basic technical side of your project. You should also be sure to order/buy any materials you'll need for your project.
+
+Please also print your Arduino bracket in the Fab Lab this week – it will be free of charge, just mention it's for this class.
+
+Next week we'll take a look at your work in progress and talk about designing circuits in EagleCAD. **Please [download and install Eagle](https://www.autodesk.com/education/free-software/eagle) before class next week!**
+
