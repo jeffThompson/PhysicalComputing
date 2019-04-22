@@ -40,5 +40,8 @@ Please continue working on your final project this week. The goal should be a wo
 
 Please also print your Arduino bracket in the Fab Lab this week – it will be free of charge, just mention it's for this class.
 
-Next week we'll take a look at your work in progress and talk about designing circuits in EagleCAD. **Please [download and install Eagle](https://www.autodesk.com/education/free-software/eagle) before class next week!**
+Next week we'll take a look at your work in progress and talk about designing circuits in ~~EagleCAD~~ Fritzing. **Please [download and install ~~Eagle~~ Fritzing](http://fritzing.org/download/) before class next week!**
+
+## FOR TUESDAY, APRIL 30  
+For next week, please have a working version of your project ready. This might not be fully-featured or have everything ready, but should be a clear iteratin of your project that you can demo and get feedback on. We won't have any demos in class, just a work day, so please come with your materials and tools ready to go – it will be helpful to prep a list of questions and things you need help with too to make the most of the time.
 
