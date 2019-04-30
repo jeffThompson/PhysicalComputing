@@ -12,9 +12,9 @@ For the critique, please:
 * Have your project finished and ready to show to the class
 
 To turn in your project on the exam date, please upload the following files to Canvas:  
-* 2-3 photographs of your project  
+* 2-3 photographs of your project. Carefully plan and frame your shots; do some editing of the photos if necessary to adjust exposure, white balanance, etc.  
 * A comment with a short description of your project: what it does, a little bit about how it works  
-* A comment with a bill-of-materials (BOM) listing the parts and materials used in your project  
+* A bill-of-materials (BOM), either as an uploaded or screenshotted Excel file, listing the parts and materials used in your project – see the sample BOM in the `Resources` folder for an example.  
 
 ## PROJECT TIMELINE  
 * **April 9:** Project assigned, create project proposal and drawings, finish 3D model of bracket  
@@ -44,4 +44,10 @@ Next week we'll take a look at your work in progress and talk about designing ci
 
 ## FOR TUESDAY, APRIL 30  
 For next week, please have a working version of your project ready. This might not be fully-featured or have everything ready, but should be a clear iteratin of your project that you can demo and get feedback on. We won't have any demos in class, just a work day, so please come with your materials and tools ready to go – it will be helpful to prep a list of questions and things you need help with too to make the most of the time.
+
+## FOR TUESDAY, MAY 7  
+For next week, please finish your project for the final critique. Your piece should be ready to go for class – if you have a complicated setup, please talk with me about finding a space to install ahead of time. **Note that you don't need to turn anything to Canvas until Friday! See below for details.**
+
+## FOR FRIDAY, MAY 10  
+We will not meet during the exam period – instead, use the time to document your piece. The quality of your documentation is part of the grade for this project, so please take your time. Documentation is hard but is really the most important thing employers, curators, etc look at! See the `Deliverables` section above for what to turn in.
 
