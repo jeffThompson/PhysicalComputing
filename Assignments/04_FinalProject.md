@@ -48,6 +48,6 @@ For next week, please have a working version of your project ready. This might n
 ## FOR TUESDAY, MAY 7  
 For next week, please finish your project for the final critique. Your piece should be ready to go for class – if you have a complicated setup, please talk with me about finding a space to install ahead of time. **Note that you don't need to turn anything to Canvas until Friday! See below for details.**
 
-## FOR FRIDAY, MAY 10  
+## FOR FRIDAY, MAY 10 at 5PM  
 We will not meet during the exam period – instead, use the time to document your piece. The quality of your documentation is part of the grade for this project, so please take your time. Documentation is hard but is really the most important thing employers, curators, etc look at! See the `Deliverables` section above for what to turn in.
 

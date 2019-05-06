@@ -1,0 +1,7 @@
+
+NOTES
+
+https://learn.sparkfun.com/tutorials/tiny-avr-programmer-hookup-guide/attiny85-use-hints
+
+* Aisler: https://aisler.net/partners/fritzing  
+* OSH Park: https://docs.oshpark.com/design-tools/fritzing  
