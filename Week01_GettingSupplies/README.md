@@ -1,6 +1,7 @@
 # GETTING SUPPLIES
 
 ### TLDR  
+* Due January 25  
 * Order the [supplies listed here](https://docs.google.com/spreadsheets/d/1eFKwcQB5PgZMCaIBkQ6jCpR6jHgA8spqsIOZDBLMFAg/edit?usp=sharing), ensuring they're here in time for class next week  
 * Bring next week:  
   * All the supplies you ordered  
