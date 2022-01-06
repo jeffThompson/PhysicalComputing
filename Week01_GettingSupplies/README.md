@@ -11,7 +11,7 @@
 ***
 
 ### ASSIGNMENT
-This week, your only task is to get the supplies you'll need for class next week. I'm suggesting you get your parts directly from Adafruit, a wonderful company based in NYC. Adafruit has been an amazing, long-time supporter of the open source hardware community, releasing tools and products, and publishing tons of tutorials, plus they're a woman-owned tech company!
+This week, your only task is to get the supplies you'll need for class next week. I'm suggesting you get your parts directly from [Adafruit](https://adafruit.com), a wonderful company based in NYC and started by [Limor Fried](https://github.com/readme/podcast/limor-fried-adafruit). Adafruit has been an amazing, long-time supporter of the open source hardware community, releasing tools and products, and publishing tons of tutorials, plus they're a woman-owned tech company!
 
 \[ [Link to a list of required supplies](https://docs.google.com/spreadsheets/d/1eFKwcQB5PgZMCaIBkQ6jCpR6jHgA8spqsIOZDBLMFAg/edit?usp=sharing) \]
 
