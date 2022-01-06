@@ -20,7 +20,9 @@ See the [syllabus](https://github.com/jeffThompson/PhysicalComputing/blob/master
 
 ### REQUIRED MATERIALS
 
-For a list of required materials, including URLs to where you can buy them, see the [PartsList.xlsx](https://github.com/jeffThompson/PhysicalComputing/blob/master/PartsList.xlsx?raw=true). ***Please note!*** You'll need some materials for the second week of class, so order them right away, please! All other parts will be needed by mid-February.
+For a list of required materials, including URLs to where you can buy them, see the [parts list](https://docs.google.com/spreadsheets/d/1eFKwcQB5PgZMCaIBkQ6jCpR6jHgA8spqsIOZDBLMFAg/edit?usp=sharing). 
+
+**Please note, you'll need some materials for the second week of class, so order them right away, please!** All other parts will be needed by mid-February.
 
 ***
 
@@ -31,7 +33,7 @@ Please note this is subject to change – be sure to check Canvas, this page, an
 * Jan 25: LEDs
 * Feb 1: Buttons 1
 * Feb 8: Buttons 2
-* :warning: **All parts needed by next week!**
+* **All parts needed by next week!** :warning:
 * Feb 15: Analog sensors 1
 * **Feb 22: Monday schedule, no class!**
 * Mar 1: Analog sensors 2
