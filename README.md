@@ -8,7 +8,7 @@
 | Meeting times  | Tuesdays, 9am–12.50pm, Morton 203 |  
 | Student hours  | Tuesdays, 2–3pm (Morton 208) and by appointment (Zoom) |
 
-This semester, we will explore how electronics, code, sculpture, and digital fabrication can bring input from the physical world into your computer (buttons, knobs, sensors) and let your computer interact back (LEDs, motors, speakers). We'll program microcontrollers using CircuitPython, as well as cover basic CAD for laser-cutting, and design and solder electronic circuits.
+This semester, we will explore how electronics, code, sculpture, and digital fabrication can bring input from the physical world into your computer (buttons, knobs, sensors) and let your computer interact back (LEDs, motors, speakers). We'll program [microcontrollers](https://en.wikipedia.org/wiki/Microcontroller) using [CircuitPython](https://circuitpython.org/), as well as cover basic CAD for laser-cutting, and design and solder electronic circuits.
 
 Along the way, we’ll look at historical and experimental interfaces used to connect people with computers, build speculative and exploratory projects that connect with your own interests, and work to refine those projects from rough prototype to finished, documented work.
 
