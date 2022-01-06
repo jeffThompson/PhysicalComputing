@@ -31,9 +31,9 @@ Please note this is subject to change – be sure to check Canvas, this page, an
 * Jan 25: LEDs
 * Feb 1: Buttons 1
 * Feb 8: Buttons 2
-* :warning: ***All parts needed by next week!***
+* :warning: **All parts needed by next week!**
 * Feb 15: Analog sensors 1
-* **Feb 22: Monday schedule, no class!  **
+* **Feb 22: Monday schedule, no class!**
 * Mar 1: Analog sensors 2
 * Mar 8: Analog sensors 3, project documentation
 * **Mar 15: Spring break, no class!**
