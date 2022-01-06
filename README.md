@@ -29,7 +29,7 @@ For a list of required materials, including URLs to where you can buy them, see 
 ### COURSE CALENDAR  
 Please note this is subject to change – be sure to check Canvas, this page, and your email regularly.
 
-* Jan 18: Hello, getting supplies  
+* Jan 18: [Hello, getting supplies](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week01_GettingSupplies)  
 * Jan 25: LEDs  
 * Feb 1: Buttons 1  
 * Feb 8: Buttons 2  
