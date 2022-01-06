@@ -1,5 +1,4 @@
 .DS_Store
-_NotesAndIdeas.txt
-_Process/
-_ExamplesToBuild.txt
+_*
+_*/
 StudentWork/
