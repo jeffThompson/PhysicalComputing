@@ -12,7 +12,7 @@ For the critique, please:
 * Have your project finished and ready to show to the class
 
 To turn in your project on the exam date, please upload the following files to Canvas:  
-* 2-3 photographs of your project. Carefully plan and frame your shots; do some editing of the photos if necessary to adjust exposure, white balance, etc.  
+* 2-3 photographs of your project. Carefully plan and frame your shots; do some editing of the photos if necessary to adjust exposure, white balanance, etc.  
 * A comment with a short description of your project: what it does, a little bit about how it works  
 * A bill-of-materials (BOM), either as an uploaded or screenshotted Excel file, listing the parts and materials used in your project – see the sample BOM in the `Resources` folder for an example.  
 

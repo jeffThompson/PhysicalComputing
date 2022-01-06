@@ -16,6 +16,10 @@ Physical computing projects require weird and unique supplies: raw material like
 * [Boards & Beams](http://www.woodboardsandbeams.com/hardwoodlumber.html)
 Hardwood lumberyard, located in Fairfield, NJ. Good website showing inventory and options.
 
+## METAL  
+* [Onlne Metals](http://www.onlinemetals.com): a great place to buy small quantities of steel and aluminum cut to size, also local if you want to go pick up!  
+* [Alro](https://www.alro.com/): another online store for buying small-quantity metal
+
 ## HARDWARE  
 * Ace Hardware: located on Washington Street in Hoboken; the usual selection of hardware, tools, paint, etc  
 * [McMaster Carr](http://www.mcmaster.com): literally millions of options for every kind of hardware you could imagine; reasonable prices and super fast deliver  
@@ -25,8 +29,9 @@ Hardwood lumberyard, located in Fairfield, NJ. Good website showing inventory an
 * [Inventables](http://www.inventables.com): a good source for laser-cutter-friendly plastics in reasonable sizes  
 * [Tap Plastics](http://www.tapplastics.com): excellent selection and will cut to size  
 
-## 3D PRINTING  
+## 3D PRINTING/LASER CUTTING  
 * [Shapeways](http://www.shapeways.com): online service with a location in Long Island City; tons of different materials and an excellent interface  
+* [SendCutSend](https://sendcutsend.com/): online metal lasercutting service  
 
 ## ART SUPPLIES  
 * [Dick Blick](https://www.dickblick.com): lots of locations in NYC, including near the PATH train
