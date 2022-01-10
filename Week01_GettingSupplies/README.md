@@ -2,6 +2,7 @@
 
 ### TLDR  
 * Due January 25  
+* Meet online next week at 10am EST on Zoom (see Canvas for link)
 * Order the [supplies listed here](https://docs.google.com/spreadsheets/d/1eFKwcQB5PgZMCaIBkQ6jCpR6jHgA8spqsIOZDBLMFAg/edit?usp=sharing), ensuring they're here in time for class next week  
 * Bring next week:  
   * All the supplies you ordered  
@@ -12,7 +13,7 @@
 ***
 
 ### ASSIGNMENT
-This week, your only task is to get the supplies you'll need for class next week. I'm suggesting you get your parts directly from [Adafruit](https://adafruit.com), a wonderful company based in NYC and started by [Limor Fried](https://github.com/readme/podcast/limor-fried-adafruit). Adafruit has been an amazing, long-time supporter of the open source hardware community, releasing their own tools and products, and publishing tons of tutorials... plus they're a woman-owned tech company!
+This week, your only task is to get the supplies you'll need for our next class. I'm suggesting you get your parts directly from [Adafruit](https://adafruit.com), a wonderful company based in NYC and started by [Limor Fried](https://github.com/readme/podcast/limor-fried-adafruit). Adafruit has been an amazing, long-time supporter of the open source hardware community, releasing their own tools and products, and publishing tons of tutorials... plus they're a woman-owned tech company!
 
 \[ [Link to a list of required supplies](https://docs.google.com/spreadsheets/d/1eFKwcQB5PgZMCaIBkQ6jCpR6jHgA8spqsIOZDBLMFAg/edit?usp=sharing) \]
 
