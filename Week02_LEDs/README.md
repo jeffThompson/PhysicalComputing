@@ -4,7 +4,8 @@
 * Due Feb 1  
 * Meet IRL next week!  
 * Create a project using at least two LEDs  
-* No additional components yet, see what you can do with just LEDs!  
+* No additional components yet, see what you can do with just LEDs!
+* Turn in a photo of your project and a short description of what it does on Canvas  
 * Bring next week:  
   * All the supplies you ordered  
   * A USB cable that fits your board/computer  
