@@ -8,6 +8,8 @@
 | Meeting times  | Tuesdays, 9am–12.50pm, Morton 203 |  
 | Student hours  | Tuesdays, 2–3pm (Morton 208) and by appointment (Zoom) |
 
+**Note! While our class is online for the first two weeks, we'll meet at 11am EST on Zoom. I'll be online at 9am for drop-in hours if you need help with anything. See Canvas for the Zoom links.**
+
 This semester, we will explore how electronics, code, sculpture, and digital fabrication can bring input from the physical world into your computer (buttons, knobs, sensors) and let your computer interact back (LEDs, motors, speakers). We'll program [microcontrollers](https://en.wikipedia.org/wiki/Microcontroller) using [CircuitPython](https://circuitpython.org/), as well as cover basic CAD for laser-cutting, and design and solder electronic circuits.
 
 Along the way, we’ll look at historical and experimental interfaces used to connect people with computers, build speculative and exploratory projects that connect with your own interests, and work to refine those projects from rough prototype to finished, documented work.
@@ -30,7 +32,7 @@ For a list of required materials, including URLs to where you can buy them, see 
 Please note this is subject to change – be sure to check Canvas, this page, and your email regularly.
 
 * Jan 18: [Hello, getting supplies](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week01_GettingSupplies)  
-* Jan 25: LEDs  
+* Jan 25: [LEDs](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week02_LEDs)  
 * Feb 1: Buttons 1  
 * Feb 8: Buttons 2  
   * **All parts needed by next week!** :warning:  
