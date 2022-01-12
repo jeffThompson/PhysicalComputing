@@ -44,7 +44,7 @@ Go to [the Circuit Python page for our board](https://circuitpython.org/board/fe
 
 Your Feather board has a small reset button, right next to the USB connector. This reboots the microcontroller but can also let us enter "update" mode by double-clicking it.
 
-![](Images/SettingUpYourBoard/FeatherM4ExpressResetButton.png)
+![](Images/SettingUpYourBoard/FeatherM4ExpressResetButton.jpg)
 
 The board should disconnect automatically, the reconnect with a different name. Open up the new volume.
 
