@@ -101,7 +101,7 @@ b = 3.14        # a floating-point number (decimal)
 c = 'Python'    # a string (text)
 ```
 
-Typically in Python, variables are written in all lowercase with underscores in between words. Other languages, like Javascript, usually write variables in `camelCase` instead. Both will work, but all the examples here will use the usual Python convention:
+Typically in Python, variables are written in all lowercase with underscores in between words. In other languages, like Javascript, we usually write variables in `camelCase` instead. Both will work, but all the examples here will use the usual Python convention:
 
 
 ```python
@@ -165,6 +165,30 @@ root = math.sqrt(9)
 ```
 
 You can find a [full list of math operations in the Circuit Python documentation](https://circuitpython.readthedocs.io/en/latest/shared-bindings/math/index.html).
+
+**I'm getting an error trying to print variables!**  
+Printing a single value should always work, but if you try to combine strings and other types:
+
+```python
+radius = 30
+print('The radius is: ' + radius)
+```
+
+You may bet an error: `TypeError: can only concatenate str (not "int") to str`
+
+To solve this, we can do two things. Instead of using `+`, we can separate values with a comma instead:
+
+```python
+radius = 30
+print('The radius is:', radius)
+```
+
+Or we can convert non-string (numbers, lists, etc) values into text using the `str()` command:
+
+```python
+radius = 30
+print('The radius is: ' + str(radius))
+```
 
 ***
 
