@@ -13,12 +13,13 @@ Before we can do fun stuff with our boards, though, we have to get everything se
 ***
 
 ### CONNECT YOUR BOARD  
-First, plug the board into your computer with a USB cable. It should mount as a "volume" on your computer, like a USB thumb drive. If it prompts you to connect the device as a keyboard, just exit out (we'll cover this later).
+First, plug the board into your computer with a USB cable. It should mount as a "volume" on your computer, like a USB thumb drive. If it prompts you to connect the device as a keyboard, just exit out (we'll cover this later). If the board doesn't show up, it could be your USB connection. Make sure you're not using a USB hub and have a normal cable, not one designed for charging only!
 
-The board's volume should be named `CIRCUITPY`. Open it up and let's look inside; there will be three items:
+The board's volume should be named `CIRCUITPY`. Open it up and let's look inside...
 
 ![](Images/SettingUpYourBoard/CircuitPyVolume.png)
 
+There will be three items:  
 * `code.py` &larr; the file we'll edit to program the board  
 * `lib` &larr; a folder for extra code libraries  
 * `boot_out.txt` &larr; info on the board and its firmware (more about this in a sec)  
@@ -29,9 +30,9 @@ The board's volume should be named `CIRCUITPY`. Open it up and let's look inside
 ***
 
 ### UPDATE CIRCUIT PYTHON  
-Our boards come with Circuit Python pre-installed, which is great, but it's also probably out of date already. To make sure everything works well, we should update that first.
+Our boards come with Circuit Python pre-installed, which is great, but it's also probably out of date already. To make sure everything works well and you can follow along with all the demos, we should update that first.
 
-Open up the `boot_out.txt` file; it should have text like this:  
+Open up the `boot_out.txt` file. You should see text like this:  
 
     Adafruit CircuitPython 6.2.0 on 2021-09-14; Adafruit Feather M4 Express with samd51j19
     Board ID:feather_m4_express
@@ -46,22 +47,20 @@ Your Feather board has a small reset button, right next to the USB connector. Th
 
 ![](Images/SettingUpYourBoard/FeatherM4ExpressResetButton.jpg)
 
-The board should disconnect automatically, the reconnect with a different name (probably something like `FEATHERBOOT`). Open up the new volume.
+After double-clicking, the board should disconnect automatically and then reconnect with a different name (probably something like `FEATHERBOOT`). Open up the new volume.
 
 ![](Images/SettingUpYourBoard/UpdateVolume.png)
 
-Just drag the downloaded `.uf2` file to the board: it will install, reboot itself, and you're all set! Check the `boot_out.txt` file again to make sure it worked.
+To update, just drag the downloaded `.uf2` file to the board: it will install, reboot itself, and you're all set! Check the `boot_out.txt` file again to make sure it worked.
 
 (You may want to [check the version of the bootloader](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/update-the-uf2-bootloader) as well, but this probably won't be necessary if you bought your board recently. The [bootloader](https://en.wikipedia.org/wiki/Bootloader) is software that handles starting up your board and running your code.)
 
 ***
 
 ### INSTALL THE MU EDITOR  
-There are lots of ways we can edit code and upload it to our board. We'll look at some better (and more complicated) ways later in the semester, but for now we'll use the free [Mu Editor](https://codewith.mu/), a piece of software created by Nicholas H. Tollervey specifically for working with these kinds of boards and Circuit Python.
+There are lots of ways we can edit code and upload it to our board. We'll look at some better (and more complicated) ways later in the semester, but for now we'll use the free [Mu Editor](https://codewith.mu/), a piece of software created by Nicholas H. Tollervey specifically for working with these kinds of boards and Circuit Python. 
 
-![](Images/SettingUpYourBoard/MuEditor.png)
-
-Just [download the editor](https://codewith.mu/en/download) and install it on your computer! 
+Just [download the editor](https://codewith.mu/en/download) and install it on your computer! We'll look at how to connect the editor with your board and verify everything is working later.
 
 ***
 
