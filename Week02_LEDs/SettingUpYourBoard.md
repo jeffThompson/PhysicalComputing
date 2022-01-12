@@ -46,13 +46,13 @@ Your Feather board has a small reset button, right next to the USB connector. Th
 
 ![](Images/SettingUpYourBoard/FeatherM4ExpressResetButton.jpg)
 
-The board should disconnect automatically, the reconnect with a different name. Open up the new volume.
+The board should disconnect automatically, the reconnect with a different name (probably something like `FEATHERBOOT`). Open up the new volume.
 
 ![](Images/SettingUpYourBoard/UpdateVolume.png)
 
-Just drag the downloaded `.uf2` file to the board: it will install, reboot itself, and you're all set! Check the `boot_out.txt` file to make sure it worked.
+Just drag the downloaded `.uf2` file to the board: it will install, reboot itself, and you're all set! Check the `boot_out.txt` file again to make sure it worked.
 
-(You may want to [check the version of the bootloader](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/update-the-uf2-bootloader) as well, but this probably won't be necessary if you bought your board recently.)
+(You may want to [check the version of the bootloader](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/update-the-uf2-bootloader) as well, but this probably won't be necessary if you bought your board recently. The [bootloader](https://en.wikipedia.org/wiki/Bootloader) is software that handles starting up your board and running your code.)
 
 ***
 
