@@ -1,6 +1,6 @@
 # INTERNAL LED
 
-We'll get into sensors and circuits and all kinds of exciting stuff soon, but the physical computing equivalent of `Hello world` is blinking an LED! [Light-emmitting diodes](https://en.wikipedia.org/wiki/Light-emitting_diode) (LEDs) are everywhere: they're cheap, bright, come in lots of colors, are super easy to wire up, and are pretty hard to accidentally destroy 😜
+We'll get into sensors and circuits and all kinds of exciting stuff soon, but the physical computing equivalent of `Hello world` is blinking an LED! [Light-emmitting diodes](https://en.wikipedia.org/wiki/Light-emitting_diode) (LEDs) are everywhere: they're cheap, bright, come in lots of colors, are super easy to wire up, and are pretty hard to accidentally destroy 🤬
 
 For this first example, we'll use the LED that's built into your Feather board: even easier! You'll find it next to the USB connection near the label `#13`. We don't need to do anything to else to prep our board for this, just open the Mu Editor and start coding!
 
@@ -22,9 +22,9 @@ Let's get started!
 ***
 
 ### LIBRARY IMPORTS  
-Before we can do anything, we need to add some extra code to our project. Called "libraries" (or "modules"), these give us extra functionality, such as controlling the inputs and outputs on our board.
+Before we can do anything, we need to add some extra code to our project. Called "libraries" (or "modules" in Python-speak), these give us extra functionality, such as controlling the inputs and outputs on our board.
 
-The first two are part of Circuit Python, the third is part of standard Python:
+The first two are specific to Circuit Python, the third is part of standard Python:
 
 ```python
 import board       # access the board itself
@@ -34,8 +34,8 @@ import time        # utility for time-related stuff
 
 These three imports will be used in every project you make this semester.
 
-**WHAT PYTHON LIBRARIES CAN I USE?**  
-Standard Python has a ton of amazing libraries built-in, but not all of them are accessible using Circuit Python. This is due to the limited hardware and memory on your board.
+**WHAT OTHER PYTHON MODULES CAN I USE?**  
+Python has a ton of amazing modules built-in, but not all of them are accessible using Circuit Python. This is mostly due to the limited hardware and memory on your board.
 
 To see a full list of modules available on your board, go to the Mu Editor and type the following command into the console...
 
@@ -45,7 +45,7 @@ To see a full list of modules available on your board, go to the Mu Editor and t
 
 ![](../Images/Demos/PythonLibraries.png)
 
-We'll install additional libraries to the board in the next example.
+Lots of cool stuff! We'll install additional modules to the board in the next example.
 
 ***
 
@@ -72,19 +72,19 @@ led.direction = digitalio.Direction.OUTPUT
 ***
 
 ### BLINK
-With our LED pin set up, we can turn it on and off!
+With our LED pin set up, now we can turn it on and off!
 
 ```python
-led.value = True       # turn on LED
-led.value = False      # turn off
+led.value = True       # turn on the LED
+led.value = False      # turn it off
 ```
 
-But if we were to run this, we'd see the LED come on then turn off immediately. To change the timing, we can use the Python `time` library to pause our program between turning the LED on and turning it off:
+If we were to run this, we'd see the LED come on then turn off immediately. To change the timing, we can use the Python `time` library (imported above) to pause our program between turning the LED on and turning it off:
 
 ```python
-led.value = True       # turn on LED
+led.value = True       # turn on the LED
 time.sleep(0.5)        # pause the program for 1/2-sec
-led.value = False      # turn off
+led.value = False      # turn it off
 time.sleep(0.5)        # and pause again
 ```
 
@@ -93,7 +93,7 @@ Better, but it will only blink once then stop!
 ***
 
 # BLINK (FOREVER)  
-We want our program to keep blinking our LED forever, until the board is shut off. To do this, we'll put our blink code in a while-loop.
+Instead of blinking just once, we want our program to keep blinking our LED forever until the board is shut off. To do this, we'll put our blink code in a while-loop.
 
 ```python
 while True:
@@ -108,7 +108,7 @@ Since `True` is always true, the loop will keep running forever! We'll almost al
 ***
 
 ### FULL CODE EXAMPLE  
-Let's see the whole thing in action. Copy/paste this code to your board, save it, and you should see the red LED blink... awesome!
+Let's see the whole thing in action. Copy/paste this code to your board, save it, and you should see the LED blink... awesome!
 
 ```python
 led = digitalio.DigitalInOut(board.LED)
