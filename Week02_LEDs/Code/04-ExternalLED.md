@@ -1,9 +1,9 @@
 # EXTERNAL LED
 
-The built-in LEDs on your Feather board are great for quick prototyping, but we can also hook up an external LED. (Next we'll also see how to hook up multiple LEDs to make complex patterns!)
+The built-in LEDs on your Feather board are great for quick prototyping, but we can also hook up an external LED. (In the next example, we'll see how to hook up multiple LEDs!)
 
 **☠️ SAFETY NOTE! ☠️**  
-Starting with this example, we'll be working with electricity and building circuits! While everything we're doing is pretty safe, you do risk (or order of bad to really bad): damaging a part, your Feather, your computer, and electrocuting yourself! Please follow these directions carefully and ask if you have any questions. (But don't let that scare you off!)
+Starting with this example, we'll be working directly with electricity and building circuits. While everything we're doing is pretty safe, you do risk (in order of not-so-good to really bad) damaging a part, your Feather, your computer, and electrocuting yourself! Please follow these directions carefully and ask if you have any questions. (But don't let that scare you off! For the next few weeks, everything we're doing is quite safe.)
 
 ***
 
@@ -24,11 +24,9 @@ Breadboards come in various sizes and configurations, but they all have rows of 
 
 ![](../Images/EmptyBreadboard.png)
 
-Some of the holes are electrically connected! This helps us hook parts together to make circuits, but it's important to what is connected to what:
+Some of the holes are electrically connected to each other! This helps us hook parts together to make circuits, but it's important to what's connected to what. The breadboard is divided into two parts: power and components:
 
 ![](../Images/BreadboardLayout.png)
-
-The breadboard is divided into two parts: power and components.
 
 **POWER**  
 The top/bottom each have two long rows used for power distribution, noted as `+` and `–`. They are connected along the rows but not to each other or to their pair on the opposite side of the breadboard.
