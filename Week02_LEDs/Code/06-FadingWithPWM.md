@@ -1,8 +1,8 @@
 # FADING WITH PULSE-WIDTH MODULATION
 
-Blinking an LED is cool, but what if we want to vary its brightness? As the name implies, a "digital" pin can only be turned on or off, we can't set them to be partially on. Luckily, some very smart people figured out that if we flash the LED on/off really quickly, we can trick our eye into thinking that the brightness has been dimmed – pretty cool!
+Blinking an LED is cool, but what if we want to vary its brightness? As the name implies, a "digital" pin can only be turned on or off, we can't set them to be partially on. Luckily, some very smart people figured out that if we flash the LED on/off really quickly, we can trick our eye into thinking that the brightness has been dimmed: exactly how flipbooks and film work!
 
-This is called [pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) (PWM) and the Feather board allows us to use it on all the digital pins. More on how PWM works below.
+This is called [pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) (PWM) and the Feather board allows us to use it on all the digital pins. More on how PWM works below, but you can also skim through the technical details and just set the brightness.
 
 ***
 
@@ -20,9 +20,7 @@ This is called [pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-widt
 ***
 
 ### BASIC PWM OUTPUT  
-We'll be using the built-in LED for this example, so we can jump right into the code and change its brightness!
-
-First, we import the `board` and `time` libraries, plus a special one for PWM control:
+We'll be using the built-in LED for this example, so we can jump right into the code and change its brightness! First, we import the `board` and `time` libraries, plus a special one for PWM control:
 
 ```python
 import board
@@ -30,7 +28,7 @@ import time
 import pwmio
 ```
 
-Then we set up our pin for PWM. Don't worry about `frequency`, we can just leave that as the default. We'll change `duty_cycle` later:
+Then we set up our pin for PWM. Don't worry about `frequency`, we can just leave that as the default. We'll change `duty_cycle` later but `0` means it will start fully off:
 
 ```python
 led = pwmio.PWMOut(
@@ -46,7 +44,9 @@ Now let's set the brightness! We do this by changing the "duty cycle" value for 
 led.duty_cycle = 65535
 ```
 
-[Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) refers to how much of the time the LED is on and how much it is off. The pin can receive values between `0` (completely off) and `65535` (max brightness), and any value in between.
+[Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) refers to what percentage of the time the LED is on and how much it is off. If a lamp is on 0% of the time, it will be entirely dark; 100% of the time would be maximum brightness. If you were to flip the light switch on for one minute and off the next minute, the average light in the room would be 50% of the maximum possible.
+
+PWM works the same way! The pin can receive values between `0` (completely off) and `65535` (max brightness), and any value in between.
 
 **WHAT A WEIRD NUMBER, WHY 65535?**  
 TLDR: that's the max brightness allowed but it's really confusing. We'll fix that in the next step, so skip ahead or read below for more details...
@@ -64,9 +64,9 @@ That's a lot higher, meaning we get way more resolution to the dimming of our LE
 ***
 
 ### MORE INTUITIVE VALUES  
-Unless you do a lot of this kind of thing, thinking in 16-bit values is not at all intuitive. Luckily, programming allows us to make this work better for us.
+Unless you do a lot of this kind of thing, thinking in 16-bit values is not at all intuitive. Luckily, programming allows us to make our own tools.
 
-What we want to do is make a new, easier to remember range of values and convert them into what our Feather board expects. Some languages, like `p5.js` and `Processing`, have a built-in function that does this called `map()`. Python doesn't have such a function, but we can build one ourselves! (Or, more accurately, we can do some Google searching and modify an example for our use.)
+What we want to do is use a more intuitive range of values and convert them into what our Feather board expects. Some languages, like `p5.js`, have a built-in function that does this called `map()`. Sadly, Python doesn't have that, but we can build one ourselves! (Or, more accurately, we can do some Google searching and modify an example for our use.)
 
 ```python
 # via: https://stackoverflow.com/a/929107/1167783
@@ -77,7 +77,7 @@ def scale_pwm(n, in_min, in_max, out_min=0, out_max=65535):
 
 The math here is kind of funky so we won't get into details, but essentially we give the function:
 
-* An input value to be scaled  
+* An input value in our intuitive range to be scaled  
 * The lowest and highest possible values in the range we want to use  
 * And the lowest/highest possible values from the range the Feather is expecting (these are presets in the function, so we don't have to specify them)  
 * The results are converted from a float-point (decimal) number to an integer (whole number), since that's what's required for PWM output  
@@ -89,7 +89,7 @@ brightness = 50
 new_brightness = scale_pwm(brightness, 0,100)
 ```
 
-This takes the value `50` and converts it to `32767.5`, or half of `65535`, then converts it to an integer value of `32768`. Let's use that to fade the LED in and out.
+This takes the value `50` and converts it to `32767.5`, or half of `65535`. It then converts it to an integer value of `32768`, which the Feather will accept. Let's use that to fade the LED in and out:
 
 ```python
 while True:
@@ -140,7 +140,7 @@ while True:
 ***
 
 ### WHAT IF MY LED LOOKS JUMPY?  
-If you want really slow, smooth fading, you might find that our example looks a bit jumpy. That's because we're reducing the resolution of the pin three orders of magnitude! For most purposes you probably won't notice, but if you do, we can just change the input range for our `scale_pwm()` function.
+If you want really slow, smooth fading, you might find that our example looks a bit jumpy. That's because we're reducing the resolution of the pin by three orders of magnitude! For most purposes you probably won't notice, but if you do, we can just change the input range for our `scale_pwm()` function.
 
 Instead of:  
 ```python
