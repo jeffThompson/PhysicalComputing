@@ -60,7 +60,7 @@ Any values inside `print()` will show up in the console. This includes text, var
 ### COMMENTS  
 Comments are code that isn't run, but instead is there to offer info to people reading it. Adding comments is a great habit to get into. Not only is it the professional thing to do, it also leaves notes for yourself when you come back later and try to remember what the heck you were doing! In Python, we can create two kinds of comments.
 
-**SINGLE LINE** 
+**SINGLE LINE**  
 Any text following a `#` is a comment. These can be on a line of their own:
 
     # turn the LED on
