@@ -18,13 +18,9 @@ Starting with this example, we'll be working directly with electricity and build
 ***
 
 ### GET TO KNOW YOUR BREADBOARD  
-This will be our first real circuit! There's lots of ways we could hook up our LED, but for this example (and most of them this semester) we'll use a electronics breadboard. This tool lets us build circuits kind of like Legos (or guitar pedals), plugging in and chaining together parts easily.
+This will be our first real circuit! There's lots of ways we could hook up our LED, but for this example (and most of them this semester) we'll use an electronics breadboard. This tool lets us build circuits kind of like Legos or guitar pedals, plugging in and chaining together parts easily. You can then take everything apart and reuse it for another project.
 
-Breadboards come in various sizes and configurations, but they all have rows of holes where we can plug stuff in. 
-
-![](../Images/EmptyBreadboard.png)
-
-Some of the holes are electrically connected to each other! This helps us hook parts together to make circuits, but it's important to what's connected to what. The breadboard is divided into two sections, one for power and one for components:
+Breadboards come in various sizes and configurations, but they all have rows of holes where we can plug stuff in. Some of these holes are electrically connected to each other! This helps us hook parts together to make circuits, but it's important to what's connected to what. The breadboard is divided into two sections, one for power and one for components:
 
 ![](../Images/BreadboardLayout.png)
 
@@ -58,7 +54,7 @@ LEDs are pretty robust little critters and it would take some doing to burn one 
 Find the longer leg of the LED and carefully insert it into the hole next to the pin labeled `D4`, near the end of the board opposite the USB connection.
 
 **GROUND**  
-Insert the short end of the LED into any hole in the ground (`–`) row. Using a jumper wire, make a connection between the ground row and the `Gnd` pin on the board, near the USB connector. Be sure it looks like this picture before plugging your board back in!
+Insert the short end of the LED into any hole in the ground (`–`) row. Using a jumper wire, make a connection between the ground row and the `Gnd` pin on the board, on the same side near the USB connector.
 
 ![](../Images/ExternalLED.jpg)
 
@@ -86,7 +82,9 @@ while True:
     time.sleep(0.5)
 ```
 
-You should see your LED blinking on/off – congrats, you just built your first electronic circuit! If the LED doens't work, first check that it's installed in the right orientation. Reversing an LED is usually not going to hurt anything, but it won't work if it's plugged in backwards.
+You should see your LED blinking on/off – congrats, you just built your first electronic circuit! 🎉
+
+If the LED doens't work, first check that it's installed in the right orientation. Reversing an LED is usually not going to hurt anything, but it won't work if it's plugged in backwards.
 
 The code works just like our first internal LED example with one change: instead of `board.LED` as the pin, we specify that we'd like to use `D4` instead. Nice!
 
