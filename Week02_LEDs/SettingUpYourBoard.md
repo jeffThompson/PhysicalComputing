@@ -4,14 +4,16 @@ Today there are a *ton* of options if you want to use code and electronics. Gene
 1. Microcontrollers: essentially tiny, very low-power computers that can either run on their own or connected to a computer; the most popular of these is [Arduino](https://www.arduino.cc/)  
 2. Single-board computers: small, self-contained computers capable of running Linux; most popular is [Raspberry Pi](https://www.raspberrypi.org/)  
 
-While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Instead, we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our board and Circuit Python to program it, both fantastic projects from the NYC-based company Adafruit.
+While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and require a lot more setup.
+
+Instead, we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our board and Circuit Python to program it, both fantastic projects from the NYC-based company Adafruit.
 
 Before we can do fun stuff with our boards, though, we have to get everything set up. This will be a bit complicated but, once it's done, we won't have to do this again!
 
 ***
 
 ### CONNECT YOUR BOARD  
-First, plug the board into your computer with a USB cable. It should mount as a "volume" on your computer, like a USB thumb drive. If it prompts you to connect the device as a keyboard, just exit out.
+First, plug the board into your computer with a USB cable. It should mount as a "volume" on your computer, like a USB thumb drive. If it prompts you to connect the device as a keyboard, just exit out (we'll cover this later).
 
 The board's volume should be named `CIRCUITPY`. Open it up and let's look inside; there will be three items:
 
@@ -19,18 +21,19 @@ The board's volume should be named `CIRCUITPY`. Open it up and let's look inside
 
 * `code.py` &larr; the file we'll edit to program the board  
 * `lib` &larr; a folder for extra code libraries  
-* `boot_out.txt` &larr; info on the board and it's firmware (more about this in a sec)  
+* `boot_out.txt` &larr; info on the board and its firmware (more about this in a sec)  
+* Any additional files, like those that appear here, are "hidden" and we can ignore them  
 
-**When you disconnect your board, be sure to eject it first!** Just unplugging your board could result in permanent damage :(
+**When you disconnect your board, be sure to eject it first!** Just unplugging your board could result in permanent damage 🤬
 
 ***
 
 ### UPDATE CIRCUIT PYTHON  
 Our boards come with Circuit Python pre-installed, which is great, but it's also probably out of date already. To make sure everything works well, we should update that first.
 
-Open up the `boot_out.txt`. It should have text like this:  
+Open up the `boot_out.txt` file; it should have text like this:  
 
-    Adafruit CircuitPython 6.2.0 on 2021-09-14; Adafruit Feather M4 Express with samd51j19
+    Adafruit CircuitPython <u>6.2.0</u> on 2021-09-14; Adafruit Feather M4 Express with samd51j19
     Board ID:feather_m4_express
 
 The first line tells us a bunch of info, including which version of Circuit Python is installed. The most recent version is `7.1.0`, so if yours is any lower you'll need to update.
