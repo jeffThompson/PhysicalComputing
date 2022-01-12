@@ -53,11 +53,11 @@ We'll install additional libraries to the board in the next example.
 In this example, we don't have to actually wire anything up. But we do have to tell our board two things:
 
 * Where to find the LED  
-* That this pin should be an output 🙋‍♀️  
+* That this pin should be an output  
 
 > 🙋‍♀️ A "pin" is a connection to your Feather board and is what we soldered those connectors to! Pins can set as either an output (LEDs, motors, etc) or input (buttons, as we'll see next week). They can also be digital or analog, something we'll talk more about later too.
 
-First, we create a variable for our LED using the built-in LED:
+First, we create a variable for our LED. We can specify a specific pin but Circuit Python gives us a shorthand for the built-in LED:
 
 ```python
 led = digitalio.DigitalInOut(board.LED)
