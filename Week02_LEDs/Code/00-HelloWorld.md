@@ -1,8 +1,10 @@
 # HELLO, WORLD!
 
-Before we start turning on/off LEDs and wiring up circuits, let's look at how we can upload code to our boards and cover some Python basics.
+Before we start turning on/off LEDs and wiring up circuits, let's look at how we can upload code to our boards and cover some Python basics. If you haven't already, be sure to [follow the steps for connecting and updating your board](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week02_LEDs/SettingUpYourBoard.md) first.
 
-If you haven't already, be sure to [follow the steps for connecting and updating your board](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week02_LEDs/SettingUpYourBoard.md) first.
+***
+
+### CONTENTS
 
 * [Connect the board](#connect-the-board)  
 * [Our first program](#out-first-program)
