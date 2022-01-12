@@ -35,7 +35,9 @@ Let's verify everything is working and write our first Circuit Python program!
 
 In the editor, copy/paste or type this line (you can delete anything else that's already there):
 
-    print('Hello, world!')
+```python
+print('Hello, world!')
+```
 
 Click the `Save` button to save your code to the board. You should immediately see some output in the Serial Console:
 
