@@ -111,6 +111,10 @@ Since `True` is always true, the loop will keep running forever! We'll almost al
 Let's see the whole thing in action. Copy/paste this code to your board, save it, and you should see the LED blink... awesome!
 
 ```python
+import board
+import digitalio
+import time
+
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
 
