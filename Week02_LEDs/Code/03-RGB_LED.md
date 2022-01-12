@@ -64,7 +64,7 @@ led = neopixel.NeoPixel(board.NEOPIXEL, 1)
 
 The `1` at the end specifies that we only have one RGB LED. If you were to hook them up externally, NeoPixels can be chained together! (For a cool example, see [this badass lightsaber](https://ziasabers.com/shop/neopixel-lightsaber/).)
 
-Finally, we set the LED's brightness. `1` means full brightness, `0` is off, and `0.5` is half brightness:
+Finally, we can set the LED's brightness. `1` means full brightness, `0` is off, and `0.5` is half brightness:
 
 ```python
 led.brightness = 0.1
@@ -87,9 +87,9 @@ And a light blue:
 led.fill( (0, 150, 255) )
 ```
 
-Thinking in RGB can be hard, so a color picker is a great way if you want to get a particular hue.
+Thinking in RGB can be hard, so a [color picker](https://color.adobe.com/create/color-wheel) is a great way if you want to get a particular hue.
 
-We can combine these commands with a while-loop and a time delay:
+We can combine these commands with a while-loop and a time delay, cycling through three differnt colors:
 
 ```python
 while True:
@@ -113,7 +113,7 @@ led.fill(orange)
 ***
 
 ### FULL CODE EXAMPLE  
-Copy/paste this code, save, and watch the colors change!  
+Copy/paste this code, save to your board, and watch the colors change!  
 
 ```python
 import board
@@ -138,6 +138,6 @@ while True:
 
 ### CHALLENGES  
 
-1. Use a color picker online and set the colors to something more pleasing  
-2. Try changing the LED's brightness value and see the range it's capable of. Can you make it change brightness in the while-loop instead?  
+1. Use a [color picker](https://color.adobe.com/create/color-wheel) online and set the colors in your code to something more pleasing  
+2. Try changing the LED's brightness value and see the range it's capable of. Can you make it change brightness in the while-loop instead of just at the beginning?  
 
