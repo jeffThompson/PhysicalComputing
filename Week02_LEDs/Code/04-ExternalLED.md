@@ -89,7 +89,7 @@ while True:
     time.sleep(0.5)
 ```
 
-You should see your LED blinking on/off – congrats, you just built your first electronic circuit!
+You should see your LED blinking on/off – congrats, you just built your first electronic circuit! If the LED doens't work, first check that it's installed in the right orientation. Reversing an LED is usually not going to hurt anything.
 
 The code works just like our first internal LED example with one change: instead of `board.LED` as the pin, we specify that we'd like to use `D4` instead.
 
@@ -97,6 +97,6 @@ The code works just like our first internal LED example with one change: instead
 
 ### CHALLENGES  
 
-1. Can you adjust the timing of the blink by creating variables at the top of your code, one for the on duration and one for off?  
-2. Can you change the circuit to use another digital output pin? (Hint: any on your Feather board that start with `D` should work fine; the ones marked `A1` etc are for analog input/output, which we'll cover soon.)  
+1. Can you adjust the timing of the blink by creating variables at the top of your code, one for the `on` duration and one for `off`?  
+2. Can you change the circuit to use another digital output pin? (Hint: any pins on your Feather board that start with `D` should work fine; the ones marked `A1` etc are for analog input/output, which we'll cover soon.)  
 
