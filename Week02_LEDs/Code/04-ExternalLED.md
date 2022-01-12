@@ -24,7 +24,7 @@ Breadboards come in various sizes and configurations, but they all have rows of 
 
 ![](../Images/EmptyBreadboard.png)
 
-Some of the holes are electrically connected to each other! This helps us hook parts together to make circuits, but it's important to what's connected to what. The breadboard is divided into two parts: power and components:
+Some of the holes are electrically connected to each other! This helps us hook parts together to make circuits, but it's important to what's connected to what. The breadboard is divided into two sections, one for power and one for components:
 
 ![](../Images/BreadboardLayout.png)
 
@@ -32,7 +32,7 @@ Some of the holes are electrically connected to each other! This helps us hook p
 The top/bottom each have two long rows used for power distribution, noted as `+` and `–`. They are connected along the rows but not to each other or to their pair on the opposite side of the breadboard.
 
 **COMPONENTS**  
-The middle of the breadboard is where we'll put all our components. This section is divided down the middle, with the top and bottom parts electrically separate from each other. The holes in each column (numbered, in this example) are connected to each other, but not across the middle gap.
+The middle of the breadboard is where we'll put all our components. It's divided down the middle, with the top and bottom sections electrically separate from each other. The holes in each column (numbered, in this example) are connected to each other, but not across the middle gap or to adjacent rows.
 
 For example, the hole at `A1` is connected to the hole at `E1`, but not `F1` or `A2`.
 
@@ -48,11 +48,9 @@ The result is that each pin on the Feather is connected to a column on the bread
 ***
 
 ### HOOKING UP THE LED  
-***⚡️ Make sure your board is unplugged from power before continuing! ⚡️***
+***⚡️ Make sure your board is unplugged from USB before continuing! ⚡️***
 
-LEDs are pretty robust little critters and it would take some doing to burn one out. But since we'll be hooking up a (very basic) circuit, it's worth slowing down for a minute and making sure we hook this up correctly.
-
-Every LED has two legs, one that electricity goes into (positive) and the other where it flows back out (negative or ground). LEDs are "polarized," meaning they have to be inserted in the right direction, like a AA battery.
+LEDs are pretty robust little critters and it would take some doing to burn one out. But since we'll be hooking up a (very basic) circuit, it's worth slowing down for a minute and making sure we hook this up correctly. Every LED has two legs, one that electricity goes into (positive) and the other where it flows back out (negative or ground). LEDs are "polarized," meaning they have to be inserted in the right direction, like a AA battery.
 
 ![](../Images/LED-Orientation.png)
 
@@ -73,9 +71,10 @@ With everything hooked up, verify one more time that it's correct then plug your
 
 ```python
 import board
-from digitalio
+import digitalio
 import time
 
+# LED connected to pin D4
 led = digitalio.DigitalInOut(board.D4)
 led.direction = digitalio.Direction.OUTPUT
 
@@ -87,9 +86,9 @@ while True:
     time.sleep(0.5)
 ```
 
-You should see your LED blinking on/off – congrats, you just built your first electronic circuit! If the LED doens't work, first check that it's installed in the right orientation. Reversing an LED is usually not going to hurt anything.
+You should see your LED blinking on/off – congrats, you just built your first electronic circuit! If the LED doens't work, first check that it's installed in the right orientation. Reversing an LED is usually not going to hurt anything, but it won't work if it's plugged in backwards.
 
-The code works just like our first internal LED example with one change: instead of `board.LED` as the pin, we specify that we'd like to use `D4` instead.
+The code works just like our first internal LED example with one change: instead of `board.LED` as the pin, we specify that we'd like to use `D4` instead. Nice!
 
 ***
 
