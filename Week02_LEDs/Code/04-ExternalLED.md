@@ -51,10 +51,10 @@ LEDs are pretty robust little critters and it would take some doing to burn one 
 ![](../Images/LED-Orientation.png)
 
 **POSITIVE**  
-Find the longer leg of the LED and carefully insert it into the hole next to the pin labeled `D4`, near the end of the board opposite the USB connection.
+Find the longer leg of the LED and carefully insert it into the hole next to the pin labeled `D5`, near the far end of the board.
 
 **GROUND**  
-Insert the short end of the LED into any hole in the ground (`–`) row. Using a jumper wire, make a connection between the ground row and the `Gnd` pin on the board, on the same side near the USB connector.
+Insert the short end of the LED into any hole in the ground (`–`) row. Using a jumper wire, make a connection between the ground row and the `Gnd` pin on the board.
 
 ![](../Images/ExternalLED.jpg)
 
@@ -70,8 +70,8 @@ import board
 import digitalio
 import time
 
-# LED connected to pin D4
-led = digitalio.DigitalInOut(board.D4)
+# LED connected to pin D5
+led = digitalio.DigitalInOut(board.D5)
 led.direction = digitalio.Direction.OUTPUT
 
 while True:
@@ -86,7 +86,7 @@ You should see your LED blinking on/off – congrats, you just built your first 
 
 If the LED doens't work, first check that it's installed in the right orientation. Reversing an LED is usually not going to hurt anything, but it won't work if it's plugged in backwards.
 
-The code works just like our first internal LED example with one change: instead of `board.LED` as the pin, we specify that we'd like to use `D4` instead. Nice!
+The code works just like our first internal LED example with one change: instead of `board.LED` as the pin, we specify that we'd like to use `D5` instead. Nice!
 
 ***
 
