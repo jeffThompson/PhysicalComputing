@@ -4,8 +4,6 @@ Jeff Thompson | 2022 | jeffreythompson.org
 
 Before we start turning on/off LEDs and wiring up circuits, let's see how we can upload code to our boards and cover some Python basics.
 
-This is a multi-line comment, where we can put info about our program, etc.
-
 BEFORE YOU START:
 1. Connect your board to your computer via USB, it should show up as 'CIRCUITPY' just like a USB drive!
 2. Inside you'll see three things, though we only need 'code.py' for now
@@ -14,6 +12,8 @@ BEFORE YOU START:
 5. Lastly, copy/paste this code to the editor and click 'save' to upload it to your board
 
 You're all set!
+
+(This is a multi-line comment, where we can put info about our program, etc.)
 
 '''
 
