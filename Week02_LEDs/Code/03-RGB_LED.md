@@ -16,6 +16,11 @@ The process is very similar to the previous example, with a few additional setup
 * [Full code example](#full-code-example)  
 * [Challenges](#challenges)  
 
+### MATERIALS  
+
+* Feather board  
+* USB cable  
+
 ***
 
 ### ADDING THE REQUIRED LIBRARY  

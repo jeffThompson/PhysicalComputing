@@ -19,6 +19,11 @@ Let's get started!
 * [Full code example](#full-code-example)  
 * [Challenges](#challenges)  
 
+### MATERIALS  
+
+* Feather board  
+* USB cable  
+
 ***
 
 ### LIBRARY IMPORTS  

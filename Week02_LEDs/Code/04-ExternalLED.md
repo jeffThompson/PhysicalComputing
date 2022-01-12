@@ -15,6 +15,14 @@ Starting with this example, we'll be working directly with electricity and build
 * [Testing the LED](#testing-the-led)  
 * [Challenges](#challenges)  
 
+### MATERIALS  
+
+* One LED  
+* Breadboard  
+* Jumpers  
+* Feather board  
+* USB cable  
+
 ***
 
 ### GET TO KNOW YOUR BREADBOARD  

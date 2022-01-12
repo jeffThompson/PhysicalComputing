@@ -12,6 +12,14 @@ Having added an external LED to our Feather, it's super easy to more! Be sure yo
 * [How many LEDs can I add?](#how-many-leds-can-i-add)  
 * [Challenges](#challenges)  
 
+### MATERIALS  
+
+* Two or more LEDs  
+* Breadboard  
+* Jumpers  
+* Feather board  
+* USB cable  
+
 ***
 
 ### UNPLUG FROM POWER!  
@@ -68,7 +76,7 @@ At this point, you're probably asking yourself: "Woah cool, how many LEDs can I 
 
 > 🙋‍♀️ "Juice" in this case is something called [electrical current](https://en.wikipedia.org/wiki/Electric_current). We'll talk more about this later, but just know that asking for too much power from your computer can result in an error message or possibly damaging your Feather board. In the worst (but unlikely) case, you could damage the USB port on your computer.
 
-TLDR: you can probably plug in about six LEDs without any problem. You can try more, but add one at a time. More than eight is definitely a bad idea. When in doubt, ask first.
+TLDR: you can probably plug in about six LEDs without any problem. You can try more, but add one at a time. More than eight is most likely a bad idea. When in doubt, ask first.
 
 ***
 
