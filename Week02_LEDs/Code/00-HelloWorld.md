@@ -166,15 +166,15 @@ root = math.sqrt(9)
 
 You can find a [full list of math operations in the Circuit Python documentation](https://circuitpython.readthedocs.io/en/latest/shared-bindings/math/index.html).
 
-**I'm getting an error trying to print variables!**  
-Printing a single value should always work, but if you try to combine strings and other types:
+**I'M GETTING AN ERROR TRYING TO PRINT VARIABLES!**  
+Printing a single value should always work, but if you try to combine strings and other types...
 
 ```python
 radius = 30
 print('The radius is: ' + radius)
 ```
 
-You may bet an error: `TypeError: can only concatenate str (not "int") to str`
+...you may get an error: `TypeError: can only concatenate str (not "int") to str`
 
 To solve this, we can do two things. Instead of using `+`, we can separate values with a comma instead:
 
@@ -193,7 +193,7 @@ print('The radius is: ' + str(radius))
 ***
 
 ### CONDITIONALS  
-Aka `if/else` statements. This is where Python can get a little tricky because we don't use curly brackets like most langauges. Instead, Python requires you to indent code to tell it what's part of your if-statement. You'll also notice we don't use parentheses either!
+Aka `if/else` statements. This is where switching to Python can get a little tricky because we don't use curly brackets like most langauges. Instead, Python requires you to indent code to tell it what's part of your if-statement. You'll also notice we don't use parentheses either!
 
 ```python
 number_of_donuts = 2
@@ -207,7 +207,7 @@ else:
 We can combine multiple conditionals using `and`...
 
 ```python
-like_dogs = True
+like_dogs =  True
 dog_nearby = True
 if like_dogs and dog_nearby:
   print('Go say hi to the dog!')
@@ -216,9 +216,10 @@ if like_dogs and dog_nearby:
 ...and `or` too:
 
 ```python
-am_hungry = True
+am_hungry =     True
 cost_of_slice = 2 
-my_money = 4.50
+my_money =      4.50
+
 if am_hungry:
   if my_money > cost_of_slice:
     print('Pizza!')
@@ -241,28 +242,29 @@ else:
 ***
 
 ### ITERATION  
-Like conditionals, iteration is indented and doesn't use curly brackets. First, let's count from 0–9...
+Like conditionals, iteration is indented and doesn't use curly brackets. First, let's count from 0–9:
 
 ```python
 for i in range(0, 10):
   print(i)
 ```
 
-Do the same thing, but count by twos...
+Do the same thing, but count by twos:
 
 ```python
+# third value is the step size
 for i in range(0, 10, 2):
   print(i)
 ```
 
-We can go backwards too...
+We can go backwards too:
 
 ```python
 for i in range(10, 0, -1):
   print(i)
 ```
 
-Python makes going through lists easy...
+Python makes going through lists easy:
 
 ```python
 vehicles = [ 'car', 'bus', 'truck', 'scooter', 'bike' ]
@@ -273,9 +275,9 @@ for vehicle in vehicles:
 ***
 
 ### FUNCTIONS  
-Lastly, like in other languages, Python lets us create our own functions. These are indented just like conditionals and loops, and can include arguments, both required and optional.
+Lastly, Python lets us create our own functions. These are indented just like conditionals and loops, and can include arguments, both required and optional. Note that we have to create our function above the code where we use it, otherwise we'll get an error that the function can't be found.
 
-We have to create our function above the code where we use it. Let's make a simple function that adds two numbers:
+Let's make a simple function that adds two numbers:
 
 ```python
 def add(a, b):
