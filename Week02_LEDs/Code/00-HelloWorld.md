@@ -4,6 +4,17 @@ Before we start turning on/off LEDs and wiring up circuits, let's look at how we
 
 If you haven't already, be sure to [follow the steps for connecting and updating your board](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week02_LEDs/SettingUpYourBoard.md) first.
 
+* [Connect the board](#connect-the-board)  
+* [Our first program](#out-first-program)
+* [Python basics](#python-basics)  
+* [Print](#print)  
+* [Comments](#comments)  
+* [Variables](#variables)  
+* [Math](#math)  
+* [Conditionals](#conditionals)  
+* [Iteration](#iteration)  
+* [Functions](#functions)  
+
 ***
 
 ### CONNECT THE BOARD
