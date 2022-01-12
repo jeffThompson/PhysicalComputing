@@ -4,7 +4,7 @@ We'll get into sensors and circuits and all kinds of exciting stuff soon, but th
 
 For this first example, we'll use the LED that's built into your Feather board: even easier! You'll find it next to the USB connection near the label `#13`. We don't need to do anything to else to prep our board for this, just open the Mu Editor and start coding!
 
-(There are two other LEDs on your board. One is opposite the LED we're using and indicates connection with your computer. The other is an RGB LED, which we'll use in our next example!)
+> There are two other LEDs on your board. One is opposite the LED we're using, next to the USB connector, and indicates communication with your computer. The other is an RGB LED, which we'll use in our next example!
 
 ***
 
