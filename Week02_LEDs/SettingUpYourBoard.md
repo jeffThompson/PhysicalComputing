@@ -6,7 +6,7 @@ Today there are a *ton* of options if you want to use code and electronics. Gene
 
 While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and require a lot more setup.
 
-Instead, we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our board and Circuit Python to program it, both fantastic projects from the NYC-based company Adafruit.
+Instead, we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our board and [Circuit Python](https://circuitpython.org/) to program it, both fantastic projects from the NYC-based company Adafruit.
 
 Before we can do fun stuff with our boards, though, we have to get everything set up. This will be a bit complicated but, once it's done, we won't have to do this again!
 
@@ -33,14 +33,14 @@ Our boards come with Circuit Python pre-installed, which is great, but it's also
 
 Open up the `boot_out.txt` file; it should have text like this:  
 
-    Adafruit CircuitPython <u>6.2.0</u> on 2021-09-14; Adafruit Feather M4 Express with samd51j19
+    Adafruit CircuitPython 6.2.0 on 2021-09-14; Adafruit Feather M4 Express with samd51j19
     Board ID:feather_m4_express
 
-The first line tells us a bunch of info, including which version of Circuit Python is installed. The most recent version is `7.1.0`, so if yours is any lower you'll need to update.
+The first line tells us a bunch of info, including which version of Circuit Python is installed. The most recent version is `7.1.0`, so if your file shows anything lower you'll need to update.
+
+Go to [the Circuit Python page for our board](https://circuitpython.org/board/feather_m4_express) and download the latest release. This should download quickly and have a `.uf2` file extension.
 
 ![](Images/SettingUpYourBoard/CircuitPythonDownloadPage.png)
-
-Go to [the Circuit Python page for our board](https://circuitpython.org/board/feather_m4_express) and download the latest release (not the alpha!). This should have a `.uf2` file extension.
 
 Your Feather board has a small reset button, right next to the USB connector. This reboots the microcontroller but can also let us enter "update" mode by double-clicking it.
 
