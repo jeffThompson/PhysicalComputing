@@ -2,9 +2,9 @@
 Today there are a *ton* of options if you want to use code and electronics. Generally, these fall into two categories:
 
 1. Microcontrollers: essentially tiny, very low-power computers that can either run on their own or connected to a computer; the most popular of these is [Arduino](https://www.arduino.cc/)  
-2. Single-board computers: small, self-contained computers capable of running Linux; most popular is [Raspberry Pi](https://www.raspberrypi.org/)  
+2. Single-board computers: small, self-contained computers capable of running a full operating system, usually some version of Linux; most popular is [Raspberry Pi](https://www.raspberrypi.org/)  
 
-While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and require a lot more setup.
+While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and requires a lot more setup.
 
 Instead, we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our board and [Circuit Python](https://circuitpython.org/) to program it, both fantastic projects from the NYC-based company Adafruit.
 
