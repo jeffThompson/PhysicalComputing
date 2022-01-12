@@ -1,8 +1,6 @@
 # INTERNAL LED
 
-We'll get into sensors and circuits and all kinds of exciting stuff soon, but the physical computing equivalent of `Hello world` is blinking an LED!
-
-[Light-emmitting diodes](https://en.wikipedia.org/wiki/Light-emitting_diode) (LEDs) are everywhere: they're cheap, bright, come in lots of colors, are super easy to wire up, and are pretty hard to accidentally destroy 😜
+We'll get into sensors and circuits and all kinds of exciting stuff soon, but the physical computing equivalent of `Hello world` is blinking an LED! [Light-emmitting diodes](https://en.wikipedia.org/wiki/Light-emitting_diode) (LEDs) are everywhere: they're cheap, bright, come in lots of colors, are super easy to wire up, and are pretty hard to accidentally destroy 😜
 
 For this first example, we'll use the LED that's built into your Feather board: even easier! You'll find it next to the USB connection near the label `#13`. We don't need to do anything to else to prep our board for this, just open the Mu Editor and start coding!
 
@@ -12,12 +10,12 @@ For this first example, we'll use the LED that's built into your Feather board: 
 
 ### CONTENTS  
 
-* Library imports  
-* Set up LED  
-* Blink  
-* Blink (forever)  
-* Full code example  
-* Challenges  
+* [Library imports](#library-imports)  
+* [Set up LED](#set-up-led)  
+* [Blink](#blink)  
+* [Blink (forever)](#blink-forever)  
+* [Full code example](#full-code-example)  
+* [Challenges](#challenges)  
 
 ***
 
