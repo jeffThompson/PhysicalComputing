@@ -25,17 +25,17 @@ To control our RGB LED, we need to add an extra library to our project. Just lik
 import neopixel
 ```
 
-Save to your board and... an error! That's because the `neopixel` library isn't included with Circuit Python. Instead, we have to manually download and add it to our board.
+Save to your board and... an error! That's because the `neopixel` library isn't included with Circuit Python by default. Instead, we have to manually download and add it to our board.
 
 Go to the [Circuit Python libraries page](https://circuitpython.org/libraries) and find the "bundle" for version `7.x`:
 
 ![](../Images/Demos/CircuitPythonBundle.png)
 
-Don't download earlier versions, the Python source or "community" bundle, etc. Unzip the bundle, then look for:
+Don't download earlier versions, the Python source or "community" bundle, etc. Unzip it, then look for:
 
-    lib > neopixel.mpy
+    lib → neopixel.mpy
 
-Copy the file to the `lib` folder on your board. That's it! Test it by trying the import statement again:
+Copy the file to the `lib` folder on your board by dragging it over. That's it! Test it by trying the import statement again:
 
 ```python
 import neopixel
@@ -43,7 +43,7 @@ import neopixel
 
 When saving it to your board this time you should see no errors. If it doesn't work, make sure you copied the right file to the correct folder on your board.
 
-> There are lots of other libraries in the bundle, mostly for interfacing with specific (and sometimes complex) sensors and hardware. Check out the `examples` folder too for demos.
+> There are lots of other libraries in the bundle, mostly for interfacing with specific (and sometimes complex) sensors and hardware. We won't use most of them, but the `examples` folder has a bunch of bonus demos you might want to check out.
 
 ***
 
@@ -62,7 +62,7 @@ Then, similar to the built-in LED, we create a variable for our NeoPixel:
 led = neopixel.NeoPixel(board.NEOPIXEL, 1)
 ```
 
-The `1` at the end specifies that we only have one RGB LED. If you were to hook them up externally, NeoPixels can be chained together!
+The `1` at the end specifies that we only have one RGB LED. If you were to hook them up externally, NeoPixels can be chained together! (For a cool example, see [this lightsaber](https://ziasabers.com/shop/neopixel-lightsaber/))
 
 Finally, we set the LED's brightness. `1` means full brightness, `0` is off, and `0.5` is half brightness:
 
@@ -73,7 +73,7 @@ led.brightness = 0.1
 ***
 
 ### SETTING THE COLOR  
-Let's make some light! The LED's color is listed as red, green, and blue (RGB) values, the color format used most commonly in computer graphics. Values range from `0` (none of that color) to `255` (100% of that color). 
+Let's make some light! The LED's color is listed as red, green, and blue (RGB) values, the color format used most commonly in computer graphics. Values range from `0` (none of that color) to `255` (100% of that color); when combined, you can theoretically make any color.
 
 For example, this changes the LED to a bright red:
 
@@ -102,6 +102,14 @@ while True:
   led.fill( (0, 0, 255) )   # green
   time.sleep(0.5)
 ```
+
+Notice that our color values are separated by commas and are contained in parentheses. This is called a ["tuple"](https://www.w3schools.com/python/python_tuples.asp) and lets us store multiple values together. What's cool is that now we can create color variables and use them elsewhere in our program!
+
+```python
+orange = (255, 150, 0)
+led.fill(orange)
+```
+
 ***
 
 ### FULL CODE EXAMPLE  
