@@ -32,7 +32,7 @@ import digitalio   # access input/output on board
 import time        # utility for time-related stuff
 ```
 
-These three imports will be used in every project you make this semester.
+You'll most likely use all three imports in every project you make this semester.
 
 **WHAT OTHER PYTHON MODULES CAN I USE?**  
 Python has a ton of amazing modules built-in, but not all of them are accessible using Circuit Python. This is mostly due to the limited hardware and memory on your board.
