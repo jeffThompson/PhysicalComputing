@@ -4,7 +4,7 @@ Most Arduino-like boards come with an LED built in, but the Feather boards have 
 
 The process is very similar to the previous example, with a few additional setup steps.
 
-**Note! If you haven't already, be sure to [update the version of Circuit Python on your board](00-SettingUpYourBoard.md) before adding the NeoPixel library.** Otherwise, they may not be compatible.
+**Note! If you haven't already, be sure to [update the version of Circuit Python on your board](00-SettingUpYourBoard.md) before adding the NeoPixel library.** Otherwise, they may not be compatible and could cause weird errors.
 
 ***
 
@@ -31,7 +31,7 @@ Go to the [Circuit Python libraries page](https://circuitpython.org/libraries) a
 
 ![](../Images/Demos/CircuitPythonBundle.png)
 
-Don't download earlier versions, the Python source or "community" bundle, etc. Unzip it, then look for:
+Don't download earlier versions, the Python source, "community" bundle, etc. Unzip it, then look inside for:
 
     lib → neopixel.mpy
 
@@ -62,7 +62,7 @@ Then, similar to the built-in LED, we create a variable for our NeoPixel:
 led = neopixel.NeoPixel(board.NEOPIXEL, 1)
 ```
 
-The `1` at the end specifies that we only have one RGB LED. If you were to hook them up externally, NeoPixels can be chained together! (For a cool example, see [this lightsaber](https://ziasabers.com/shop/neopixel-lightsaber/))
+The `1` at the end specifies that we only have one RGB LED. If you were to hook them up externally, NeoPixels can be chained together! (For a cool example, see [this badass lightsaber](https://ziasabers.com/shop/neopixel-lightsaber/).)
 
 Finally, we set the LED's brightness. `1` means full brightness, `0` is off, and `0.5` is half brightness:
 
