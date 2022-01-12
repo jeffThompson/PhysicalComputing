@@ -44,14 +44,16 @@ Try changing the text inside the `print()` command. Save it and watch the consol
 ***
 
 ### PYTHON BASICS  
-In a bit, we'll start by turning on/off LEDs. But first, let's go over some basics of Python, the langauge we'll be using to program our board. Python is a fantastic, flexible, and friendly language and is one of my faves.
+This week you'll learn to turn on/off LEDs. But first, let's go over some basics of Python, the langauge we'll be using to program our board. Python is a fantastic, flexible, and friendly language and is one of my faves.
 
-This guide (and subsequent demos) assume you've done at least some basic programming before. You should know a bit about variables, conditionals, and loops but it's ok if you've never used Python before!
+This guide (and subsequent demos) assumes you've done at least some basic programming before. You should know a bit about variables, conditionals, and loops but it's ok if you've never used Python!
 
 ***
 
 ### PRINT  
 We've already covered this command! `print()` is super helpful for debugging, especially when working with a board like the Feather that has no display of its own.
+
+Any values inside `print()` will show up in the console. This includes text, variables, lists, etc.
 
 ***
 
