@@ -6,6 +6,8 @@ For this first example, we'll use the LED that's built into your Feather board: 
 
 > There are two other LEDs on your board. One is opposite the LED we're using, next to the USB connector, and indicates communication with your computer. The other is an RGB LED, which we'll use in our next example!
 
+Let's get started!
+
 ***
 
 ### CONTENTS  
@@ -20,13 +22,30 @@ For this first example, we'll use the LED that's built into your Feather board: 
 ***
 
 ### LIBRARY IMPORTS  
-Before we can do anything, we need to add some extra code to our project. Called "libraries," these give us extra functionality, such as controlling the inputs and outputs on our board. These three imports will be used in every project you make this semester...
+Before we can do anything, we need to add some extra code to our project. Called "libraries" (or "modules"), these give us extra functionality, such as controlling the inputs and outputs on our board.
+
+The first two are part of Circuit Python, the third is part of standard Python:
 
 ```python
 import board       # access the board itself
 import digitalio   # access input/output on board
 import time        # utility for time-related stuff
 ```
+
+These three imports will be used in every project you make this semester.
+
+**WHAT PYTHON LIBRARIES CAN I USE?**  
+Standard Python has a ton of amazing libraries built-in, but not all of them are accessible using Circuit Python. This is due to the limited hardware and memory on your board.
+
+To see a full list of modules available on your board, go to the Mu Editor and type the following command into the console...
+
+    help('modules')
+
+...and hit enter. You should get back a list like this:
+
+![](../Images/Demos/PythonLibraries.png)
+
+We'll install additional libraries to the board in the next example.
 
 ***
 
@@ -36,7 +55,7 @@ In this example, we don't have to actually wire anything up. But we do have to t
 * Where to find the LED  
 * That this pin\* should be an output  
 
-> \*A "pin" is a connection to your Feather board and is what we soldered those connectors to! Pins can set as either an output (LEDs, motors, etc) or input (buttons, as we'll see next week).
+> \*A "pin" is a connection to your Feather board and is what we soldered those connectors to! Pins can set as either an output (LEDs, motors, etc) or input (buttons, as we'll see next week). They can also be digital or analog, something we'll talk more about later too.
 
 First, we create a variable for our LED using the built-in LED:
 
