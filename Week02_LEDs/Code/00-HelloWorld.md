@@ -61,23 +61,25 @@ Any values inside `print()` will show up in the console. This includes text, var
 Comments are code that isn't run, but instead is there to offer info to people reading it. Adding comments is a great habit to get into. Not only is it the professional thing to do, it also leaves notes for yourself when you come back later and try to remember what the heck you were doing! In Python, we can create two kinds of comments.
 
 **SINGLE LINE**  
-Any text following a `#` is a comment. These can be on a line of their own:
+Any text after a `#` symbol is a comment. These can be on a line of their own...
 
     # turn the LED on
 
-Or after a line of code:
+...or after a line of code:
 
     a = 2 * 3   # multiply two numbers together
 
 **MULTIPLE LINE**  
-For larger blocks of text, you can create multi-line comments. Multi-line comments start and end with three quote-marks, either single- or double-quotes:
+For larger blocks of text, you can create multi-line comments. These start and end with three quote-marks, either single- or double-quotes:
 
     '''
     This comment is on multiple lines.
     It starts and ends with three quote-marks.
     '''
 
-You'll see comments throughout the example code to explain what's happening.
+    """
+    This works too!
+    """
 
 ***
 
