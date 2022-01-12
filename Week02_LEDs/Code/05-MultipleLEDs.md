@@ -24,8 +24,8 @@ This is for your safety and the safety of your components.
 ### WIRE UP ANOTHER LED  
 Adding another LED to our board is super simple: just do the same thing as the [previous example](04-ExternalLED.md) but attach the positive end to another digital pin.
 
-* Plug the long leg of the LED into `D6`  
-* Plug the short end into the same ground row as the other LED  
+* Plug the long leg of the LED into a hole next to `D6`  
+* Plug the short end into the same ground row as the other LED, but in another hole  
 
 When done, your breadboard should look like this:
 
@@ -64,18 +64,16 @@ Save the code to your board: you should see one LEDs blinking on/off in opposite
 ***
 
 ### HOW MANY LEDs CAN I ADD?  
-At this point, you're probably asking yourself: "Woah how many LEDs can I attach to this thing?" There are 13 digital pins, so theoretically we could attach 13 LEDs to the Feather – cool!
+At this point, you're probably asking yourself: "Woah cool, how many LEDs can I attach to this thing?" There are 13 digital pins, so theoretically we could attach 13 LEDs to the Feather. In reality though, this probably won't work. Everything you attach to your Feather draws electricity from the USB connection on your computer. USB is meant to power things like a keyboard or mouse, so if we plug too many LEDs in we risk running out of juice.
 
-In reality though, this probably won't work. Everything you attach to your Feather draws electricity from the USB connection on your computer. USB is meant to power things like a keyboard or mouse, so if we plug too many LEDs in we risk running out of juice.
+> 🙋‍♀️ "Juice" in this case is something called [electrical current](https://en.wikipedia.org/wiki/Electric_current). We'll talk more about this later, but just know that asking for too much power from your computer can result in an error message or possibly damaging your Feather board. In the worst (but unlikely) case, you could damage the USB port on your computer.
 
-> 🙋‍♀️ "Juice" in this case is something called [electrical current](https://en.wikipedia.org/wiki/Electric_current). We'll talk more about this later, but just know that asking for too much power from your computer can result in an error message or possibly damaging your Feather board.
-
-**TLDR: you can probably plug in about six LEDs without any problem. You can try more, but add one at a time. More than eight is definitely a bad idea. When in doubt, ask first :)**
+TLDR: you can probably plug in about six LEDs without any problem. You can try more, but add one at a time. More than eight is definitely a bad idea. When in doubt, ask first.
 
 ***
 
 ### CHALLENGES  
 
-1. Can you add two more LEDs to your circuit? (Be sure to update the code and your breadboard.)  
-2. What patterns can you make with your LEDs?  
+1. Can you add two more LEDs to your circuit? (Hint: be sure to update your breadboard *and* the code.)  
+2. What patterns can you make with your LEDs? Can you make them run back-and-forth in a line? Count numbers?  
 
