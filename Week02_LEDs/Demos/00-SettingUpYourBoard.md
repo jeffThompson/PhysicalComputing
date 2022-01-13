@@ -7,6 +7,8 @@ Today there are a *ton* of options if you want to use code, sensors, and electro
 
 While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and a lot more setup. Of course, there are lots of other options out there, ranging from single chips that cost less than a dollar to plug-and-play sensor interfaces.
 
+![](../Images/FeatherM4Express.png)
+
 These all have their place, but this semester we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our microcontroller and [Circuit Python](https://circuitpython.org/) to program it, both fantastic projects from the NYC-based company Adafruit. Before we can do fun stuff with our boards, though, we have to get everything set up. 
 
 This will involve quite a few steps but, once it's done, we won't have to do this again!
