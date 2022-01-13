@@ -50,17 +50,14 @@ To see a full list of modules available on your board, go to the Mu Editor and t
 
 ![](../Images/PythonLibraries.png)
 
-Lots of cool stuff! We'll install additional modules to the board in the next example.
+Lots of cool stuff! You'll learn how to install additional modules to the board in the next example, too.
 
 ***
 
 ### SET UP THE LED  
-In this example, we don't have to actually wire anything up. But we do have to tell our board two things:
+In this example, we don't have to actually wire anything up. But we do have to tell our board two things: where to find the LED and that this pin should be an output.
 
-* Where to find the LED  
-* That this pin should be an output  
-
-> 🙋‍♀️ A "pin" is a connection to your Feather board and is what we soldered those connectors to! Pins can set as either an output (LEDs, motors, etc) or input (buttons, as we'll see next week). They can also be digital or analog, something we'll talk more about later too.
+> 🙋‍♀️ A "pin" is a connection to your Feather board and is what we soldered those connectors to! Pins can set as either an output (LEDs, motors, etc) or input (buttons like we'll use next week, sensors, etc). They can also be digital or analog, something we'll talk more about later too. [Check out this page](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts) if you want to read about all the different pins on the board.  
 
 First, we create a variable for our LED. We can specify a specific pin but Circuit Python gives us a shorthand for the built-in LED:
 
@@ -84,7 +81,7 @@ led.value = True       # turn on the LED
 led.value = False      # turn it off
 ```
 
-If we were to run this, we'd see the LED come on then turn off immediately. To change the timing, we can use the Python `time` library (imported above) to pause our program between turning the LED on and turning it off:
+If we were to run this, we'd see the LED come on then turn off immediately. To change the timing, we can use the Python `time` library (imported in the beginning of this demo) to pause our program between turning the LED on and turning it off:
 
 ```python
 led.value = True       # turn on the LED
@@ -93,7 +90,7 @@ led.value = False      # turn it off
 time.sleep(0.5)        # and pause again
 ```
 
-Better, but it will only blink once then stop!
+Better, but it will only blink once then stop! We can fix that...
 
 ***
 
@@ -108,7 +105,7 @@ while True:
   time.sleep(0.5)
 ```
 
-Since `True` is always true, the loop will keep running forever! We'll almost always create a loop like this in our code, after creating variables/functions and setting up the board's pins.
+Since `True` is always true, the loop will keep running forever! We will almost always create a loop like this in our code, after creating variables/functions and setting up the board's pins. If you've used `p5.js` before, this is just like the `draw()` loop!
 
 ***
 
