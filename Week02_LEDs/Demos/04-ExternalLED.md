@@ -39,7 +39,7 @@ Breadboards come in various sizes and configurations, but they all have rows of 
 
 The breadboard is divided into two sections, one for power and one for components:
 
-![](../Images/BreadboardLayout.png)
+![](Images/BreadboardLayout.png)
 
 **POWER**  
 The top/bottom each have two long rows used for power distribution, noted as `+` and `–`. They are connected along the rows but not to each other or to their pair on the opposite side of the breadboard.
@@ -56,7 +56,7 @@ For example, the hole at `A1` is connected to the hole at `E1`, but not `F1` or 
 ### PLACING YOUR FEATHER BOARD  
 Now that you understand how the breadboard is laid out, we can start by placing your Feather board! The exact location isn't super important, but it should look something like this:
 
-![](../Images/FeatherOnBreadboard.png)
+![](Images/FeatherOnBreadboard.png)
 
 The result is that each pin on the Feather is connected to a column on the breadboard so we can connect parts to it, but they are electrically isolated from each other.
 
@@ -69,7 +69,7 @@ LEDs are pretty robust little critters and it would take some doing to burn one 
 
 Every LED has two legs, one that electricity goes into (positive) and the other where it flows back out (negative or ground). LEDs are "polarized," meaning they have to be inserted in the right direction, like a AA battery.
 
-![](../Images/LED-Orientation.png)
+![](Images/LED-Orientation.png)
 
 **POSITIVE**  
 Find the longer leg of the LED and carefully insert it into the hole next to the pin labeled `D5`, near the far end of the board.
@@ -77,7 +77,7 @@ Find the longer leg of the LED and carefully insert it into the hole next to the
 **GROUND**  
 Insert the short end of the LED into any hole in the ground (`–`) row. Using a jumper wire, make a connection between the ground row and the `Gnd` pin on the board.
 
-![](../Images/ExternalLED.png)
+![](Images/ExternalLED.png)
 
 > 🙋‍♀️ We'll talk more about electricity, ground, voltage, etc in a few weeks. But you won't need to know much to be able to make cool stuff!
 

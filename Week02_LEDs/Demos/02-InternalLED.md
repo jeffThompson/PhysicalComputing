@@ -4,7 +4,7 @@ We'll get into sensors and circuits and all kinds of exciting stuff soon, but th
 
 For this first example, we'll use the LED that's built into your Feather board: even easier! You'll find it next to the USB connection near the label `#13`.
 
-![](../Images/LED-Location.png)
+![](Images/LED-Location.png)
 
 > Note: There are two other LEDs on your board. One is opposite the LED we're using, next to the USB connector, and indicates communication with your computer. The other is an RGB LED, which we'll use in our next example!
 
@@ -50,7 +50,7 @@ To see a full list of modules available on your board, go to the Mu Editor and t
 
 ...and hit enter. You should get back a list like this:
 
-![](../Images/PythonLibraries.png)
+![](Images/PythonLibraries.png)
 
 Lots of cool stuff! You'll learn how to install additional modules to the board in the next example, too.
 

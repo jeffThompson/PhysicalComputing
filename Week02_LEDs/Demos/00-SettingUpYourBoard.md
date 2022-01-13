@@ -7,7 +7,7 @@ Today there are a *ton* of options if you want to use code, sensors, and electro
 
 While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and a lot more setup. Of course, there are lots of other options out there, ranging from single chips that cost less than a dollar to plug-and-play sensor interfaces.
 
-![](../Images/FeatherM4Express.png)
+![](Images/FeatherM4Express.png)
 
 These all have their place, but this semester we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our microcontroller and [Circuit Python](https://circuitpython.org/) to program it, both fantastic projects from the NYC-based company Adafruit. Before we can do fun stuff with our boards, though, we have to get everything set up. 
 
@@ -26,7 +26,7 @@ If the board doesn't show up, check your USB connection – often, it's just tha
 
 The board's volume should be named `CIRCUITPY`. Open it up and let's look inside...
 
-![](../Images/CircuitPyVolume.png)
+![](Images/CircuitPyVolume.png)
 
 There will be three items:  
 * `code.py` &larr; the file we'll edit to program the board  
@@ -48,15 +48,15 @@ On your board, open up the `boot_out.txt` file. You should see text like this:
 
 The first line tells us a bunch of info, including which version of Circuit Python is installed. **The most recent version is `7.1.0`, so if your file shows anything lower you'll need to update.** Go to [the Circuit Python page for our board](https://circuitpython.org/board/feather_m4_express) and download the latest release. This should download quickly and have a `.uf2` file extension.
 
-![](../Images/CircuitPythonDownloadPage.png)
+![](Images/CircuitPythonDownloadPage.png)
 
 Your Feather board has a small reset button, right next to the USB connector. This reboots the microcontroller but can also let us enter "update" mode by double-clicking it.
 
-![](../Images/ResetButton-Location.png)
+![](Images/ResetButton-Location.png)
 
 After double-clicking, the board should disconnect automatically and then reconnect with a different name (probably something like `FEATHERBOOT`). Open up the new volume.
 
-![](../Images/UpdateVolume.png)
+![](Images/UpdateVolume.png)
 
 To update, just drag the downloaded `.uf2` file to the board: it will install, reboot itself, and you're all set! Check the `boot_out.txt` file again to make sure it worked.
 
