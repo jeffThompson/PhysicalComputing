@@ -19,7 +19,7 @@
 ### ASSIGNMENT
 This week, we'll limit oursleves to just your microcontrollers and a handful of LEDs. No fancy sensors, motors, etc yet; instead, the goal is to get comfortable with programming, uploading code to your board, and thinking creatively!
 
-A few rules for this project:  
+A few "rules" for this project:  
 * Use at least two LEDs  
 * Either on/off or pulse-width modulation (PWM)  
 * No other inputs/outputs other than LEDs!  
