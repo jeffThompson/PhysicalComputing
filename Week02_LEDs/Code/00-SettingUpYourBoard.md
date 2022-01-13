@@ -41,12 +41,10 @@ Our boards come with Circuit Python pre-installed, which is great, but it's also
 
 On your board, open up the `boot_out.txt` file. You should see text like this:  
 
-    `Adafruit `**`CircuitPython 6.2.0`**`` on 2021-09-14; Adafruit Feather M4 Express with samd51j19
+    Adafruit CircuitPython 6.2.0 on 2021-09-14; Adafruit Feather M4 Express with samd51j19
     Board ID:feather_m4_express
 
-The first line tells us a bunch of info, including which version of Circuit Python is installed. The most recent version is `7.1.0`, so if your file shows anything lower you'll need to update.
-
-Go to [the Circuit Python page for our board](https://circuitpython.org/board/feather_m4_express) and download the latest release. This should download quickly and have a `.uf2` file extension.
+The first line tells us a bunch of info, including which version of Circuit Python is installed. **The most recent version is `7.1.0`, so if your file shows anything lower you'll need to update.** Go to [the Circuit Python page for our board](https://circuitpython.org/board/feather_m4_express) and download the latest release. This should download quickly and have a `.uf2` file extension.
 
 ![](../Images/CircuitPythonDownloadPage.png)
 
