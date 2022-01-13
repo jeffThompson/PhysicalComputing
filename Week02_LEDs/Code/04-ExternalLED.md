@@ -2,13 +2,11 @@
 
 The built-in LEDs on your Feather board are great for quick prototyping, but we can also hook up an external LED. (In the next example, we'll see how to hook up multiple LEDs!)
 
-**☠️ SAFETY NOTE! ☠️**  
-Starting with this example, we'll be working directly with electricity and building circuits. While everything we're doing is pretty safe, you do risk (in order of not-so-good to really bad) damaging a part, your Feather, your computer, and electrocuting yourself! Please follow these directions carefully and ask if you have any questions. (But don't let that scare you off! For the next few weeks, everything we're doing is quite safe.)
-
 ***
 
 ### CONTENTS  
 
+* [Safety note](#safety-note)  
 * [Get to know your breadboard](#get-to-know-your-breadboard)  
 * [Placing your Feather board](#placing-your-feather-board)  
 * [Hooking up the LED](#hooking-up-the-led)  
@@ -22,6 +20,15 @@ Starting with this example, we'll be working directly with electricity and build
 * Jumpers  
 * Feather board  
 * USB cable  
+
+***
+
+### ☠️ SAFETY NOTE! ☠️  
+Starting with this example, we'll be working directly with electricity and building circuits. While everything we're doing is pretty safe, you do risk (in order of not-so-good to really bad) damaging a part, your Feather, your computer, and electrocuting yourself!
+
+**Please follow these directions carefully and ask if you have any questions.**
+
+But don't let that scare you off! For the next few weeks, everything we're doing is quite safe and forgiving, even if you do something wrong.
 
 ***
 
