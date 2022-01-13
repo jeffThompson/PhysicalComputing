@@ -1,8 +1,8 @@
 # FADING WITH PULSE-WIDTH MODULATION
 
-Blinking an LED is cool, but what if we want to vary its brightness? As the name implies, a "digital" pin can only be turned on or off, we can't set them to be partially on. Luckily, some very smart people figured out that if we flash the LED on/off really quickly, we can trick our eye into thinking that the brightness has been dimmed: exactly how flipbooks and film work!
+Blinking an LED is cool, but what if we want to vary its brightness? As the name implies, a "digital" pin can only be turned on or off. We can't set them to be partially on. Luckily, some very smart people figured out that if we flash the LED on/off really quickly, we can [trick our eye](https://en.wikipedia.org/wiki/Persistence_of_vision) into thinking that the brightness has been dimmed: exactly how flipbooks and film work!
 
-This is called [pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) (PWM) and the Feather board allows us to use it on all the digital pins. More on how PWM works below, but you can also skim through the technical details and just set the brightness.
+This is called [pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) (PWM) and the Feather board allows us to use it on all the digital pins. More on how PWM works below, but you can also skim through the technical details and just experiment with the brightness.
 
 ***
 
@@ -20,7 +20,9 @@ This is called [pulse-width modulation](https://en.wikipedia.org/wiki/Pulse-widt
 ***
 
 ### BASIC PWM OUTPUT  
-We'll be using the built-in LED for this example, so we can jump right into the code and change its brightness! First, we import the `board` and `time` libraries, plus a special one for PWM control:
+We'll be using the built-in LED for this example, so we can jump right into the code and change its brightness! This would work the same for an external LED, too.
+
+First, we import the `board` and `time` libraries, plus a special one for PWM control:
 
 ```python
 import board
@@ -28,7 +30,7 @@ import time
 import pwmio
 ```
 
-Then we set up our pin for PWM. Don't worry about `frequency`, we can just leave that as the default. We'll change `duty_cycle` later but `0` means it will start fully off:
+Then we set up our pin for PWM. Don't worry about `frequency`, we can just leave that as the default. We'll change `duty_cycle` later but `0` means it will start turned off:
 
 ```python
 led = pwmio.PWMOut(
@@ -44,9 +46,11 @@ Now let's set the brightness! We do this by changing the "duty cycle" value for 
 led.duty_cycle = 65535
 ```
 
-[Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) refers to what percentage of the time the LED is on and how much it is off. If a lamp is on 0% of the time, it will be entirely dark; 100% of the time would be maximum brightness. If you were to flip the light switch on for one minute and off the next minute, the average light in the room would be 50% of the maximum possible.
+[Duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) refers to what percentage of the time the LED is on and how much it is off. If a lamp is on 0% of the time, it will be entirely dark; 100% of the time would be maximum brightness. 
 
-PWM works the same way! The pin can receive values between `0` (completely off) and `65535` (max brightness), and any value in between.
+Think about a light switch in a room: if you were to flip the switch on for one minute and off the next minute, over the course of an hour the average light in the room would be 50% of the maximum possible. PWM works the same way! 
+
+The pin can receive values between `0` (completely off) and `65535` (max brightness), and any value in between.
 
 **WHAT A WEIRD NUMBER, WHY 65535?**  
 TLDR: that's the max brightness allowed but it's really confusing. We'll fix that in the next step, so skip ahead or read below for more details...
