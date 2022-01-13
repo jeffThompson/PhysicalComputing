@@ -1,14 +1,17 @@
 # HELLO, WORLD!
 
-Before we start turning on/off LEDs and wiring up circuits, let's look at how we can upload code to our boards and cover some Python basics. If you haven't already, be sure to [follow the steps for connecting and updating your board](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week02_LEDs/SettingUpYourBoard.md) first.
+This week you'll learn to control various kinds LEDs with code. But first, let's get your board connected to the Mu Editor and go over some basics of [Python](https://www.python.org/), the langauge we'll be using to program our board. Python is a fantastic, flexible, and friendly language and is one of my faves.
+
+This guide (and subsequent demos) assumes you've done at least some basic programming before. You should know a bit about variables, conditionals, and loops but it's ok if you've never used Python!
+
+If you haven't already, be sure to [follow the steps for connecting and updating your board](00-SettingUpYourBoard.md) first.
 
 ***
 
 ### CONTENTS
 
 * [Connect the board](#connect-the-board)  
-* [Our first program](#out-first-program)
-* [Python basics](#python-basics)  
+* [Our first program](#out-first-program) 
 * [Print](#print)  
 * [Comments](#comments)  
 * [Variables](#variables)  
@@ -22,24 +25,22 @@ Before we start turning on/off LEDs and wiring up circuits, let's look at how we
 ### CONNECT THE BOARD
 First, we need to get the board and Mu Editor talking to each other:
 
-1. Connect your board to your computer via USB, like before. It should show up as `CIRCUITPY`  
+1. Connect your Feather board to your computer via USB, like before. It should show up as `CIRCUITPY`  
 2. Open Mu Editor and click the `Load` button. Select the `code.py` file. You should now see a blank file where we can write some code  
-3. Click the `Serial` button at the top of the editor. This lets us see messages from the board, like the console in a web browser. We'll use this a lot for debugging  
+3. Click the `Serial` button at the top of the editor. This lets us see messages and errors from the board, like the console in a web browser. We'll use this a lot for debugging  
 
-We'll use these steps every time you go to work on a project.
+We'll use these steps every time you go to work on a project!
 
 ***
 
 ### OUR FIRST PROGRAM  
-Let's verify everything is working and write our first Circuit Python program!
-
-In the editor, copy/paste or type this line (you can delete anything else that's already there):
+Let's verify everything is working and write our first Circuit Python program! In the editor, copy/paste or type this line (you can delete anything that's already there):
 
 ```python
 print('Hello, world!')
 ```
 
-Click the `Save` button to save your code to the board. You should immediately see some output in the Serial Console:
+Click the `Save` button (`Ctrl+S` or `Cmd+S` will also work) to save your code to the board. You should immediately see some output in the console:
 
     Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.
     code.py output:
@@ -53,27 +54,17 @@ There's a bunch of stuff we don't have to worry about yet, but the important thi
 
 Try changing the text inside the `print()` command. Save it and watch the console again. 
 
-**CHALLENGES**  
-1. Can you add additional `print()` commands to display extra text?
-
-***
-
-### PYTHON BASICS  
-This week you'll learn to turn on/off LEDs. But first, let's go over some basics of Python, the langauge we'll be using to program our board. Python is a fantastic, flexible, and friendly language and is one of my faves.
-
-This guide (and subsequent demos) assumes you've done at least some basic programming before. You should know a bit about variables, conditionals, and loops but it's ok if you've never used Python!
-
 ***
 
 ### PRINT  
-We've already covered this command! `print()` is super helpful for debugging, especially when working with a board like the Feather that has no display of its own.
+We've already covered this command a bit! `print()` is super helpful for debugging, especially when working with a board like the Feather that has no display of its own.
 
-Any values inside `print()` will show up in the console. This includes text, variables, lists, etc.
+Any values inside `print()` will show up in the console. This includes text, variables, lists, etc. If you haven't used `print()` or similar commands much in the past, now's a great time to start using it more!
 
 ***
 
 ### COMMENTS  
-Comments are code that isn't run, but instead is there to offer info to people reading it. Adding comments is a great habit to get into. Not only is it the professional thing to do, it also leaves notes for yourself when you come back later and try to remember what the heck you were doing! In Python, we can create two kinds of comments.
+Comments are code that isn't run, but instead is there to offer info to people reading it. Adding comments is a great habit to get into: not only is it the professional thing to do (and therefore looks great when sharing your code with potential employers) it also leaves notes for yourself when you come back later and try to remember what the heck you were doing! In Python, we can create two kinds of comments.
 
 **SINGLE LINE**  
 Any text after a `#` symbol is a comment. These can be on a line of their own...
@@ -89,12 +80,12 @@ a = 2 * 3   # multiply two numbers together
 ```
 
 **MULTIPLE LINE**  
-For larger blocks of text, you can create multi-line comments. These start and end with three quote-marks, either single- or double-quotes:
+For larger blocks of text, you can create multi-line comments. These start and end with three quote-marks, either single or double will work the same:
 
 ```python
 '''
 This comment is on multiple lines.
-It starts and ends with three quote-marks.
+It starts and ends with three single quote-marks.
 '''
 
 """
@@ -108,13 +99,15 @@ too!
 ***
 
 ### VARIABLES  
-In Python, variables are ["un-typed,"](https://fosterv222.medium.com/coding-languages-typed-vs-untyped-d29c7e0b3713) meaning we don't have to tell Python if a value is a number or text or something else. To create a variable, all we need to do is give it a name and an initial value!
+In Python, variables are ["un-typed,"](https://fosterv222.medium.com/coding-languages-typed-vs-untyped-d29c7e0b3713) meaning we don't have to tell Python if a value is a number or text or something else, and variables can change type. To create a variable, all we need to do is give it a name and an initial value!
 
 ```python
 a = -5          # an integer (whole number)
 b = 3.14        # a floating-point number (decimal)
 c = 'Python'    # a string (text)
 ```
+
+You'll also notice that we don't need semicolons at the end of lines of code in Python!
 
 Typically in Python, variables are written in all lowercase with underscores in between words. In other languages, like Javascript, we usually write variables in `camelCase` instead. Both will work, but all the examples here will use the usual Python convention:
 
@@ -150,7 +143,7 @@ pets = [ 'June', 'Kahn' ]
 We can get the length of a list using `len()`:
 
 ```python
-print( len(pets) )
+print(len(pets))
 ```
 
 Adding an item is easy:
@@ -242,7 +235,7 @@ if am_hungry:
     print('Not enough money for pizza...')
 ```
 
-If we need to check more than two combinations, we can add `else-if` to our conditionals too. Note that this is shortened in Python to `elif`:
+If we need to check more than two combinations, we can add one or more `else-if` statements to our conditionals too. Note that this is shortened in Python to `elif`:
 
 ```python
 current_time = 3
@@ -257,14 +250,14 @@ else:
 ***
 
 ### ITERATION  
-Like conditionals, iteration is indented and doesn't use curly brackets. First, let's count from 0–9:
+Like conditionals, iteration is indented and doesn't use curly brackets. First, let's count from `0–9`:
 
 ```python
 for i in range(0, 10):
   print(i)
 ```
 
-Do the same thing, but count by twos:
+The same thing, but counting by twos:
 
 ```python
 # third value is the step size
@@ -272,14 +265,15 @@ for i in range(0, 10, 2):
   print(i)
 ```
 
-We can go backwards too:
+We can go backwards too!
 
 ```python
+# -1 means go backwards by 1
 for i in range(10, 0, -1):
   print(i)
 ```
 
-Python makes going through lists easy:
+Lastly, Python also makes going through lists easy:
 
 ```python
 vehicles = [ 'car', 'bus', 'truck', 'scooter', 'bike' ]
@@ -290,7 +284,7 @@ for vehicle in vehicles:
 ***
 
 ### FUNCTIONS  
-Lastly, Python lets us create our own functions. These are indented just like conditionals and loops, and can include arguments, both required and optional. Note that we have to create our function above the code where we use it, otherwise we'll get an error that the function can't be found.
+Lastly, Python lets us create our own functions. These are indented just like conditionals and loops, and can include arguments, both required and optional. **Note that we have to create our function above the code where we use it, otherwise we'll get an error that the function can't be found!**
 
 Let's make a simple function that adds two numbers:
 
@@ -307,19 +301,21 @@ c = add(10, 50)
 print(c)
 ```
 
-This function has an optional argument with a preset value. If we don't include anything for that argument, Python will use the default listed.
+This function has an optional argument with a preset value. If we don't include anything for that argument, Python will use the default that's listed.
 
 ```python
-def punctuate(s1, s2, punct='.'):
-  return s1 + ' ' + s2 + punct
+def punctuate(a, b, punct='.'):
+  return a + ' ' + b + punct
 
 print( punctuate('Lovely', 'day') )
 print( punctuate('Wonderful', 'donuts', '!') )
 ```
 
+This will add the default punctuation (a period) unless we specify a different punctuation mark to use, like in the second example.
+
 ***
 
-Of course, there's lots more Python can do and lots we haven't covered! But with these basics you should be able to do almost everything you need for this class, with a little Google/Stack Overflow searching from time to time.
+Of course, there's lots more Python can do and lots we haven't covered! But with these basics you should be able to do almost everything you need for this class, with a little Google/Stack Overflow searching from ~time to time~ every week.
 
 If you find something we haven't covered that would be helpful, please let me know!
 
