@@ -19,13 +19,13 @@
 ### ASSIGNMENT
 This week, we'll limit oursleves to just your microcontrollers and a handful of LEDs. No fancy sensors, motors, etc yet; instead, the goal is to get comfortable with programming, uploading code to your board, and thinking creatively!
 
-A few rules for this project\*:  
+A few rules for this project:  
 * Use at least two LEDs  
 * Either on/off or pulse-width modulation (PWM)  
 * No other inputs/outputs other than LEDs!  
 * But any other materials you want to incorporate are great (found objects, sculptural, drawing/painting, etc)  
 
-\*Creative rule-breaking is encouraged in this class! Embrace the limitations and think about what novel, interesting, fun, meaningful, and/or surprising things you can make with such simple means.
+> 🙋‍♀️ Creative rule-breaking is encouraged in this class! Embrace the limitations and think about what novel, interesting, fun, meaningful, and/or surprising things you can make with such simple means.
 
 ***
 
@@ -40,7 +40,7 @@ If that doesn't work, you can try:
 * Email me!  
 * [Circuit Python overview](https://learn.adafruit.com/welcome-to-circuitpython/overview)  
 * [Post to the Adafruit forum](https://forums.adafruit.com/viewforum.php?f=60)  
-* [Way more detail on Circuit Python](https://circuitpython.readthedocs.io/en/latest/shared-bindings/index.html)  
+* [Way more detail on Circuit Python](https://circuitpython.readthedocs.io/en/latest/shared-bindings/index.html) (probably most helpful if you've done some Python before)  
 
 ***
 
