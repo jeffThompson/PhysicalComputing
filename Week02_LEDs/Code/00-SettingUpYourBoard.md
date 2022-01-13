@@ -5,14 +5,23 @@ Today there are a *ton* of options if you want to use code, sensors, and electro
 1. Microcontrollers: essentially tiny, very low-power computers that can either run on their own or connected to a computer; the most popular of these is [Arduino](https://www.arduino.cc/)  
 2. Single-board computers: small, self-contained computers capable of running a full operating system, usually some version of Linux; most popular is [Raspberry Pi](https://www.raspberrypi.org/)  
 
-While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and requires a lot more setup. Of course, there are lots of other options out there, ranging from chips that cost less than a dollar to plug-and-play sensor interfaces.
+While Arduino is a fantastic platform with tons of examples and a great community, it requires us to use the programming language C, which is super complex and confusing. Raspberry Pi is also wonderful, but requires a monitor and keyboard, and a lot more setup. Of course, there are lots of other options out there, ranging from single chips that cost less than a dollar to plug-and-play sensor interfaces.
 
-These all have their place, but this semester we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our microcontroller and [Circuit Python](https://circuitpython.org/) to program it, both fantastic projects from the NYC-based company Adafruit. Before we can do fun stuff with our boards, though, we have to get everything set up. This will involve quite a few steps but, once it's done, we won't have to do this again!
+These all have their place, but this semester we're going to use the [Feather M4 Express](https://www.adafruit.com/product/3857) as our microcontroller and [Circuit Python](https://circuitpython.org/) to program it, both fantastic projects from the NYC-based company Adafruit. Before we can do fun stuff with our boards, though, we have to get everything set up. 
+
+This will involve quite a few steps but, once it's done, we won't have to do this again!
 
 ***
 
 ### CONNECT YOUR BOARD  
-First, plug the Feather board into your computer with a USB cable. It should mount as a "volume" on your computer, like a USB thumb drive. If your computer asks you to connect the device as a keyboard, just exit out of the prompt (we'll cover this later). If the board doesn't show up, it could be your USB connection. Make sure you're not using a USB hub and have a normal cable, not one designed for charging only.
+First, plug the Feather board into your computer with a USB cable. It should mount as a "volume" on your computer, like a USB thumb drive. If your computer asks you to connect the device as a keyboard, just exit out of the prompt (we'll cover this later). 
+
+If the board doesn't show up:  
+* Check your USB connection  
+* Make sure you're not using a "charge-only" USB cable  
+* Don't use a USB hub  
+* Try another USB port on your computer  
+* If none of those work, contact Adafruit customer service: they're super responsive and very helpful  
 
 The board's volume should be named `CIRCUITPY`. Open it up and let's look inside...
 
