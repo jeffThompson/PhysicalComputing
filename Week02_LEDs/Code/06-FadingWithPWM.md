@@ -96,10 +96,9 @@ def scale_pwm(n, in_min, in_max, out_min=0, out_max=65535):
 
 The math here is kind of funky so we won't get into details, but essentially we give the function:
 
-* An input value in our intuitive range to be scaled  
-* The lowest and highest possible values in the range we want to use  
-* And the lowest/highest possible values from the range the Feather is expecting (these are presets in the function, so we don't have to specify them)  
-* The results are converted from a float-point (decimal) number to an integer (whole number), since that's what's required for PWM output  
+* An input value in our intuitive range  
+* The lowest and highest possible values in the intuitive range we want to use  
+* Optional: the lowest/highest possible values from the range the Feather is expecting (these are presets in the function, so we don't have to specify them)  
 
 To me, a PWM range of `0–100` seems pretty good. We can use our new function like this:
 
@@ -108,7 +107,9 @@ brightness = 50
 new_brightness = scale_pwm(brightness, 0,100)
 ```
 
-This takes the value `50` and converts it to `32767.5`, or half of `65535`. It then converts it to an integer value of `32768`, which the Feather will accept. Let's use that to fade the LED in and out:
+This takes the value `50` and converts it to `32767.5`, or half of `65535`. It then converts it to an integer (whole number) value of `32768`, which the Feather requires. 
+
+Let's use that to fade the LED in and out:
 
 ```python
 while True:
@@ -167,21 +168,21 @@ while True:
 ### WHAT IF MY LED LOOKS JUMPY?  
 If you want really slow, smooth fading, you might find that our example looks a bit jumpy. That's because we're reducing the resolution of the pin by three orders of magnitude! For most purposes you probably won't notice, but if you do, we can just change the input range for our `scale_pwm()` function.
 
-Instead of:  
+Instead of `0–100`:  
 ```python
 for i in range(0, 100):
     led.duty_cycle = scale_pwm(i, 0,100)
     time.sleep(0.02)
 ```
 
-Try:  
+Try `0–1000`:  
 ```python
 for i in range(0, 1000):
     led.duty_cycle = scale_pwm(i, 0,1000)
     time.sleep(0.002)
 ```
 
-Should be much smoother!
+Should be much smoother! (Notice the slower time delay when we increase the resolution, keeping the overall speed of the fade the same.)
 
 ***
 
