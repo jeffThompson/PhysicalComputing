@@ -52,12 +52,21 @@ Think about a light switch in a room: if you were to flip the switch on for one 
 
 The pin can receive values between `0` (completely off) and `65535` (max brightness), and any value in between.
 
-**WHAT A WEIRD NUMBER, WHY 65535?**  
-TLDR: that's the max brightness allowed but it's really confusing. We'll fix that in the next step, so skip ahead or read below for more details...
+**WHAT A WEIRD NUMBER, WHY `65535?`**  
+TLDR: that's the max brightness allowed but it's really confusing. We'll fix that in the next step, so read below for more details or just skip ahead the next section...
 
-Computers use binary values: true or false, zero or one. We call this "base 2," which works just like the decimal (base 10) numbers we're used to, but instead of using the digits `0–9`, it only uses `0` and `1`. The maximum value allowed in a computer system varies depending on its internal architecture: many microcontrollers (like Arduino) may be limited to only 8-bit values:
+Under the hood, computers are limited to binary values: true or false, zero or one. We call this ["base 2,"](https://en.wikipedia.org/wiki/Binary_number) which works just like the decimal numbers (base 10) we're used to, but instead of using the digits `0–9`, it only uses `0` and `1`. 
 
-    2^8 = a maximum value of 255
+For example, here are some numbers in decimal and their equivelant in binary:  
+
+```
+Decimal   0  1  2  3  4   ... 9    10
+Binary    0  1  10 11 100 ... 1001 1010
+```
+
+The maximum value allowed in a computer system varies depending on how it's designed: many older microcontrollers (like Arduino) may be limited to only 8-bit values:
+
+<code>2<sup>8</sup> = a maximum value of 255</code>
 
 But the PWM pins on our Feather board can receive 16-bit values:
 
