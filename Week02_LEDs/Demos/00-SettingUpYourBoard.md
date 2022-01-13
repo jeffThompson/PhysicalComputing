@@ -50,7 +50,7 @@ The first line tells us a bunch of info, including which version of Circuit Pyth
 
 Your Feather board has a small reset button, right next to the USB connector. This reboots the microcontroller but can also let us enter "update" mode by double-clicking it.
 
-![](../Images/FeatherM4ExpressResetButton.jpg)
+![](../Images/ResetButton-Location.png)
 
 After double-clicking, the board should disconnect automatically and then reconnect with a different name (probably something like `FEATHERBOOT`). Open up the new volume.
 

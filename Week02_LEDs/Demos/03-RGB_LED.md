@@ -1,6 +1,8 @@
 # RGB LED (aka NeoPixel)  
 
-Most Arduino-like boards come with an LED built in, but the Feather boards have a bonus: an LED capable of changing color! Called RGB LEDs (or [NeoPixels](https://learn.adafruit.com/adafruit-neopixel-uberguide), in Adafruit-speak), we can change their color in code to make some really cool effects.
+Most Arduino-like boards come with an LED built in, but the Feather boards have a bonus: an LED capable of changing color! Called RGB LEDs (or [NeoPixels](https://learn.adafruit.com/adafruit-neopixel-uberguide), in Adafruit-speak), we can change their color in code to make some really cool effects. You can find the RGB LED near the reset button on your board:
+
+![](../Images/Neopixel-Location.png)
 
 The process is very similar to the previous example, with a few additional setup steps, which we'll only have to do once.
 
