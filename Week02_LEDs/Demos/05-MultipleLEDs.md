@@ -37,7 +37,7 @@ Adding another LED to our board is super simple: just do the same thing as the [
 
 When done, your breadboard should look like this:
 
-![](../Images/MultipleLEDs.jpg)
+![](../Images/MultipleLEDs.png)
 
 ***
 

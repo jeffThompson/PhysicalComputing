@@ -77,7 +77,7 @@ Find the longer leg of the LED and carefully insert it into the hole next to the
 **GROUND**  
 Insert the short end of the LED into any hole in the ground (`–`) row. Using a jumper wire, make a connection between the ground row and the `Gnd` pin on the board.
 
-![](../Images/ExternalLED.jpg)
+![](../Images/ExternalLED.png)
 
 > 🙋‍♀️ We'll talk more about electricity, ground, voltage, etc in a few weeks. But you won't need to know much to be able to make cool stuff!
 
