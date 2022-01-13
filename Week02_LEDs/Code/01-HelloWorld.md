@@ -1,6 +1,6 @@
 # HELLO, WORLD!
 
-This week you'll learn to control various kinds LEDs with code. But first, let's get your board connected to the Mu Editor and go over some basics of [Python](https://www.python.org/), the langauge we'll be using to program our board. Python is a fantastic, flexible, and friendly language and is one of my faves.
+This week you'll learn to control various kinds LEDs with code. But first, let's get your Feather connected to the Mu Editor and go over some basics of [Python](https://www.python.org/), the langauge we'll be using to program our board. Python is a fantastic, flexible, and friendly language and is one of my faves.
 
 This guide (and subsequent demos) assumes you've done at least some basic programming before. You should know a bit about variables, conditionals, and loops but it's ok if you've never used Python!
 
@@ -19,6 +19,7 @@ If you haven't already, be sure to [follow the steps for connecting and updating
 * [Conditionals](#conditionals)  
 * [Iteration](#iteration)  
 * [Functions](#functions)  
+* [Challenges](#challenges)  
 
 ***
 
@@ -27,14 +28,14 @@ First, we need to get the board and Mu Editor talking to each other:
 
 1. Connect your Feather board to your computer via USB, like before. It should show up as `CIRCUITPY`  
 2. Open Mu Editor and click the `Load` button. Select the `code.py` file. You should now see a blank file where we can write some code  
-3. Click the `Serial` button at the top of the editor. This lets us see messages and errors from the board, like the console in a web browser. We'll use this a lot for debugging  
+3. Click the `Serial` button at the top of the editor. This lets us see messages and errors from the board, like the console in a web browser. We'll use this a lot for debugging parts of your program  
 
-We'll use these steps every time you go to work on a project!
+You'll use these steps every time you go to work on a project!
 
 ***
 
 ### OUR FIRST PROGRAM  
-Let's verify everything is working and write our first Circuit Python program! In the editor, copy/paste or type this line (you can delete anything that's already there):
+Let's verify everything is working and, in the process, write our first Circuit Python program. In the editor, copy/paste or type this line (you can delete anything that's already there):
 
 ```python
 print('Hello, world!')
@@ -51,8 +52,6 @@ Click the `Save` button (`Ctrl+S` or `Cmd+S` will also work) to save your code t
     Press any key to enter the REPL. Use CTRL-D to reload.
 
 There's a bunch of stuff we don't have to worry about yet, but the important thing is that it displays the text we wrote using the `print()` command. Nice!
-
-Try changing the text inside the `print()` command. Save it and watch the console again. 
 
 ***
 
@@ -318,4 +317,11 @@ This will add the default punctuation (a period) unless we specify a different p
 Of course, there's lots more Python can do and lots we haven't covered! But with these basics you should be able to do almost everything you need for this class, with a little Google/Stack Overflow searching from ~time to time~ every week.
 
 If you find something we haven't covered that would be helpful, please let me know!
+
+***
+
+### CHALLENGES  
+
+1. Try changing the text inside the `print()` command. Save it and watch the console again to see the output  
+2. Can you write a simple Python program that outputs various text to the console? What creative things can you do with such a simple interaface?  
 
