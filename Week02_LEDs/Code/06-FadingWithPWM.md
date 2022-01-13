@@ -34,9 +34,9 @@ Then we set up our pin for PWM. Don't worry about `frequency`, we can just leave
 
 ```python
 led = pwmio.PWMOut(
-    board.LED, 
-    frequency=5000, 
-    duty_cycle=0
+  board.LED, 
+  frequency=5000, 
+  duty_cycle=0
 )
 ```
 
@@ -60,32 +60,38 @@ Under the hood, computers are limited to binary values: true or false, zero or o
 For example, here are some numbers in decimal and their equivelant in binary:  
 
 ```
-Decimal   0  1  2  3  4   ... 9    10
-Binary    0  1  10 11 100 ... 1001 1010
+Decimal   0  1  2   3   4   ... 9     10
+Binary    0  1  10  11  100 ... 1001  1010
 ```
 
 The maximum value allowed in a computer system varies depending on how it's designed: many older microcontrollers (like Arduino) may be limited to only 8-bit values:
 
-<code>2<sup>8</sup> = a maximum value of 255</code>
+    2^8 = a maximum value of 255
 
 But the PWM pins on our Feather board can receive 16-bit values:
 
     2^16 = a maximum value of 65535!
 
-That's a lot higher, meaning we get way more resolution to the dimming of our LED! But, if you're like me, that value is super confusing, so we'll fix that in the next step...
+That's a lot higher, meaning we get way more resolution to the dimming of our LED. But, if you're like me, that value is super confusing, so we'll use some code to fix that in the next step...
 
 ***
 
 ### MORE INTUITIVE VALUES  
 Unless you do a lot of this kind of thing, thinking in 16-bit values is not at all intuitive. Luckily, programming allows us to make our own tools.
 
-What we want to do is use a more intuitive range of values and convert them into what our Feather board expects. Some languages, like `p5.js`, have a built-in function that does this called `map()`. Sadly, Python doesn't have that, but we can build one ourselves! (Or, more accurately, we can do some Google searching and modify an example for our use.)
+What we want to do is use a more intuitive range of values in our code, then convert them into what our Feather board expects. Some languages, like `p5.js`, have a built-in function that does this called `map()`. Sadly, Python doesn't have that, but we can build one ourselves! (Or, more accurately, we can do some Google searching and modify an example for our use.)
 
 ```python
-# via: https://stackoverflow.com/a/929107/1167783
 def scale_pwm(n, in_min, in_max, out_min=0, out_max=65535):
-    val = (((n - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min
-    return int(val)
+  '''
+  Scales a number from one range to another, designed
+  for PWM output on the Feather board. Default output
+  range is 0–65535
+
+  Via: https://stackoverflow.com/a/929107/1167783
+  '''
+  val = (((n - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min
+  return int(val)
 ```
 
 The math here is kind of funky so we won't get into details, but essentially we give the function:
@@ -128,15 +134,21 @@ import time
 import pwmio
 
 led = pwmio.PWMOut(
-    board.LED, 
-    frequency=5000, 
-    duty_cycle=0
+  board.LED, 
+  frequency=5000, 
+  duty_cycle=0
 )
 
-# via: https://stackoverflow.com/a/929107/1167783
 def scale_pwm(n, in_min, in_max, out_min=0, out_max=65535):
-    val = (((n - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min
-    return int(val)
+  '''
+  Scales a number from one range to another, designed
+  for PWM output on the Feather board. Default output
+  range is 0–65535
+  
+  Via: https://stackoverflow.com/a/929107/1167783
+  '''
+  val = (((n - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min
+  return int(val)
 
 while True:
   # fade in...
