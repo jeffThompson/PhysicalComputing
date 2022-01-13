@@ -15,7 +15,7 @@ Starting with this example, we'll be working directly with electricity and build
 * [Testing the LED](#testing-the-led)  
 * [Challenges](#challenges)  
 
-### MATERIALS  
+### STUFF YOU'LL NEED  
 
 * One LED  
 * Breadboard  

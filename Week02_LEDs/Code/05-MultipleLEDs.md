@@ -12,7 +12,7 @@ Having added an external LED to our Feather, it's super easy to more! Be sure yo
 * [How many LEDs can I add?](#how-many-leds-can-i-add)  
 * [Challenges](#challenges)  
 
-### MATERIALS  
+### STUFF YOU'LL NEED  
 
 * Two or more LEDs  
 * Breadboard  

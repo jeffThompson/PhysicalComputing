@@ -16,7 +16,7 @@ The process is very similar to the previous example, with a few additional setup
 * [Full code example](#full-code-example)  
 * [Challenges](#challenges)  
 
-### MATERIALS  
+### STUFF YOU'LL NEED  
 
 * Feather board  
 * USB cable  

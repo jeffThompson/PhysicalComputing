@@ -1,12 +1,12 @@
 # INTERNAL LED
 
-We'll get into sensors and circuits and all kinds of exciting stuff soon, but the physical computing equivalent of `Hello world` is blinking an LED! [Light-emmitting diodes](https://en.wikipedia.org/wiki/Light-emitting_diode) (LEDs) are everywhere: they're cheap, bright, come in lots of colors, are super easy to wire up, and are pretty hard to accidentally destroy 🤬
+We'll get into sensors and circuits and all kinds of exciting stuff soon, but the physical computing equivalent of `Hello world` is blinking an LED. [Light-emmitting diodes](https://en.wikipedia.org/wiki/Light-emitting_diode) (LEDs) are everywhere: they're cheap, bright, don't require much electricity, come in lots of colors, are super easy to wire up, and are pretty hard to accidentally destroy!
 
-For this first example, we'll use the LED that's built into your Feather board: even easier! You'll find it next to the USB connection near the label `#13`. We don't need to do anything to else to prep our board for this, just open the Mu Editor and start coding!
+For this first example, we'll use the LED that's built into your Feather board: even easier! You'll find it next to the USB connection near the label `#13`.
 
-> There are two other LEDs on your board. One is opposite the LED we're using, next to the USB connector, and indicates communication with your computer. The other is an RGB LED, which we'll use in our next example!
+> Note: There are two other LEDs on your board. One is opposite the LED we're using, next to the USB connector, and indicates communication with your computer. The other is an RGB LED, which we'll use in our next example!
 
-Let's get started!
+We don't need to do anything to else to prep our board for this, just open the Mu Editor and start coding!
 
 ***
 
@@ -19,7 +19,7 @@ Let's get started!
 * [Full code example](#full-code-example)  
 * [Challenges](#challenges)  
 
-### MATERIALS  
+### STUFF YOU'LL NEED  
 
 * Feather board  
 * USB cable  
@@ -27,7 +27,7 @@ Let's get started!
 ***
 
 ### LIBRARY IMPORTS  
-Before we can do anything, we need to add some extra code to our project. Called "libraries" (or "modules" in Python-speak), these give us extra functionality, such as controlling the inputs and outputs on our board.
+Before we can do anything, we need to add some extra code to our project. Called "libraries" (or "modules" in Python-speak), these give us extra functionality that we might not ordinarily need, such as controlling the inputs and outputs on our board. These can technically go anywhere, but are best at the very top of your code.
 
 The first two are specific to Circuit Python, the third is part of standard Python:
 
@@ -37,7 +37,7 @@ import digitalio   # access input/output on board
 import time        # utility for time-related stuff
 ```
 
-You'll most likely use all three imports in every project you make this semester.
+You'll most likely use all three imports (or some version of them) in every project you make this semester.
 
 **WHAT OTHER PYTHON MODULES CAN I USE?**  
 Python has a ton of amazing modules built-in, but not all of them are accessible using Circuit Python. This is mostly due to the limited hardware and memory on your board.
@@ -48,7 +48,7 @@ To see a full list of modules available on your board, go to the Mu Editor and t
 
 ...and hit enter. You should get back a list like this:
 
-![](../Images/Demos/PythonLibraries.png)
+![](../Images/PythonLibraries.png)
 
 Lots of cool stuff! We'll install additional modules to the board in the next example.
 

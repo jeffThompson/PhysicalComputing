@@ -21,6 +21,11 @@ If you haven't already, be sure to [follow the steps for connecting and updating
 * [Functions](#functions)  
 * [Challenges](#challenges)  
 
+### STUFF YOU'LL NEED  
+
+* Feather board  
+* USB cable  
+
 ***
 
 ### CONNECT THE BOARD
@@ -314,14 +319,14 @@ This will add the default punctuation (a period) unless we specify a different p
 
 ***
 
-Of course, there's lots more Python can do and lots we haven't covered! But with these basics you should be able to do almost everything you need for this class, with a little Google/Stack Overflow searching from ~time to time~ every week.
-
-If you find something we haven't covered that would be helpful, please let me know!
-
-***
-
 ### CHALLENGES  
 
 1. Try changing the text inside the `print()` command. Save it and watch the console again to see the output  
 2. Can you write a simple Python program that outputs various text to the console? What creative things can you do with such a simple interaface?  
+
+***
+
+Of course, there's lots more Python can do and lots we haven't covered! But with these basics you should be able to do almost everything you need for this class, with a little Google/Stack Overflow searching from ~time to time~ every week.
+
+If you find something we haven't covered that would be helpful, please let me know!
 
