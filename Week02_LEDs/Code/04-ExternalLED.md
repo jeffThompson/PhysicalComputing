@@ -6,7 +6,7 @@ The built-in LEDs on your Feather board are great for quick prototyping, but we 
 
 ### CONTENTS  
 
-* [Safety note](#safety-note)  
+* [Safety note](#%EF%B8%8F-safety-note-%EF%B8%8F)  
 * [Get to know your breadboard](#get-to-know-your-breadboard)  
 * [Placing your Feather board](#placing-your-feather-board)  
 * [Hooking up the LED](#hooking-up-the-led)  
@@ -24,18 +24,20 @@ The built-in LEDs on your Feather board are great for quick prototyping, but we 
 ***
 
 ### ☠️ SAFETY NOTE! ☠️  
-Starting with this example, we'll be working directly with electricity and building circuits. While everything we're doing is pretty safe, you do risk (in order of not-so-good to really bad) damaging a part, your Feather, your computer, and electrocuting yourself!
+Starting with this example, we'll be working directly with electricity and building circuits. While everything we're doing is pretty safe, you do risk (in order of not-so-good to really bad) damaging a part, your Feather, your computer, and electrocuting yourself.
 
-**Please follow these directions carefully and ask if you have any questions.**
+Places where you need to be extra careful are noted with ⚡️.
 
-But don't let that scare you off! For the next few weeks, everything we're doing is quite safe and forgiving, even if you do something wrong.
+But don't let that scare you off! For the next few weeks, everything we're doing is quite safe and forgiving, even if you do something wrong. **Just follow these directions carefully and ask if you have any questions.**
 
 ***
 
 ### GET TO KNOW YOUR BREADBOARD  
-This will be our first real circuit! There's lots of ways we could hook up our LED, but for this example (and most of them this semester) we'll use an electronics breadboard. This tool lets us build circuits kind of like Legos or guitar pedals, plugging in and chaining together parts easily. You can then take everything apart and reuse it for another project.
+This will be our first real circuit! There's lots of ways we could hook up our LED, but for this example (and most of them this semester) we'll use an electronics breadboard. This prototyping tool lets us build circuits kind of like Legos or guitar pedals, plugging in and chaining together parts easily. You can then take everything apart and reuse it for another project.
 
-Breadboards come in various sizes and configurations, but they all have rows of holes where we can plug stuff in. Some of these holes are electrically connected to each other! This helps us hook parts together to make circuits, but it's important to what's connected to what. The breadboard is divided into two sections, one for power and one for components:
+Breadboards come in various sizes and configurations, but they all have rows of holes where we can plug stuff in. Some of these holes are electrically connected to each other! This helps us hook parts together to make circuits, but it's important to know what's connected to what. 
+
+The breadboard is divided into two sections, one for power and one for components:
 
 ![](../Images/BreadboardLayout.png)
 
@@ -47,6 +49,8 @@ The middle of the breadboard is where we'll put all our components. It's divided
 
 For example, the hole at `A1` is connected to the hole at `E1`, but not `F1` or `A2`.
 
+> 🙋‍♀️ Breadboards are great for prototypes but the connections aren't very sturdy. We'll talk more about soldering, enclosures, etc in a few weeks.
+
 ***
 
 ### PLACING YOUR FEATHER BOARD  
@@ -54,14 +58,16 @@ Now that you understand how the breadboard is laid out, we can start by placing 
 
 ![](../Images/FeatherOnBreadboard.png)
 
-The result is that each pin on the Feather is connected to a column on the breadboard but isolated from each other.
+The result is that each pin on the Feather is connected to a column on the breadboard so we can connect parts to it, but they are electrically isolated from each other.
 
 ***
 
 ### HOOKING UP THE LED  
 ***⚡️ Make sure your board is unplugged from USB before continuing! ⚡️***
 
-LEDs are pretty robust little critters and it would take some doing to burn one out. But since we'll be hooking up a (very basic) circuit, it's worth slowing down for a minute and making sure we hook this up correctly. Every LED has two legs, one that electricity goes into (positive) and the other where it flows back out (negative or ground). LEDs are "polarized," meaning they have to be inserted in the right direction, like a AA battery.
+LEDs are pretty robust little critters and it would take some doing to burn one out. But since we'll be hooking up a (very basic) circuit, it's worth slowing down for a minute and making sure we hook this up correctly. 
+
+Every LED has two legs, one that electricity goes into (positive) and the other where it flows back out (negative or ground). LEDs are "polarized," meaning they have to be inserted in the right direction, like a AA battery.
 
 ![](../Images/LED-Orientation.png)
 
@@ -73,7 +79,7 @@ Insert the short end of the LED into any hole in the ground (`–`) row. Using a
 
 ![](../Images/ExternalLED.jpg)
 
-> We'll talk more about electricity, ground, voltage, etc in a few weeks, though you won't need to know much to be able to make cool stuff!
+> 🙋‍♀️ We'll talk more about electricity, ground, voltage, etc in a few weeks. But you won't need to know much to be able to make cool stuff!
 
 ***
 
@@ -97,7 +103,7 @@ while True:
     time.sleep(0.5)
 ```
 
-You should see your LED blinking on/off – congrats, you just built your first electronic circuit! 🎉
+You should see your LED blinking on/off: congrats, you just built your first electronic circuit! 🎉
 
 If the LED doens't work, first check that it's installed in the right orientation. Reversing an LED is usually not going to hurt anything, but it won't work if it's plugged in backwards.
 
