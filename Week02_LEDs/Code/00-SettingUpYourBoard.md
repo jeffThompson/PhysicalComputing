@@ -16,12 +16,11 @@ This will involve quite a few steps but, once it's done, we won't have to do thi
 ### CONNECT YOUR BOARD  
 First, plug the Feather board into your computer with a USB cable. It should mount as a "volume" on your computer, like a USB thumb drive. If your computer asks you to connect the device as a keyboard, just exit out of the prompt (we'll cover this later). 
 
-If the board doesn't show up:  
-* Check your USB connection  
+If the board doesn't show up, check your USB connection – often, it's just that your board isn't getting enough power:  
 * Make sure you're not using a "charge-only" USB cable  
 * Don't use a USB hub  
 * Try another USB port on your computer  
-* If none of those work, contact Adafruit customer service: they're super responsive and very helpful  
+* If none of these work, try the [Feather troubleshooting page](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/troubleshooting) or contact Adafruit customer service: they're super responsive and very helpful  
 
 The board's volume should be named `CIRCUITPY`. Open it up and let's look inside...
 
