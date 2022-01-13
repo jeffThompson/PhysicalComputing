@@ -26,9 +26,9 @@ The built-in LEDs on your Feather board are great for quick prototyping, but we 
 ### ☠️ SAFETY NOTE! ☠️  
 Starting with this example, we'll be working directly with electricity and building circuits. While everything we're doing is pretty safe, you do risk (in order of not-so-good to really bad) damaging a part, your Feather, your computer, and electrocuting yourself.
 
-**⚡️ Places where you need to be extra careful in tutorials will be noted with ⚡️**
+***⚡️ Places in these tutorials where you need to be extra careful will be noted like this! ⚡️***
 
-But don't let that scare you off! For the next few weeks, everything we're doing is quite safe and forgiving, even if you do something wrong. Just follow these directions carefully and ask if you have any questions.
+But don't let that scare you off! Most everything we'll be doing is quite safe and forgiving, even if you do something wrong. Just follow these directions carefully and ask if you have any questions.
 
 ***
 
