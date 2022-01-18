@@ -123,7 +123,7 @@ while True:
   led.value = not button.value
 ```
 
-The `not` command flips boolean values: when the button is `False` the LED is `True` and vice versa!
+The `not` command flips boolean values: when the button is `False` the LED is `True` and vice versa! In most of our examples, we'll use the longer version because it's easier to understand for beginners.
 
 ***
 
