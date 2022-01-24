@@ -68,7 +68,7 @@ Then we can read the state of our button (whether it's pressed or not) in a loop
 
 ```python
 while True:
-  console.log(button.value)
+  print(button.value)
 ```
 
 Upload this code to your board and see if it works. You should see the values in the console change as you press the button!
