@@ -72,7 +72,7 @@ while True:
 
 Way easier than the state change code! Circuit Python keeps track of the button's previous state for us and handles (behind the scenes) a process of ignoring inputs after the state of the button changes for a short period.
 
-> 🙋‍♀️ What do `rose` and `fell` mean? In physical computing, we often refer to `True` as `high` and `False` as `low` &larr; think `1` and `0`, electricity and none. This means the state of our button is "rising" when it goes from low to high and "falling" when it goes from high to low!
+> 🙋‍♀️ What do `rose` and `fell` mean? In physical computing, we often refer to `True` as `high` and `False` as `low` &larr; we could also think of this as `1` and `0`, electricity and no electricity. This means the state of our button is "rising" when it goes from low to high and "falling" when it goes from high to low!
 
 ***
 
@@ -88,7 +88,7 @@ Then we can create a sequence for the LED to display. There's a lot of cool thin
 
     .... . .-.. .-.. ---
 
-This pattern is made up of three parts: short pulses, long pulses, and blanks. To make updating our code easier, let's define the duration for each part as variables at the top of our code:
+This pattern is made up of three parts: short pulses, long pulses, and blanks. To make updating our code easier, let's define a variable for the duration of each part at the top of our code. The [official Morse Code specification](https://skybrary.aero/articles/morse-code) says that our pulses can be any duration, but the long should be three times the duration of the short:
 
 ```python
 short_dur = 0.1 
@@ -96,9 +96,7 @@ long_dur =  0.3
 pause_dur = 0.3
 ```
 
-The [official Morse Code specification](https://skybrary.aero/articles/morse-code) says that our pulses can be any duration, but the long should be three times the duration of the short. 
-
-We could just [hard-code](https://en.wikipedia.org/wiki/Hard_coding) this in our if-statement but it would get really messy. Instead, let's first make a custom function to make this easier:
+With that done, we could just [hard-code](https://en.wikipedia.org/wiki/Hard_coding) the pattern in our if-statement but it would get really messy. Instead, let's first make a custom function:
 
 ```python
 def pulse(dur, off_time=0.1):
@@ -139,9 +137,9 @@ if debounce.fell:
     
 ```
 
-Not the most efficient code but it works. When you press the button, you should see this pattern play. A better system would probably be a set of functions that takes a string of text and does everything for us, but I'll leave that for you to try!
+Not the most efficient code but it works. When you press the button, you should see this pattern play. A better system would probably be a set of functions that take a string of text as the input and does everything for us, but I'll leave that for you to try!
 
-> 🙋‍♀️ What happens when you release the button? You'll notice that the pattern doesn't stop right away. That's because of the function works: it will play every pulse until stopping and only then will the loop continue and the button's state is read again. We could check the button's state in our function and stop (using `return`) if the state is low. See if you can try adding that yourself!
+> 🙋‍♀️ What happens when you release the button? You'll notice that the pattern doesn't stop right away. That's because of the function (and Python) works: it will play every pulse until stopping. Only when it's done will the loop continue and the button's state is read again. We could check the button's state in our function and stop (using `return`) if the state is low, which would be especially helpful for long sequences. See if you can try adding that yourself!
 
 ***
 
@@ -220,5 +218,5 @@ while True:
 ### CHALLENGES  
 
 1. Can you have the LED display the word "bye" when the button is released?  
-2. Can you improve our Morse Code function to be easier to use? One way might be to pass in `.`, `-`, or ` ` and have it automatically pick the right duration.  
+2. Can you improve our Morse Code function to be easier to use? One way might be to pass in `.`, `-`, or `[space]` and have it automatically pick the right duration.  
 
