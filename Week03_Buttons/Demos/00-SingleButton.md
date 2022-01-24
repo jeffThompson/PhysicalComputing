@@ -21,12 +21,12 @@ Soon we'll get to fancy sensors that can read all kinds of things in the world. 
 ***
 
 ### TYPES OF BUTTONS  
-Buttons (aka switches) come in many different forms: the small ones in your parts kit, huge ones on arcade games, little ones for controlling the volume of your phone... they're everywhere! We can think of buttons as having two basic types:  
+Buttons (aka switches) come in many different forms: the small ones in your parts kit, huge ones on arcade games, tiny ones for controlling the volume of your phone... they're everywhere! We can think of buttons as having two basic types:  
 
-* Momentary: on when you press them, off when you let go (like the volume button on your phone)  
+* Momentary: on when you press them, off when you let go (like a key on your keyboard)  
 * Latched: stays on or off, depending on their position (like a light switch at home)  
 
-Buttons can further be defined by how they are wired, but that's more detail than we need for now. If you want to read more, check out [this super-detailed article](https://www.electronicshub.org/switches/).
+Buttons can further be defined by how they are wired, but that's more detail than we'll need at this point. If you want to read more, check out [this super-detailed article](https://www.electronicshub.org/switches/).
 
 We're going to start with a breadboard-friendly pushbutton. This is a momentary switch and will give us `True` when it's pressed, `False` when it's not. (Actually, it's going to be the opposite, but we'll talk about why later.)
 
@@ -43,7 +43,7 @@ As you can see in the image above, the orientation of these buttons is important
 
 ![](Images/SingleButton.png)
 
-One end is connected to ground, the other to digital pin #5 (`D5`) on your Feather. When the button is pressed, the circuit gets connected and will go directly to ground. That's it for this circuit!
+One end is connected to ground, the other to digital pin #5 (`D5`) on your Feather. When the button is pressed, electricity flows through and the Feather can read the change. That's it for this circuit!
 
 ***
 
@@ -76,20 +76,20 @@ Upload this code to your board and see if it works. You should see the values in
 ***
 
 ### WHY DOES `FALSE` MEAN PRESSED?  
-You'll notice that the Feather prints `True` when the button is *not* pressed and `False` when it is... the opposite of what's intuitively the case. Super weird.
+You'll notice that the Feather prints `True` when the button is *not* pressed and `False` when it is... the opposite of what we'd intuitively expect. Super weird. The reason has to do with how our button is wired.
 
-We haven't talked too much about how electricity works yet, but the key here is how we've wired our button. You never want power from the board to go directly to ground. This is called a ["short circuit"](https://en.wikipedia.org/wiki/Short_circuit). Like a downed power line, a short on your breadboard can lead to errors or damaging your Feather – bad news!
+We haven't talked too much about how electricity works yet, but you never want power from the board to flow directly to ground. This is called a ["short circuit"](https://en.wikipedia.org/wiki/Short_circuit). Like a downed power line, a short on your breadboard can lead to errors or damaging your Feather – bad news! As our circuit is currently set up, when the switch is pressed power would flow from `D5` to ground, creating a short circuit.
 
-To avoid this, we need some extra circuitry. Often, we'd use an extra component on our breadboard called a ["resistor"](https://en.wikipedia.org/wiki/Resistor). Like its name implies, a resistor resists, or impedes, the flow of electricity. By adding a resistor to the circuit, a bit of the electricity gets dissipated as heat on its way to ground and prevents a short circuit.
+To avoid this, we need an extra part called a ["resistor"](https://en.wikipedia.org/wiki/Resistor). Like its name implies, a resistor resists, or impedes, the flow of electricity. By adding a resistor to the circuit, a bit of the electricity gets dissipated as heat on its way to ground and prevents a short circuit.
 
-Lucky for us though, our Feather board has a tiny resistor built in to each digital pin! To enable that resistor, we added `button.pull = digitalio.Pull.UP` right after creating the input.
+Lucky for us though, our Feather board has a tiny resistor built in to each digital pin! To enable that resistor, we added `button.pull = digitalio.Pull.UP` right after creating the input variable. This works great and means we don't have to buy any extra parts, but does change the way electricity flows in our circuit. This leads to the button values being opposite what we'd expect, but is a reasonable tradeoff!
 
 > 🙋‍♀️ Don't worry if this feels confusing! We don't have to know too much about how electricity or circuits work to be able to make awsome stuff. Just keep in mind that we can't have power running directly to ground and to use an internal resistor.
 
 ***
 
 ### CONNECTING TO THE LED  
-Printing some text every time a button is pressed is pretty boring. Let's hook it up to the internal LED on our board! We'll skip over the details covered last week and create an LED variable too:
+Printing some text every time a button is pressed is pretty boring. Let's hook it up to the internal LED on our board! We'll skip over the details (that was covered last week, if you need a refresher). First, we create an LED variable:
 
 ```python
 led = digitalio.DigitalInOut(board.LED)
@@ -103,7 +103,7 @@ while True:
   led.value = button.value
 ```
 
-Great, but backwards from what we'd expect. That's because, as discussed above, the button will read `False` when pressed and `True` when not! To fix this, we need an if-statement:  
+Great, but backwards from what we'd expect. That's because (as discussed above) the button will read `False` when pressed and `True` when not! To fix this, we need an if-statement:  
 
 ```python
 while True:
@@ -156,5 +156,5 @@ while True:
 ***
 
 ### CHALLENGES  
-1. Can you make the LED blink in a pattern when the button is pressed?  
+1. Can you make the LED blink in a pattern while the button is pressed, then turn off when it's released?  
 
