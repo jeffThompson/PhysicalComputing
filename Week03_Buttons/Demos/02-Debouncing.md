@@ -42,7 +42,7 @@ If you need a refresher or lost the Circuit Python libraries you downloaded, [ch
 ***
 
 ### DEBOUNCING  
-With our button set up and code ready, we first want to import the debouncing library. (Not this is available to us without having to install a library.)
+With our button set up and debouncing library added, we first want to import the library:
 
 ```python
 from adafruit_debouncer import Debouncer
@@ -70,9 +70,9 @@ while True:
     print('released!')
 ```
 
-Way easier! Circuit Python keeps track of the button's previous state for us and handles (behind the scenes) a process of ignoring inputs after the state of the button changes for a short period.
+Way easier than the state change code! Circuit Python keeps track of the button's previous state for us and handles (behind the scenes) a process of ignoring inputs after the state of the button changes for a short period.
 
-> 🙋‍♀️ What do `rose` and `fell` mean? In physical computing, we often refer to `True` as `high` and `False` as `low`. This means the state of our button is "rising" when it goes from low to high and "falling" when it goes from high to low! (Thinking about our circuit this makes sense too. When the button is pressed, we go from no electricity to electricity flowing: low to high. When the button is released, we go from electricity to none: high to low.)
+> 🙋‍♀️ What do `rose` and `fell` mean? In physical computing, we often refer to `True` as `high` and `False` as `low` &larr; think `1` and `0`, electricity and none. This means the state of our button is "rising" when it goes from low to high and "falling" when it goes from high to low!
 
 ***
 
