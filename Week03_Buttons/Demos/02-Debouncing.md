@@ -3,6 +3,9 @@ Computers, phones, and all of our electronics make it really easy to forget that
 
 If you were to zoom inside your button, you'd see two metals bits that touch each other when the button is pressed. Being made of "real" materials, there's a moment right before the button is pressed where its state is unpredictable: you might see the button's state bouncing back and forth between pressed and not! (See [this great post from Adafruit](https://learn.adafruit.com/make-it-switch/debouncing) that shows this nicely.)
 
+![](Images/ButtonBouncingOnOscilloscope.jpg)  
+*An oscilloscope, showing a button's state bouncing when pressed. Via [Adafruit](https://learn.adafruit.com/make-it-switch/debouncing)*
+
 To avoid this, we can improve our previous state change code by introducing something called "debouncing." This basically ignores any inputs after the state of the button has changed for a short period of time. Users won't notice a difference but this can be really helpful in stabilizing the behavior of your project.
 
 We could code this by hand (and that would be a great challenge!) but lucky for us Circuit Python has built in debouncing code!
