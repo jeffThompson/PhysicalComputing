@@ -1,10 +1,10 @@
 # CAPACITIVE TOUCH  
 
-Mechanical buttons are by far the most common type, but today we're also very used to touch-sensitive devices, like the screens of our phones. This works through a technology called "[capacitive sensing](https://en.wikipedia.org/wiki/Capacitive_sensing)." Essentially, your finger (or another object) changes the conductivity of the button, which we can read as an input!
+Mechanical buttons are by far the most common type, but today we're also very used to touch-sensitive devices, like the screens of our phones. This works through a technology called "[capacitive sensing](https://en.wikipedia.org/wiki/Capacitive_sensing)." Essentially, your finger changes the conductive field around the button, which we can read as an input.
 
 > 🧐 If your phone has run out of battery, you might have noticed in the past few years that the mechanical "home" button has been replaced by a touch-sensitive one! This works similarly to our example and allows companies to include fingerprint sensors and other items under the home button – something that would have been difficult or impossible with a traditional mechanical switch.
 
-This opens up a ton of options for us: can even turn objects like fruit into buttons!
+While we won't be able to have `x/y` coordinates or anything as fancy as your phone's screen, this opens up a ton of options for us: we can even turn everyday objects like fruit or sculpted pieces into buttons!
 
 ***
 
@@ -30,16 +30,16 @@ This opens up a ton of options for us: can even turn objects like fruit into but
 ### WIRING UP THE SENSOR  
 Lucky for us, the Feather has capacitive touch input built right in, making this super easy: basically all we need to do is run a wire from one of the analog pins (more about those in the next project) and that's it!
 
-However, this doesn't always work perfectly and we need a 1M-ohm resistor to complete the circuit. You can try it without, but will likely get an error in your code.
+While the docs say that's all we need, I found that we really do need a 1M-ohm resistor to complete the circuit. You can try it without, but will likely get an error in your code. Add it going from your pin to ground, as shown here:
 
 ![](Images/CapacitiveTouch.png)
 
-We'll also add an LED (or use the built-in one) to see the output.
+We'll also add an LED (or use the built-in one) to see the output, so wire that up too. For now, we can just use a bare wire but we'll experiment with other objects (like bananas!) shortly.
 
 ***
 
 ### READING TOUCH INPUT  
-With our circuit wired up, we can read the touch input with code! First, we'll import the usual libraries as well as the built in `touchio` library. (This is included automatically, no need to add it to your board.)
+With our circuit wired up, we can read the touch input with code! First, we'll import the usual libraries as well as the built in `touchio` library. (This is included as part of Circuit Python, no need to add it to your board.)
 
 ```python
 import board
@@ -70,12 +70,14 @@ The console will now print the word `Touched!` every time you touch the wire: aw
 ### CALIBRATING  
 Our sensor works great, but there's a few more things we can do to ensure it works best for your application.
 
-**USING A DIFFERENT TRIGGER OBJECT**  
-If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button. When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
+**SWITCHING TRIGGER OBJECTS**  
+If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button or by pressing `command/control + d` in the Mu Editor.
 
 ![](Images/ResetButton-Location.png)
 
-**ADJUST THRESHOLD**  
+When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
+
+**ADJUST THE THRESHOLD**  
 By looking at the [Circuit Python reference](https://circuitpython.readthedocs.io/en/latest/shared-bindings/touchio/index.html) for the `touchio` library, we can discover some additional functions that may improve our sensor! Most promising is the `threshold` value, which sets the sensitivity of the input. 
 
 The values allowed aren't super clear from the docs and will likely vary depending on your object. Luckily, `touchio` lets us read the raw sensor value, which will give us a good starting point:
@@ -92,12 +94,12 @@ touch = touchio.TouchIn(board.A5)
 touch.threshold = 1400
 ```
 
-In my case, that was a bit too sensitive but may be worth adjusting as needed.
+In my case, that was not sensitive enough but may be worth adjusting as needed, depending on what you're using.
 
 **(APPROXIMATE) PRESSURE SENSITIVITY**  
-If you watch the raw value from the sensor while touching it very carefully, you will see the numbers slowly getting larger the more you press. We can hack this to give us very approximate pressure sensitivity!
+This one is a pretty cool hack! If you watch the raw value from the sensor while touching it very carefully, you will see the numbers get larger the harder you press. We can hack this to give us very approximate pressure sensitivity.
 
-First, record the lightest and hardest touch you expect. With a bare wire, I get about `300` and `1000`. We can combine that with our pulse-width modulation code from last time to dim the LED, depending on how hard we're pressing! (To see this in action, see the `Bonus code` section below.)
+First, record the lightest and hardest touch you expect using `touch.raw_input` like above: with a bare wire, I get about `300` and `1000`. We can combine that with our pulse-width modulation code from last time to dim the LED, depending on how hard we're pressing! (To see this in action, see the `Bonus code` section below.)
 
 ***
 
@@ -107,16 +109,17 @@ A bare wire is fine, but other objects work too! Here are some suggestions – i
 * Fruit or veggies  
 * Forks, spoons, etc  
 * Aluminum foil  
-* Copper or aluminum tape on objects  
+* Copper or aluminum tape on objects\*  
 * Liquids  
 * Anything else metallic  
+* Insulating materials, like rubber, probably won't work  
 
-Insulating materials, like rubber, probably won't work.
+\*Spreading copper/aluminum tape out across a larger surface not only creates a large trigger pad, but can even read *through* the back-side of objects! 1/4" plywood, plastic, or fabric work great for this and allow you to hide your sensor.
 
 ***
 
 ### FULL CODE EXAMPLE  
-Copy/paste this code, save to your board, and watch the colors change!  
+Copy/paste this code, save to your board:
 
 ```python
 import board
@@ -189,4 +192,6 @@ while True:
 
 ### CHALLENGES  
 
-1. 
+1. Can you add two (or more) additional touch sensors?  
+2. Combining inputs can lead to interesting interface designs. Can you add a regular pushbutton and only read the touch sensor when it's pressed?  
+
