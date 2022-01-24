@@ -88,9 +88,7 @@ The console will now print the word `Touched!` every time you touch the wire: aw
 Our sensor works great, but there's a few more things we can do to ensure it works best for your application.
 
 **SWITCHING TRIGGER OBJECTS**  
-If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button or by pressing `command/control + d` in the Mu Editor.
-
-When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
+If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button or by pressing `Command/control + d` in the Mu Editor. When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
 
 **ADJUST THE THRESHOLD**  
 By looking at the [Circuit Python reference](https://circuitpython.readthedocs.io/en/latest/shared-bindings/touchio/index.html) for the `touchio` library, we can discover some additional functions that may improve our sensor! Most promising is the `threshold` value, which sets the sensitivity of the input. 
@@ -186,7 +184,7 @@ def constrain(val, min_val, max_val):
   return min(max_val, max(min_val, val))
 
 def scale_pwm(n, in_min, in_max, out_min=0, out_max=65535):
-  # scales values into Feather M0 PWM range
+  # scales values into Feather M4 PWM range
   val = (((n - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min
   return int(val)
 
