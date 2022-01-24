@@ -34,7 +34,7 @@ Lucky for us, the Feather has capacitive touch input built right in, making this
 
 ![](Images/CapacitiveTouch.png)
 
-First, we need a piece of wire to act as our sensor. This can be a jumper, a bit of hookup wire, or an alligator clip (which works great for connecting to random objects). Connect one end to analog pin `A5`, leaving the other end unconnected. For now, we can just use a bare wire but we'll experiment with other objects (like bananas!) shortly.
+First, we need a piece of wire to act as our sensor. This can be a jumper, a bit of hookup wire, or an alligator clip. Connect one end to analog pin `A5`, leaving the other end unconnected. For now, we can just use a bare wire but we'll experiment with other objects (like bananas!) shortly.
 
 > 🙋‍♀️ Which pins can read touch input? All the analog ones! (These are marked `A0` through `A5`. More about this in the next assignment.)
 
