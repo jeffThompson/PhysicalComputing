@@ -1,8 +1,8 @@
 # BUTTON STATE CHANGE
 
-In our last example, you might have noticed that the console prints `False` over and over while the button is pressed. That's because our loop reads the button's state (pressed or not) repeatedly as fast as possible. But what if we only want to know when state of the button has changed, gone from `True` to `False` or vise versa?
+In our last example, you might have noticed that the console prints `False` over and over while the button is pressed. That's because our loop reads the button's state (pressed or not) repeatedly as fast as possible. If the button is still pressed, it prints `False` again.
 
-We'll code this by hand then, in the next example, see how we can improve this with an idea called "debouncing."
+But what if we only want to know when state of the button has changed, gone from `True` to `False` or vise versa? We'll code this by hand then, in the next example, see how we can improve this with an idea called "debouncing."
 
 ***
 
@@ -47,13 +47,16 @@ If you run this, you should see a long series of `True` and `False` printing, de
 ***
 
 ### KEEPING TRACK OF THE BUTTON'S STATE  
+
+⚠️ **Remember that the Feather will read `False` when the button is pressed and `True` when it's not!** ⚠️
+
 With our basic setup ready, now we can figure out a way to keep track of the button's state. First, we need a variable to store the last reading of the button:
 
 ```python
 prev_state = True
 ```
 
-The value here isn't too important, but we can safely assume the button won't be pressed when the Feather starts up. Then, when we read our button, we can compare the current state to the previous one. If they are different (not equal) we know that the button has either been pressed or released!
+The initial value here isn't too important, but we can safely assume the button won't be pressed when the Feather starts up. Then, when we read our button, we can compare the current state to the previous one. If they are different (not equal) we know that the button has either been pressed or released!
 
 ```python
 current_state = button.value
