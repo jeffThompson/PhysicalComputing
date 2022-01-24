@@ -12,6 +12,7 @@ While we won't be able to read fingerprints, get `x/y` coordinates, or anything 
 
 * [Wiring things up](#wiring-things-up)  
 * [Reading touch input](#reading-touch-input)  
+* [Resistors](#resistors)  
 * [Calibrating](#calibrating)  
 * [Trigger objects](#trigger-objects)  
 * [Full code example](#full-code-example)  
@@ -33,13 +34,26 @@ Lucky for us, the Feather has capacitive touch input built right in, making this
 
 ![](Images/CapacitiveTouch.png)
 
-First, we need a piece of wire to act as our sensor. This can be a jumper, a bit of hookup wire, or an alligator clip (which work great for connecting to random objects). Connect one end to analog pin `A5`, leaving the other end unconnected. For now, we can just use a bare wire but we'll experiment with other objects (like bananas!) shortly.
+First, we need a piece of wire to act as our sensor. This can be a jumper, a bit of hookup wire, or an alligator clip (which works great for connecting to random objects). Connect one end to analog pin `A5`, leaving the other end unconnected. For now, we can just use a bare wire but we'll experiment with other objects (like bananas!) shortly.
 
 > 🙋‍♀️ Which pins can read touch input? All the analog ones! (These are marked `A0` through `A5`. More about this in the next assignment.)
 
-Next, we need a 1 mega-ohm resistor. One end gets connected to the analog pin, the other to ground. This provides protection from a short-circuit, like discussed in the other button examples; skipping this probably won't damage your Feather but the board is smart enough to know if you've skipped it and will throw an error until you add one.
+Next, we need a 1 mega-ohm resistor. One end gets connected to the analog pin, the other to ground. This provides protection from a short-circuit, like discussed in the other button examples. Skipping this probably won't damage your Feather but the board is smart enough to know if you've skipped it and will throw an error until you add one.
 
 Finally, we'll also add an LED (or use the built-in one) to see the output. 
+
+***
+
+### RESISTORS  
+Perhaps the simplest electronic component is the resistor. Like the name suggests, resistors [*resist*](https://en.wikipedia.org/wiki/Electrical_resistance_and_conductance) the flow of electricity. All objects have some amount of resistance: think about copper which has very low resistance (meaning it conducts electricity very well, which is why it's used for wiring in your home) versus rubber, which has very high resistance (it barly conducts at all). In electronic circuits, resistors are little hotdog-shaped parts made using special materials chosen for their resistance.
+
+Since resistors impede the flow of electricity, we talk about their *impedance*. This is measured in a unit called *ohms* (Ω), named after [Georg Ohm](https://en.wikipedia.org/wiki/Georg_Ohm), who carried out many important experiments with electricity in the early 1800s. The impedance of resistors varies from very small (just a few ohms) to ordinary (1k to 100k &larr; "k" meaning thousand) to fairly high (1M+ &larr; "M" meaning million).
+
+The impedance of a resistor can be found two ways: either reading the colored bands printed on it or using a multimeter. These codes can be hard to read, especially if you're color-blind! An auto-ranging multimeter will automatically read the value of the resistor for you and is by far my preferred method.
+
+As we saw earlier, resistors are not polarized, meaning you can insert them in any orientation and they will work the same. This isn't the case for most other components!
+
+Resistors are super cheap and having some on hand is really helpful. Sparkfun sells a [small kit of 500 various resistors](https://www.sparkfun.com/products/10969) for $8; Digikey has a [nice one for $45](https://www.digikey.com/en/products/detail/nte-electronics-inc/RK-02/11649734) that includes a storage case.
 
 ***
 
