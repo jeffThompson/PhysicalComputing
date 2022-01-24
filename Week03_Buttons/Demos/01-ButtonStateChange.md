@@ -47,16 +47,15 @@ If you run this, you should see a long series of `True` and `False` printing, de
 ***
 
 ### KEEPING TRACK OF THE BUTTON'S STATE  
-
-⚠️ **Remember that the Feather will read `False` when the button is pressed and `True` when it's not!** ⚠️
-
 With our basic setup ready, now we can figure out a way to keep track of the button's state. First, we need a variable to store the last reading of the button:
 
 ```python
 prev_state = True
 ```
 
-The initial value here isn't too important, but we can safely assume the button won't be pressed when the Feather starts up. Then, when we read our button, we can compare the current state to the previous one. If they are different (not equal) we know that the button has either been pressed or released!
+The initial value here isn't too important, but we can safely assume the button won't be pressed when the Feather starts up. ⚠️ **Remember that the Feather will read `False` when the button is pressed and `True` when it's not!** ⚠️
+
+Now we can read our button and compare the current state to the previous one. If they are different (not equal) we know that the button has either been pressed or released!
 
 ```python
 current_state = button.value
