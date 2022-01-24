@@ -1,6 +1,6 @@
 # MULTIPLE BUTTONS  
 
-Just like LEDs, one button is cool but not as much fun as lots of buttons! There are lots of ways we could do this, but in this example we'll leverage custom functions as a way to clean up and simplify repeated tasks in our code, then have an LED blink different patterns depending on which button is pressed.
+Just like LEDs, one button is cool but not as much fun as lots of buttons! There are lots of ways we could accomplish this, but in this example we'll leverage custom functions as a way to clean up and simplify repeated tasks in our code, then have an LED blink different patterns depending on which button is pressed.
 
 ***
 
@@ -37,7 +37,7 @@ led.direction = digitalio.Direction.OUTPUT
 ***
 
 ### BUTTON VARIABLES  
-With everything ready, can now create variables for our buttons. We could do this just like our previous example, creating a second variable for the second pin and button:
+With everything ready, can now create variables for our buttons. We could do this just like our previous example, creating a second set of variables for the new pin and button:
 
 ```python
 pin1 = digitalio.DigitalInOut(board.D5)
@@ -70,14 +70,14 @@ b2 = button_setup(board.D6)
 ***
 
 ### READING THE BUTTONS  
-Now we're ready to read our buttons! This works just like one button, but we'll need to call `update()` and check the state of each one:
+Now we're ready to read our buttons! This works just like one button, but we'll need to call `update()` to get the state of each one:
 
 ```python
 b1.update()
 b2.update()
 ```
 
-This is great, but not very exciting. Let's have the LED blink once if the first button is pressed, twice if the second one is pressed. Again, this is a great place to use a function: we can pass in the number of blinks.
+Now let's have the LED blink once if the first button is pressed, twice if the second one is pressed. Again, this is a great place to use a function: we can pass in the number of blinks.
 
 ```python
 def blink(n, duration=0.2):
@@ -98,7 +98,7 @@ if b2.fell:
   blink(2)
 ```
 
-Let's put that all together and see how it works!
+You should see the LED blink once when the first button is pressed, twice when the second one is pressed!
 
 ***
 
@@ -116,7 +116,7 @@ led = digitalio.DigitalInOut(board.D13)
 led.direction = digitalio.Direction.OUTPUT
 
 def button_setup(pin):
-  # create a button input
+  # creates a button input
   # (with pullup resistor and debouncing)
   button = digitalio.DigitalInOut(pin)
   button.pull = digitalio.Pull.UP 

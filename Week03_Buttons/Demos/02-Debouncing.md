@@ -51,10 +51,12 @@ With our button set up and debouncing library added, we first want to import the
 from adafruit_debouncer import Debouncer
 ```
 
-This import syntax is a little different than we've seen before. It only brings in the part of the debouncing library that we need. Next, we create a variable for the debouncing, giving it our button to watch:
+This import syntax is a little different than we've seen before. It only brings in the part of the debouncing library that we need. Next, we create a variable for the debounced button, giving it the pin it's attached to:
 
 ```python
-debounce = Debouncer(button)
+pin = digitalio.DigitalInOut(board.D5)
+pin.pull = digitalio.Pull.UP
+button = Debouncer(pin)
 ```
 
 The library will now handle watching the current and previous state of the butotn for us! We can update our while-loop to read the button's state:
@@ -62,14 +64,14 @@ The library will now handle watching the current and previous state of the butot
 ```python
 while True:
   # get the current state of the button
-  debounce.update()
+  button.update()
 
   # if the button went from low to high
-  if debounce.fell:
+  if button.fell:
     print('pressed!')
 
   # if the button went from high to low
-  if debounce.rose:
+  if button.rose:
     print('released!')
 ```
 
@@ -103,10 +105,10 @@ With that done, we could just [hard-code](https://en.wikipedia.org/wiki/Hard_cod
 
 ```python
 def pulse(dur, off_time=0.1):
-    led.value = True
-    time.sleep(dur)
-    led.value = False
-    time.sleep(off_time)
+  led.value = True
+  time.sleep(dur)
+  led.value = False
+  time.sleep(off_time)
 ``` 
 
 This function turns on the LED for a specified period of time, then turns it off for another period of time before it will allow another pulse. Nice!
@@ -115,28 +117,28 @@ Let's use that to play the "hello" sequence:
 
 ```python
 if debounce.fell:
-    # if the button is pressed, play "hello" in
-    # morse code
-    pulse(short_dur)  # h
-    pulse(short_dur)
-    pulse(short_dur)
-    pulse(short_dur)
-    pulse(pause_dur)  # (space)
-    pulse(short_dur)  # e
-    pulse(pause_dur)  # (space)
-    pulse(short_dur)  # l
-    pulse(long_dur)
-    pulse(short_dur)
-    pulse(short_dur)
-    pulse(pause_dur)  # (space)
-    pulse(short_dur)  # l
-    pulse(long_dur)
-    pulse(short_dur)
-    pulse(short_dur)
-    pulse(pause_dur)  # (space)
-    puslse(long_dur)  # o
-    puslse(long_dur)
-    puslse(long_dur)
+  # if the button is pressed, play "hello" in
+  # morse code
+  pulse(short_dur)  # h
+  pulse(short_dur)
+  pulse(short_dur)
+  pulse(short_dur)
+  pulse(pause_dur)  # (space)
+  pulse(short_dur)  # e
+  pulse(pause_dur)  # (space)
+  pulse(short_dur)  # l
+  pulse(long_dur)
+  pulse(short_dur)
+  pulse(short_dur)
+  pulse(pause_dur)  # (space)
+  pulse(short_dur)  # l
+  pulse(long_dur)
+  pulse(short_dur)
+  pulse(short_dur)
+  pulse(pause_dur)  # (space)
+  puslse(long_dur)  # o
+  puslse(long_dur)
+  puslse(long_dur)
     
 ```
 
@@ -162,35 +164,35 @@ pause_dur = 0.3
 
 # create a button on digital pin #5
 # with an internal resistor enabled
-button = digitalio.DigitalInOut(board.D5)
-button.pull = digitalio.Pull.UP
+pin = digitalio.DigitalInOut(board.D5)
+pin.pull = digitalio.Pull.UP
 
 # create the debouncer and have it
 # watch our button
-debounce = Debouncer(button)
+button = Debouncer(pin)
 
 # use the built-in LED
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
 
 def pulse(dur, off_time=0.1):
-    # turns on the LED for a certain amount
-    # of time, turns it off and pauses
-    led.value = True
-    time.sleep(dur)
-    led.value = False
-    time.sleep(off_time)
+  # turns on the LED for a certain amount
+  # of time, turns it off and pauses
+  led.value = True
+  time.sleep(dur)
+  led.value = False
+  time.sleep(off_time)
 
 while True:
   # get the current state of the button
-  debounce.update()
+  button.update()
 
   # if the button went from on to off
-  if debounce.fell:
+  if button.fell:
     print('pressed!')
 
   # if the button went from off to on
-  if debounce.rose:
+  if button.rose:
     print('released!')
 
     # play "hello" in morse code
