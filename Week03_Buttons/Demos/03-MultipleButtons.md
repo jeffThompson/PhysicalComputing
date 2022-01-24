@@ -152,5 +152,6 @@ while True:
 
 1. Can you add a third button and have it blink the LED three times?  
 2. Could you add a second LED as well? Can you have one button blink one of the LEDs, the other button blink the other one?  
-3. This [super-helpful list of examples](https://github.com/todbot/circuitpython-tricks#set-up-and-debounce-a-list-of-pins) from Tod Kurt includes a method for debouncing multiple pins. Can you try implementing that here?  
+3. Can you make this into a simple adding machine? Using a global `total`, can you have one button add one to that number, the other two, then blink the result?  
+4. This [super-helpful list of examples](https://github.com/todbot/circuitpython-tricks#set-up-and-debounce-a-list-of-pins) from Tod Kurt includes a method for debouncing multiple pins. Can you try implementing that here?  
 
