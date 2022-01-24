@@ -77,7 +77,7 @@ b1.update()
 b2.update()
 ```
 
-Now let's have the LED blink once if the first button is pressed, twice if the second one is pressed. Again, this is a great place to use a function: we can pass in the number of blinks.
+Now let's have the LED blink once if the first button is pressed, twice if the second one is pressed. Again, this is a great place to use a function: we can pass in the number of blinks!
 
 ```python
 def blink(n, duration=0.2):
