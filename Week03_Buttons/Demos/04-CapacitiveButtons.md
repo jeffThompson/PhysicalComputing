@@ -90,8 +90,6 @@ Our sensor works great, but there's a few more things we can do to ensure it wor
 **SWITCHING TRIGGER OBJECTS**  
 If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button or by pressing `command/control + d` in the Mu Editor.
 
-![](Images/ResetButton-Location.png)
-
 When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
 
 **ADJUST THE THRESHOLD**  
