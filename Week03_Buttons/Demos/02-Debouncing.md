@@ -1,7 +1,9 @@
 # DEBOUNCING  
-Computers, phones, and all of our electronics make it really easy to forget that they are made of physical stuff! If you were to zoom inside your button, you'd see two metals bits that touch each other when the button is pressed. But, being made of messy "real" materials, there can be a moment right between the button being pressed and not where things can become unpredictable. You might get several state changes in a row or even the button's state bouncing back and forth between pressed and not!
+Computers, phones, and all of our electronics make it really easy to forget that they are made of physical stuff! And all that messy, "real" stuff doesn't always behave in the same clean and perfect way that code does.
 
-To avoid this, we can improve our state change code by introducing something called "debouncing." This basically ignores any inputs after the state of the button has changed for a short period of time. Users won't notice a difference but this can be really helpful in stabilizing the behavior of your project.
+If you were to zoom inside your button, you'd see two metals bits that touch each other when the button is pressed. Being made of "real" materials, there's a moment right before the button is pressed where its state is unpredictable: you might see the button's state bouncing back and forth between pressed and not! (See [this great post from Adafruit](https://learn.adafruit.com/make-it-switch/debouncing) that shows this nicely.)
+
+To avoid this, we can improve our previous state change code by introducing something called "debouncing." This basically ignores any inputs after the state of the button has changed for a short period of time. Users won't notice a difference but this can be really helpful in stabilizing the behavior of your project.
 
 We could code this by hand (and that would be a great challenge!) but lucky for us Circuit Python has built in debouncing code!
 
@@ -9,7 +11,12 @@ We could code this by hand (and that would be a great challenge!) but lucky for 
 
 ### CONTENTS  
 
-* [](#)  
+* [Setup](#setup)  
+* [Add the `Debouncing` library](#add-the-debouncing-library)  
+* [Debouncing](#debouncing)  
+* [Triggering events](#triggering-events)  
+* [Full code example](#full-code-example)  
+* [Challenges](#challenges)  
 
 ### STUFF YOU'LL NEED  
 
