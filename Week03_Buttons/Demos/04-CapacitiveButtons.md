@@ -1,16 +1,16 @@
 # CAPACITIVE TOUCH  
 
-Mechanical buttons are by far the most common type, but today we're also very used to touch-sensitive devices, like the screens of our phones. This works through a technology called "[capacitive sensing](https://en.wikipedia.org/wiki/Capacitive_sensing)." Essentially, your finger changes the conductive field around the button, which we can read as an input.
+Mechanical buttons are by far the most common type, but today we're also very used to touch-sensitive devices, like the screens of our phones. This works through a technology called [*capacitive sensing*](https://en.wikipedia.org/wiki/Capacitive_sensing). Essentially, your finger changes the conductive field around the button, which we can read as an input.
 
-> 🧐 If your phone has run out of battery, you might have noticed in the past few years that the mechanical "home" button has been replaced by a touch-sensitive one! This works similarly to our example and allows companies to include fingerprint sensors and other items under the home button – something that would have been difficult or impossible with a traditional mechanical switch.
+> 🧐 If your phone has run out of battery, you might have noticed in the past few years that the mechanical "home" button has been replaced by a touch-sensitive one! This allows companies to include fingerprint sensors and other items under the home button – something that would have been difficult or impossible with a traditional mechanical switch.
 
-While we won't be able to have `x/y` coordinates or anything as fancy as your phone's screen, this opens up a ton of options for us: we can even turn everyday objects like fruit or sculpted pieces into buttons!
+While we won't be able to read fingerprints, get `x/y` coordinates, or anything as fancy as what's in your phone, this opens up a ton of options for us: we can even turn everyday objects like fruit or sculpted pieces into buttons!
 
 ***
 
 ### CONTENTS  
 
-* [Wiring up the sensor](#wiring-up-the-sensor)  
+* [Wiring things up](#wiring-things-up)  
 * [Reading touch input](#reading-touch-input)  
 * [Calibrating](#calibrating)  
 * [Trigger objects](#trigger-objects)  
@@ -21,20 +21,25 @@ While we won't be able to have `x/y` coordinates or anything as fancy as your ph
 ### STUFF YOU'LL NEED  
 
 * Jumper wire or [alligator clip](https://www.adafruit.com/product/321)  
-* Possibly: 1M-ohm resistor  
+* 1M-ohm resistor (I'll give you one)  
 * Feather board  
 * USB cable  
+* Optional: an object to use as a sensor  
 
 ***
 
-### WIRING UP THE SENSOR  
-Lucky for us, the Feather has capacitive touch input built right in, making this super easy: basically all we need to do is run a wire from one of the analog pins (more about those in the next project) and that's it!
-
-While the docs say that's all we need, I found that we really do need a 1M-ohm resistor to complete the circuit. You can try it without, but will likely get an error in your code. Add it going from your pin to ground, as shown here:
+### WIRING THINGS UP  
+Lucky for us, the Feather has capacitive touch input built right in, making this super easy! 
 
 ![](Images/CapacitiveTouch.png)
 
-We'll also add an LED (or use the built-in one) to see the output, so wire that up too. For now, we can just use a bare wire but we'll experiment with other objects (like bananas!) shortly.
+First, we need a piece of wire to act as our sensor. This can be a jumper, a bit of hookup wire, or an alligator clip (which work great for connecting to random objects). Connect one end to analog pin `A5`, leaving the other end unconnected. For now, we can just use a bare wire but we'll experiment with other objects (like bananas!) shortly.
+
+> 🙋‍♀️ Which pins can read touch input? All the analog ones! (These are marked `A0` through `A5`. More about this in the next assignment.)
+
+Next, we need a 1 mega-ohm resistor. One end gets connected to the analog pin, the other to ground. This provides protection from a short-circuit, like discussed in the other button examples; skipping this probably won't damage your Feather but the board is smart enough to know if you've skipped it and will throw an error until you add one.
+
+Finally, we'll also add an LED (or use the built-in one) to see the output. 
 
 ***
 
@@ -62,8 +67,6 @@ while True:
 ```
 
 The console will now print the word `Touched!` every time you touch the wire: awesome! We can also make the touch sensor light up the LED.
-
-> 🙋‍♀️ Which pins can read touch input? All the analog ones! (These are marked `A0` through `A5`.)
 
 ***
 
