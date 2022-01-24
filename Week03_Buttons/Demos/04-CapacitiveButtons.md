@@ -1,0 +1,192 @@
+# CAPACITIVE TOUCH  
+
+Mechanical buttons are by far the most common type, but today we're also very used to touch-sensitive devices, like the screens of our phones. This works through a technology called "[capacitive sensing](https://en.wikipedia.org/wiki/Capacitive_sensing)." Essentially, your finger (or another object) changes the conductivity of the button, which we can read as an input!
+
+> 🧐 If your phone has run out of battery, you might have noticed in the past few years that the mechanical "home" button has been replaced by a touch-sensitive one! This works similarly to our example and allows companies to include fingerprint sensors and other items under the home button – something that would have been difficult or impossible with a traditional mechanical switch.
+
+This opens up a ton of options for us: can even turn objects like fruit into buttons!
+
+***
+
+### CONTENTS  
+
+* [Wiring up the sensor](#wiring-up-the-sensor)  
+* [Reading touch input](#reading-touch-input)  
+* [Calibrating](#calibrating)  
+* [Trigger objects](#trigger-objects)  
+* [Full code example](#full-code-example)  
+* [Bonus code (pressure sensitivity)](#bonus-code)  
+* [Challenges](#challenges)  
+
+### STUFF YOU'LL NEED  
+
+* Jumper wire or [alligator clip](https://www.adafruit.com/product/321)  
+* Possibly: 1M-ohm resistor  
+* Feather board  
+* USB cable  
+
+***
+
+### WIRING UP THE SENSOR  
+Lucky for us, the Feather has capacitive touch input built right in, making this super easy: basically all we need to do is run a wire from one of the analog pins (more about those in the next project) and that's it!
+
+However, this doesn't always work perfectly and we need a 1M-ohm resistor to complete the circuit. You can try it without, but will likely get an error in your code.
+
+![](Images/CapacitiveTouch.png)
+
+We'll also add an LED (or use the built-in one) to see the output.
+
+***
+
+### READING TOUCH INPUT  
+With our circuit wired up, we can read the touch input with code! First, we'll import the usual libraries as well as the built in `touchio` library. (This is included automatically, no need to add it to your board.)
+
+```python
+import board
+import digitalio
+import touchio
+```
+
+Then we create a touch input on analog pin `A5`. This is similar to regular buttons but even easier:
+
+```python
+touch = touchio.TouchIn(board.A5)
+```
+
+Finally, we can read the input in our while-loop:
+
+```python
+while True:
+  if touch.value:
+    print('Touched!')
+```
+
+The console will now print the word `Touched!` every time you touch the wire: awesome! We can also make the touch sensor light up the LED.
+
+> 🙋‍♀️ Which pins can read touch input? All the analog ones! (These are marked `A0` through `A5`.)
+
+***
+
+### CALIBRATING  
+Our sensor works great, but there's a few more things we can do to ensure it works best for your application.
+
+**USING A DIFFERENT TRIGGER OBJECT**  
+If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button. When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
+
+![](Images/ResetButton-Location.png)
+
+**ADJUST THRESHOLD**  
+By looking at the [Circuit Python reference](https://circuitpython.readthedocs.io/en/latest/shared-bindings/touchio/index.html) for the `touchio` library, we can discover some additional functions that may improve our sensor! Most promising is the `threshold` value, which sets the sensitivity of the input. 
+
+The values allowed aren't super clear from the docs and will likely vary depending on your object. Luckily, `touchio` lets us read the raw sensor value, which will give us a good starting point:
+
+```python
+while True:
+  print(touch.raw_value)
+```
+
+Using a ripe banana, I get values of about `350` when not being touched and `1300` when touched. The sensor works great with the automatic threshold, but we can try changing and see if things work better. The docs suggest setting the threshold to about `100` more than what we see from the raw input:
+
+```python
+touch = touchio.TouchIn(board.A5)
+touch.threshold = 1400
+```
+
+In my case, that was a bit too sensitive but may be worth adjusting as needed.
+
+**(APPROXIMATE) PRESSURE SENSITIVITY**  
+If you watch the raw value from the sensor while touching it very carefully, you will see the numbers slowly getting larger the more you press. We can hack this to give us very approximate pressure sensitivity!
+
+First, record the lightest and hardest touch you expect. With a bare wire, I get about `300` and `1000`. We can combine that with our pulse-width modulation code from last time to dim the LED, depending on how hard we're pressing! (To see this in action, see the `Bonus code` section below.)
+
+***
+
+### TRIGGER OBJECTS  
+A bare wire is fine, but other objects work too! Here are some suggestions – if you find something cool, please let me know and we can add to this list.
+
+* Fruit or veggies  
+* Forks, spoons, etc  
+* Aluminum foil  
+* Copper or aluminum tape on objects  
+* Liquids  
+* Anything else metallic  
+
+Insulating materials, like rubber, probably won't work.
+
+***
+
+### FULL CODE EXAMPLE  
+Copy/paste this code, save to your board, and watch the colors change!  
+
+```python
+import board
+import digitalio
+import touchio
+
+# create touch input on analog pin #5
+touch = touchio.TouchIn(board.A5)
+
+# LED, to show up when touched
+led = digitalio.DigitalInOut(board.D13)
+led.direction = digitalio.Direction.OUTPUT
+
+while True:
+  # read touch sensor, if touched
+  # light up the LED
+  if touch.value:
+    led.value = True
+  else:
+    led.value = False
+```
+
+***
+
+### BONUS CODE  
+This example reads the min/max `raw_value` from the sensor to do kinda-fake pressure sensitivity:
+
+```python
+import board
+import touchio
+import pwmio
+
+# raw values, measured from the sensor first
+min_touch = 300
+max_touch = 1000
+
+# create touch input on analog pin #5
+touch = touchio.TouchIn(board.A5)
+
+# LED, set up for PWM
+led = pwmio.PWMOut(
+  board.LED, 
+  frequency=5000, 
+  duty_cycle=0
+)
+
+def constrain(val, min_val, max_val):
+  # keeps numbers within a specified range
+  return min(max_val, max(min_val, val))
+
+def scale_pwm(n, in_min, in_max, out_min=0, out_max=65535):
+  # scales values into Feather M0 PWM range
+  val = (((n - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min
+  return int(val)
+
+while True:
+  # if above the threshold for being a touch
+  if touch.raw_value >= min_touch:
+    # make sure values are in the expected range
+    brightness = constrain(touch.raw_value, min_touch, max_touch)
+    
+    # then scale the reading to PWM range and light up LED
+    brightness = scale_pwm(brightness, min_touch,max_touch)
+    led.duty_cycle = brightness
+  
+  # otherwise, turn off LED
+  else:
+    led.duty_cycle = 0
+```
+
+### CHALLENGES  
+
+1. 
