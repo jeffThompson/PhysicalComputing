@@ -2,7 +2,7 @@
 
 In our last example, you might have noticed that the console prints `False` over and over while the button is pressed. That's because our loop reads the button's state (pressed or not) repeatedly as fast as possible. If the button is still pressed, it prints `False` again.
 
-But what if we only want to know when state of the button has changed, gone from `True` to `False` or vise versa? We'll code this by hand then, in the next example, see how we can improve this with an idea called "debouncing."
+But what if we only want to know when state of the button has changed, gone from `True` to `False` or vise versa? We'll code this by hand then, in the next example, see how we can improve this with an idea called *debouncing.*
 
 ***
 
@@ -32,6 +32,7 @@ This is the same button setup as the [previous example](00-SingleButton.md), so 
 ```python
 import board 
 import digitalio
+import time
 
 # create a button on digital pin #5
 # with an internal resistor enabled
@@ -40,6 +41,7 @@ button.pull = digitalio.Pull.UP
 
 while True:
   print(button.value)
+  time.sleep(0.05)
 ```
 
 If you run this, you should see a long series of `True` and `False` printing, depending on the state of the button.
@@ -53,9 +55,9 @@ With our basic setup ready, now we can figure out a way to keep track of the but
 prev_state = True
 ```
 
-The initial value here isn't too important, but we can safely assume the button won't be pressed when the Feather starts up. ⚠️ **Remember that the Feather will read `False` when the button is pressed and `True` when it's not!** ⚠️
+The initial value here isn't too important, but we can safely assume the button won't be pressed when the Feather starts up. **Remember that the Feather will read `False` when the button is pressed and `True` when it's not!**
 
-Now we can read our button and compare the current state to the previous one. If they are different (not equal) we know that the button has either been pressed or released!
+Now we can read our button and compare the current state to the previous one. If they are different (not equal) we know that the button has either been pressed or released:
 
 ```python
 current_state = button.value

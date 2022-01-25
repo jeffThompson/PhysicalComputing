@@ -1,19 +1,11 @@
 # DEBOUNCING  
-Computers, phones, and all of our electronics make it really easy to forget that they are made of physical stuff! And all that messy, "real" stuff doesn't always behave in the same clean and perfect way that code does.
-
-If you were to zoom inside your button, you'd see two metals bits that touch each other when the button is pressed. Being made of "real" materials, there's a moment right before the button is pressed where its state is unpredictable: you might see the button's state bouncing back and forth between pressed and not! (See [this great post from Adafruit](https://learn.adafruit.com/make-it-switch/debouncing) that shows this nicely.)
-
-![](Images/ButtonBouncingOnOscilloscope.jpg)  
-*An oscilloscope, showing a button's state bouncing when pressed (via [Adafruit](https://learn.adafruit.com/make-it-switch/debouncing))*
-
-To avoid this, we can improve our previous state change code by introducing something called "debouncing." This basically ignores any inputs after the state of the button has changed for a short period of time. Users won't notice a difference but this can be really helpful in stabilizing the behavior of your project.
-
-We could code this by hand (and that would be a great challenge!) but lucky for us Circuit Python has built in debouncing code!
+Computers, phones, and all of our electronics make it really easy to forget that they are made of physical stuff! And all that messy, "real" stuff doesn't always behave in the same clean and perfect way that code does. Luckily, we can clean up this messy input with some clever code.
 
 ***
 
 ### CONTENTS  
 
+* [Why do we need debouncing?](#why-do-we-need-debouncing)  
 * [Setup](#setup)  
 * [Add the `Debouncing` library](#add-the-debouncing-library)  
 * [Debouncing](#debouncing)  
@@ -30,8 +22,20 @@ We could code this by hand (and that would be a great challenge!) but lucky for 
 
 ***
 
+### WHY DO WE NEED DEBOUNCING?  
+If you were to [zoom inside your button](Images/ButtonInternalMechanism.gif), you'd see two metals bits that touch each other when the button is pressed. Being made of physical materials, there's a moment right before the button is pressed where its state is unpredictable: you might see the button's state bouncing back and forth between pressed and not!
+
+![](Images/ButtonBouncingOnOscilloscope.jpg)  
+*An oscilloscope, showing a button's state bouncing when pressed (via [Adafruit](https://learn.adafruit.com/make-it-switch/debouncing))*
+
+To avoid this, we can improve our previous state change code by introducing something called *debouncing.* This basically ignores any inputs after the state of the button has changed for a short period of time. Users won't notice a difference but this can be really helpful in stabilizing the behavior of your project.
+
+We could code this by hand (and that would be a great challenge!) but lucky for us Circuit Python has built in debouncing code!
+
+***
+
 ### SETUP  
-We'll use the same setup and code as the [previous example](01-ButtonStateChange.md)!
+We'll use the same setup and code as the [previous example](01-ButtonStateChange.md)... easy!
 
 ***
 
@@ -51,7 +55,9 @@ With our button set up and debouncing library added, we first want to import the
 from adafruit_debouncer import Debouncer
 ```
 
-This import syntax is a little different than we've seen before. It only brings in the part of the debouncing library that we need. Next, we create a variable for the debounced button, giving it the pin it's attached to:
+This import syntax is a little different than we've seen before. It only brings in the part of the debouncing library that we need. We don't have to do it this way, but it helps keep our code cleaner.
+
+Next, we create a variable for the debounced button. This is pretty similar to a normal button, but in two steps: first we create the pin the button is attached to, then create a button variable with that pin.
 
 ```python
 pin = digitalio.DigitalInOut(board.D5)
@@ -59,7 +65,7 @@ pin.pull = digitalio.Pull.UP
 button = Debouncer(pin)
 ```
 
-The library will now handle watching the current and previous state of the butotn for us! We can update our while-loop to read the button's state:
+The library will now handle everything for us, watching the current and previous state of the button! We can update our while-loop to read the button's state:
 
 ```python
 while True:
@@ -77,7 +83,7 @@ while True:
 
 Way easier than the state change code! Circuit Python keeps track of the button's previous state for us and handles (behind the scenes) a process of ignoring inputs after the state of the button changes for a short period.
 
-> 🙋‍♀️ What do `rose` and `fell` mean? In physical computing, we often refer to `True` as `high` and `False` as `low` &larr; we could also think of this as `1` and `0`, electricity and no electricity. This means the state of our button is "rising" when it goes from low to high and "falling" when it goes from high to low!
+> 🙋‍♀️ What do `rose` and `fell` mean? In physical computing, we often refer to `True` as `high` and `False` as `low` &larr; we could also think of this as `1` and `0`, electricity and no electricity. This means the state of our button is *rising* when it goes from low to high and *falling* when it goes from high to low!
 
 ***
 
@@ -93,7 +99,7 @@ Then we can create a sequence for the LED to display. There's a lot of cool thin
 
     .... . .-.. .-.. ---
 
-This pattern is made up of three parts: short pulses, long pulses, and blanks. To make updating our code easier, let's define a variable for the duration of each part at the top of our code. The [official Morse Code specification](https://skybrary.aero/articles/morse-code) says that our pulses can be any duration, but the long should be three times the duration of the short:
+This pattern is made up of three parts: short pulses, long pulses, and blanks between letters. To make updating our code easier, let's define a variable for the duration of each part at the top of our code. The [official Morse Code specification](https://skybrary.aero/articles/morse-code) says that our pulses can be any duration, but the long should be three times the duration of the short:
 
 ```python
 short_dur = 0.1 
@@ -105,6 +111,8 @@ With that done, we could just [hard-code](https://en.wikipedia.org/wiki/Hard_cod
 
 ```python
 def pulse(dur, off_time=0.1):
+  # turns on the LED for a certain amount
+  # of time, turns it off and pauses
   led.value = True
   time.sleep(dur)
   led.value = False
@@ -116,7 +124,7 @@ This function turns on the LED for a specified period of time, then turns it off
 Let's use that to play the "hello" sequence:
 
 ```python
-if debounce.fell:
+if button.fell:
   # if the button is pressed, play "hello" in
   # morse code
   pulse(short_dur)  # h
@@ -144,7 +152,7 @@ if debounce.fell:
 
 Not the most efficient code but it works. When you press the button, you should see this pattern play. A better system would probably be a set of functions that take a string of text as the input and does everything for us, but I'll leave that for you to try!
 
-> 🙋‍♀️ What happens when you release the button? You'll notice that the pattern doesn't stop right away. That's because of the function (and Python) works: it will play every pulse until stopping. Only when it's done will the loop continue and the button's state is read again. We could check the button's state in our function and stop (using `return`) if the state is low, which would be especially helpful for long sequences. See if you can try adding that yourself!
+> 🙋‍♀️ What happens when you release the button? You'll notice that the pattern doesn't stop right away. That's because of the way the function (and Python) works: it will play every pulse until stopping. Only when it's done will the loop continue and the button's state is read again. We could check the button's state in our function and stop (using `return`) if the state is low, which would be especially helpful for long sequences. See if you can try adding that yourself!
 
 ***
 

@@ -2,9 +2,9 @@
 
 Mechanical buttons are by far the most common type, but today we're also very used to touch-sensitive devices, like the screens of our phones. This works through a technology called [*capacitive sensing*](https://en.wikipedia.org/wiki/Capacitive_sensing). Essentially, your finger changes the conductive field around the button, which we can read as an input.
 
-> 🧐 If your phone has run out of battery, you might have noticed in the past few years that the mechanical "home" button has been replaced by a touch-sensitive one! This allows companies to include fingerprint sensors and other items under the home button – something that would have been difficult or impossible with a traditional mechanical switch.
+> 🧐 If your phone has run out of battery, you might have noticed in the past few years that the mechanical "home" button has been replaced by a touch-sensitive one! This allows companies to include fingerprint sensors and other items under the home button – something that would have been difficult or impossible with a traditional mechanical switch. Then they use a vibration motor to simulate the feel of a real switch!
 
-While we won't be able to read fingerprints, get `x/y` coordinates, or anything as fancy as what's in your phone, this opens up a ton of options for us: we can even turn everyday objects like fruit or sculpted pieces into buttons!
+This is also similar to how the touchscreen on your phone works too. While we won't be able to do anything as fancy as read fingerprints or get `x/y` coordinates, this opens up a ton of options for us: we can even turn everyday objects like fruit or sculpted pieces into buttons!
 
 ***
 
@@ -13,8 +13,8 @@ While we won't be able to read fingerprints, get `x/y` coordinates, or anything 
 * [Wiring things up](#wiring-things-up)  
 * [Reading touch input](#reading-touch-input)  
 * [Resistors](#resistors)  
-* [Calibrating](#calibrating)  
 * [Trigger objects](#trigger-objects)  
+* [Calibrating](#calibrating)  
 * [Full code example](#full-code-example)  
 * [Bonus code (pressure sensitivity)](#bonus-code)  
 * [Challenges](#challenges)  
@@ -45,11 +45,14 @@ Finally, we'll also add an LED (or use the built-in one) to see the output.
 ***
 
 ### RESISTORS  
-Perhaps the simplest electronic component is the resistor. Like the name suggests, resistors [*resist*](https://en.wikipedia.org/wiki/Electrical_resistance_and_conductance) the flow of electricity. All objects have some amount of resistance: think about copper which has very low resistance (meaning it conducts electricity very well, which is why it's used for wiring in your home) versus rubber, which has very high resistance (it barly conducts at all). In electronic circuits, resistors are little hotdog-shaped parts made using special materials chosen for their resistance.
+Perhaps the simplest electronic component is the resistor. We used the internal resistor with pushbuttons, but what are they? Like the name suggests, resistors [*resist the flow of electricity*](https://en.wikipedia.org/wiki/Electrical_resistance_and_conductance). All objects have some amount of resistance: think about copper which has very low resistance (meaning it conducts electricity very well, which is why it's used for wiring in your home) versus rubber, which has very high resistance (it barely conducts at all). In electronic circuits, resistors are little hotdog-shaped parts made using special materials chosen for their resistance.
 
-Since resistors impede the flow of electricity, we talk about their *impedance*. This is measured in a unit called *ohms* (Ω), named after [Georg Ohm](https://en.wikipedia.org/wiki/Georg_Ohm), who carried out many important experiments with electricity in the early 1800s. The impedance of resistors varies from very small (just a few ohms) to ordinary (1k to 100k &larr; "k" meaning thousand) to fairly high (1M+ &larr; "M" meaning million).
+Since resistors impede the flow of electricity, we talk about their *impedance*. This is measured in a unit called *ohms* (Ω), named after [Georg Ohm](https://en.wikipedia.org/wiki/Georg_Ohm), who carried out many important experiments with electricity in the early 1800s. The impedance of normal resistors varies from very small (just a few ohms) to ordinary (1k to 100k &larr; "k" meaning thousand) to fairly high (1M+ &larr; "M" meaning million), though they are made into the *petaohms*... a quadrillion ohms!
 
-The impedance of a resistor can be found two ways: either reading the colored bands printed on it or using a multimeter. These codes can be hard to read, especially if you're color-blind! An auto-ranging multimeter will automatically read the value of the resistor for you and is by far my preferred method.
+![](Images/GeorgOhmAndHisOneOhmStandard.jpg)
+*Georg Ohm and a [British Association Standard Ohm resistor](https://www.gettyimages.com/detail/news-photo/british-association-standard-ohm-resistor-purchased-by-the-news-photo/90737541) from 1865*
+
+The impedance of a resistor can be found two ways: either reading the [colored bands](https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code) printed on it or using a multimeter. These codes can be hard to read, especially if you're color-blind! An auto-ranging multimeter will automatically read the value of the resistor for you and is by far my preferred method. (We'll try this in class.)
 
 As we saw earlier, resistors are not polarized, meaning you can insert them in any orientation and they will work the same. This isn't the case for most other components!
 
@@ -84,20 +87,36 @@ The console will now print the word `Touched!` every time you touch the wire: aw
 
 ***
 
+### TRIGGER OBJECTS  
+A bare wire is fine, but other objects work too! Here are some suggestions – if you find something cool, please let me know and we can add to this list.
+
+* Fruit or veggies  
+* Forks, spoons, etc  
+* Aluminum foil  
+* Copper or aluminum tape on objects\*  
+* Liquids  
+* Anything else metallic  
+* Insulating materials, like rubber, probably won't work  
+
+\*Spreading copper/aluminum tape out across a larger surface not only creates a largef trigger pad, but can even read *through* the back-side of objects! Thin plywood, plastic, or fabric work great for this and allow you to hide your sensor. And of course you could cut the tape into different shapes to make unusual buttons.
+
+***
+
 ### CALIBRATING  
 Our sensor works great, but there's a few more things we can do to ensure it works best for your application.
 
 **SWITCHING TRIGGER OBJECTS**  
-If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button or by pressing `Command/control + d` in the Mu Editor. When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
+If you switch the object being used to trigger the input, you'll want to restart your Feather. You can do this by pressing the reset button or by pressing `Control + d` in the Mu Editor. When the Feather starts up, it calibrates the touch library to whatever is connected, so a new object won't read properly if you add it while the Feather is running.
 
 **ADJUST THE THRESHOLD**  
-By looking at the [Circuit Python reference](https://circuitpython.readthedocs.io/en/latest/shared-bindings/touchio/index.html) for the `touchio` library, we can discover some additional functions that may improve our sensor! Most promising is the `threshold` value, which sets the sensitivity of the input. 
+By looking at the [Circuit Python reference](https://circuitpython.readthedocs.io/en/latest/shared-bindings/touchio/index.html) for the `touchio` library, we discover additional function that may improve our sensor! There's lots there, but most promising is the `threshold` value, which sets the sensitivity of the input. 
 
 The values allowed aren't super clear from the docs and will likely vary depending on your object. Luckily, `touchio` lets us read the raw sensor value, which will give us a good starting point:
 
 ```python
 while True:
   print(touch.raw_value)
+  time.sleep(0.05)
 ```
 
 Using a ripe banana, I get values of about `350` when not being touched and `1300` when touched. The sensor works great with the automatic threshold, but we can try changing and see if things work better. The docs suggest setting the threshold to about `100` more than what we see from the raw input:
@@ -113,21 +132,6 @@ In my case, that was not sensitive enough but may be worth adjusting as needed, 
 This one is a pretty cool hack! If you watch the raw value from the sensor while touching it very carefully, you will see the numbers get larger the harder you press. We can hack this to give us very approximate pressure sensitivity.
 
 First, record the lightest and hardest touch you expect using `touch.raw_input` like above: with a bare wire, I get about `300` and `1000`. We can combine that with our pulse-width modulation code from last time to dim the LED, depending on how hard we're pressing! (To see this in action, see the `Bonus code` section below.)
-
-***
-
-### TRIGGER OBJECTS  
-A bare wire is fine, but other objects work too! Here are some suggestions – if you find something cool, please let me know and we can add to this list.
-
-* Fruit or veggies  
-* Forks, spoons, etc  
-* Aluminum foil  
-* Copper or aluminum tape on objects\*  
-* Liquids  
-* Anything else metallic  
-* Insulating materials, like rubber, probably won't work  
-
-\*Spreading copper/aluminum tape out across a larger surface not only creates a large trigger pad, but can even read *through* the back-side of objects! 1/4" plywood, plastic, or fabric work great for this and allow you to hide your sensor.
 
 ***
 

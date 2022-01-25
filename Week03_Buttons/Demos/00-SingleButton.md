@@ -48,14 +48,15 @@ One end is connected to ground, the other to digital pin #5 (`D5`) on your Feath
 ***
 
 ### TESTING THE BUTTON  
-With our button wired up, all we need to do is add some code to read it. Like our LED last week, this is relatively simple. First, we import the usual libraries:
+With our button wired up, all we need to do is add some code to read it. First, we import the usual libraries:
 
 ```python
 import board 
 import digitalio
+import time
 ```
 
-Then we create a variable for our button plus some extra code:  
+Then we create a variable for our button. The first line is just like our LEDs last week:
 
 ```python
 button = digitalio.DigitalInOut(board.D5)
@@ -69,7 +70,10 @@ Then we can read the state of our button (whether it's pressed or not) in a loop
 ```python
 while True:
   print(button.value)
+  time.sleep(0.05)
 ```
+
+The `time.sleep()` is there to prevent overloading the console in Mu Editor, which might happen if we bombard it with data too quickly. We'll see this throughout upcoming examples.
 
 Upload this code to your board and see if it works. You should see the values in the console change as you press the button!
 
@@ -80,11 +84,11 @@ You'll notice that the Feather prints `True` when the button is *not* pressed an
 
 We haven't talked too much about how electricity works yet, but you never want power from the board to flow directly to ground. This is called a ["short circuit"](https://en.wikipedia.org/wiki/Short_circuit). Like a downed power line, a short on your breadboard can lead to errors or damaging your Feather – bad news! As our circuit is currently set up, when the switch is pressed power would flow from `D5` to ground, creating a short circuit.
 
-To avoid this, we need an extra part called a ["resistor"](https://en.wikipedia.org/wiki/Resistor). Like its name implies, a resistor resists, or impedes, the flow of electricity. By adding a resistor to the circuit, a bit of the electricity gets dissipated as heat on its way to ground and prevents a short circuit.
+To avoid this, we need an extra part called a ["resistor"](https://en.wikipedia.org/wiki/Resistor). Like its name implies, a resistor resists, or impedes, the flow of electricity. By adding a resistor to the circuit, a bit of the electricity gets dissipated as heat on its way to ground and prevents a short circuit. (More on resistors later.)
 
-Lucky for us though, our Feather board has a tiny resistor built in to each digital pin! To enable that resistor, we added `button.pull = digitalio.Pull.UP` right after creating the input variable. This works great and means we don't have to buy any extra parts, but does change the way electricity flows in our circuit. This leads to the button values being opposite what we'd expect, but is a reasonable tradeoff!
+Lucky for us though, our Feather board has a tiny resistor built in to each digital pin! To enable that resistor, we added `button.pull = digitalio.Pull.UP` right after creating the input variable. This works great and means we don't have to buy any extra parts, but does change the way electricity flows in our circuit. This leads to the button values being opposite what we'd expect, but is a reasonable tradeoff, given we don't have to add any extra parts.
 
-> 🙋‍♀️ Don't worry if this feels confusing! We don't have to know too much about how electricity or circuits work to be able to make awsome stuff. Just keep in mind that we can't have power running directly to ground and to use an internal resistor.
+> 🙋‍♀️ Don't worry if this feels confusing! We don't have to know too much about how electricity or circuits work to be able to make awsome stuff. Just keep in mind that we can't have power running directly to ground and to use an internal resistor when connecting a button.
 
 ***
 
