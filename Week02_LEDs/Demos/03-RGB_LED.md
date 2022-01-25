@@ -108,7 +108,7 @@ while True:
   time.sleep(0.5)
 ```
 
-Notice that our color values are separated by commas and are contained in parentheses. This is called a ["tuple"](https://www.w3schools.com/python/python_tuples.asp) and lets us store multiple values together. What's cool is that now we can create color variables and use them elsewhere in our program!
+Notice that our color values are separated by commas and are contained in parentheses. This is called a [*tuple*](https://www.w3schools.com/python/python_tuples.asp) and lets us store multiple values together. What's cool is that now we can create color variables and use them elsewhere in our program!
 
 ```python
 orange = (255, 150, 0)

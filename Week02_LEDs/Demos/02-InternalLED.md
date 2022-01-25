@@ -6,7 +6,7 @@ For this first example, we'll use the LED that's built into your Feather board: 
 
 ![](Images/LED-Location.png)
 
-> Note: There are two other LEDs on your board. One is opposite the LED we're using, next to the USB connector, and indicates communication with your computer. The other is an RGB LED, which we'll use in our next example!
+> 🙋‍♀️ You might have noticed there are two other LEDs on your board. One is opposite the LED we're using, next to the USB connector, and indicates battery charging (if connected). The other is an RGB LED, which we'll use in our next example!
 
 We don't need to do anything to else to prep our board for this, just open the Mu Editor and start coding!
 
@@ -29,7 +29,7 @@ We don't need to do anything to else to prep our board for this, just open the M
 ***
 
 ### LIBRARY IMPORTS  
-Before we can do anything, we need to add some extra code to our project. Called "libraries" (or "modules" in Python-speak), these give us extra functionality that we might not ordinarily need, such as controlling the inputs and outputs on our board. These can technically go anywhere, but are best at the very top of your code.
+Before we can do anything, we need to add some extra code to our project. Called *libraries* (or *modules* in Python-speak), these give us extra functionality that we might not ordinarily need, such as controlling the inputs and outputs on our board. These can technically go anywhere, but are best at the very top of your code.
 
 The first two are specific to Circuit Python, the third is part of standard Python:
 
@@ -59,7 +59,7 @@ Lots of cool stuff! You'll learn how to install additional modules to the board 
 ### SET UP THE LED  
 In this example, we don't have to actually wire anything up. But we do have to tell our board two things: where to find the LED and that this pin should be an output.
 
-> 🙋‍♀️ A "pin" is a connection to your Feather board and is what we soldered those connectors to! Pins can set as either an output (LEDs, motors, etc) or input (buttons like we'll use next week, sensors, etc). They can also be digital or analog, something we'll talk more about later too. [Check out this page](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts) if you want to read about all the different pins on the board.  
+> 🙋‍♀️ A *pin* is a connection to your Feather board and is what we soldered those connectors to! Pins can set as either an output (LEDs, motors, etc) or input (buttons like we'll use next week, sensors, etc). They can also be digital or analog, something we'll talk more about later too. [Check out this page](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts) if you want to read about all the different pins on the board.  
 
 First, we create a variable for our LED. We can specify a specific pin but Circuit Python gives us a shorthand for the built-in LED:
 
