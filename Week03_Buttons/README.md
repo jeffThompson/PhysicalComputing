@@ -2,10 +2,10 @@
 
 ### TLDR  
 * Due Feb 15  
+  * For Feb 8: breadboard prototype, materials gathered  
+  * For Feb 15: final version done  
 * Make a weird keyboard for your computer  
 * Buttons and LEDs only, but other physical materials are great!  
-* For Feb 8: breadboard prototype, materials gathered  
-* For Feb 15: final version done  
 * No need to turn in anything on Canvas  
 * **Reminder! You'll need all your remaining supplies the week this project is due. If you haven't ordered them, please do so ASAP!**  
 
@@ -14,15 +14,13 @@
 > "If you can’t give me poetry, can’t you give me poetical science? — [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace)  
 
 ### ASSIGNMENT  
-Having seen how to program our Feather boards and digital outputs in the form of LEDs, our next project is all about digital inputs! We'll start with the simplest of all: switches, aka buttons. These come in a range of sizes and shapes, but they all work the same basic way, either allowing electricity to flow through them or not. (In fact, [your entire computer is essentially made of super tiny switches](https://www.youtube.com/watch?v=k1hJoalcK68) too!)
+Having seen how to program our Feather boards and digital outputs in the form of LEDs, our next project is all about digital inputs! We'll start with the simplest of all: switches, aka buttons. These come in a range of sizes and shapes, but they all work the same basic way, either allowing electricity to flow through them or not. (In fact, [your entire computer is essentially made of super tiny switches](https://www.youtube.com/watch?v=k1hJoalcK68) too!) In addition to learning how to wire and read various switches, we'll also look at using Circuit Python's `HID` (human interface device) library. This lets your Feather appear as a keyboard (and mouse, which we'll see later) to your computer!
 
-In addition to learning how to wire and read various switches, we'll also look at using Circuit Python's `HID` (human interface device) library. This lets your Feather appear as a keyboard (and mouse, which we'll see later) to your computer!
-
-With that in mind, over the next two weeks your assignment is to build a "weird" keyboard for your computer. The goal here is an experimental input device that is both functional (to whatever degree you want) and is built into some kind of finished form: a case, embedded in an object, part of a sculpture, etc. Your keyboard should use at least two buttons and can include LEDs too.
+With that in mind, over the next two weeks your assignment is to build a ["weird"](https://www.google.com/search?channel=nus5&client=firefox-b-1-d&q=weird) keyboard for your computer. The goal here is an experimental input device that is both functional (to whatever degree you want) and is built into some kind of finished form: a case, embedded in an object, sewn into your clothes, part of a sculpture, etc. Your keyboard should use at least two buttons and can include LEDs, if you want.
 
 What your keyboard does, what it looks like, etc is all up to you but embrace the idea of a "weird" keyboard!
 
-> 🙋‍♀️ There are lots of other sensors that work digitally, though buttons are the most simple. Many use communications protocols like I2C, which allow data to be sent to the digital pins and even chaining of sensors together! We'll learn more about this later in the semester.  
+> 🙋‍♀️ There are lots of other sensors that work digitally, though buttons are the most simple. Many use communications protocols like I2C, which allow data to be sent to the digital pins and even chaining of sensors together! We'll learn more about this later in the semester.
 
 ***
 
@@ -53,7 +51,7 @@ We'll record some short demo videos of your keyboards in class, too. No need to 
 
 ### PROJECTS SHOWN    
 * Douglass Engelbart's [*Mother of All Demos*](https://www.youtube.com/watch?v=M5PgQS3ZBWA), a public demonstration in 1968 of many firsts: the first computer mouse, interactive computing, and video teleconferencing  
-* Mattel's 1977 handheld game [*Football*](http://www.handheldmuseum.com/Mattel/FB.htm), notable for having just a few buttons and some LEDs ([see it in action here](https://www.youtube.com/watch?v=fuEbVy6iTJ0))  
+* Mattel's 1977 handheld game [*Football*](http://www.handheldmuseum.com/Mattel/FB.htm), notable for having just a few buttons and some LEDs ([see it in action here](https://www.youtube.com/watch?v=EQ5TVoVD5Ss))  
 * Alex Myer's [prepared game controllers](http://www.alexmyers.info/pages/prepcont/index.html)  
 * Encoding data digitally has been happening for centuries!  
   * [Morse Code](https://en.wikipedia.org/wiki/Morse_code), remarkable for using just two values (a short and long pulse) to encode letters to be sent via [telegraph](https://en.wikipedia.org/wiki/Telegraphy) (which in itself has an intersting history: smoke, fires, and reflected light have all been used to send messages over great distances)  
