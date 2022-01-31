@@ -25,8 +25,8 @@ Computers, phones, and all of our electronics make it really easy to forget that
 ### WHY DO WE NEED DEBOUNCING?  
 If you were to [zoom inside your button](Images/ButtonInternalMechanism.gif), you'd see two metals bits that touch each other when the button is pressed. Being made of physical materials, there's a moment right before the button is pressed where its state is unpredictable: you might see the button's state bouncing back and forth between pressed and not!
 
-![](Images/ButtonBouncingOnOscilloscope.jpg)  
-*An oscilloscope, showing a button's state bouncing when pressed (via [Adafruit](https://learn.adafruit.com/make-it-switch/debouncing))*
+![](Images/ButtonBouncingOnOscilloscope.png)  
+*An [oscilloscope](https://learn.sparkfun.com/tutorials/how-to-use-an-oscilloscope/all), showing a button's state bouncing when pressed (via [Adafruit](https://learn.adafruit.com/make-it-switch/debouncing))*
 
 To avoid this, we can improve our previous state change code by introducing something called *debouncing.* This basically ignores any inputs after the state of the button has changed for a short period of time. Users won't notice a difference but this can be really helpful in stabilizing the behavior of your project.
 
