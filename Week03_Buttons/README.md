@@ -53,6 +53,8 @@ We'll record some short demo videos of your keyboards in class, too. No need to 
 * Douglass Engelbart's [*Mother of All Demos*](https://www.youtube.com/watch?v=M5PgQS3ZBWA), a public demonstration in 1968 of many firsts: the first computer mouse, interactive computing, and video teleconferencing  
 * Mattel's 1977 handheld game [*Football*](http://www.handheldmuseum.com/Mattel/FB.htm), notable for having just a few buttons and some LEDs ([see it in action here](https://www.youtube.com/watch?v=EQ5TVoVD5Ss))  
 * Alex Myer's [prepared game controllers](http://www.alexmyers.info/pages/prepcont/index.html)  
+* Taylor Hokanson's [*Sledgehammer Keyboard*](https://taylorhokanson.com/2019/09/19/sledgehammer-keyboard/)  
+* Mathilde μP's [*Stone-Age Computer*](https://oertijd.home.xs4all.nl/st-age/photo.htm)  
 * Encoding data digitally has been happening for centuries!  
   * [Morse Code](https://en.wikipedia.org/wiki/Morse_code), remarkable for using just two values (a short and long pulse) to encode letters to be sent via [telegraph](https://en.wikipedia.org/wiki/Telegraphy) (which in itself has an intersting history: smoke, fires, and reflected light have all been used to send messages over great distances)  
   * [Flag semaphore](https://en.wikipedia.org/wiki/Flag_semaphore) is another encoding system, used to send visual signals over long distances  
