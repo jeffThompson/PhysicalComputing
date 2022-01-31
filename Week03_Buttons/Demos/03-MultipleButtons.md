@@ -9,6 +9,7 @@ Just like LEDs, one button is cool but not as much fun as lots of buttons! There
 * [Wiring the buttons and LED](#wiring-the-buttons-and-led)  
 * [Button variables](#button-variables)  
 * [Reading the buttons](#reading-the-buttons)  
+* [How many buttons can I have?](#how-many-buttons-can-i-have)  
 * [Full code example](#full-code-example)  
 * [Challenges](#challenges)  
 
@@ -99,6 +100,29 @@ if b2.fell:
 ```
 
 You should see the LED blink once when the first button is pressed, twice when the second one is pressed!
+
+***
+
+### HOW MANY BUTTONS CAN I HAVE?  
+At this point, you might be wondering how many buttons you can have in a project. A good question! At the most basic, we're limited by the number of digital pins on our board. This is one of the reasons we might choose a Feather over a cheaper board with fewer inputs or splurge on something like the Arduino Mega.
+
+If we look at the *pinout* diagram (a drawing showing all the pins available to us and their names) for the Feather, we see some interesting things:
+
+* Digital pins: the usual ones we've been using; noted as `D4–6` and `D9–13`  
+* `RX/TX`: these are used for serial (USB) connection but can also be used as `D0` and `D1` respectively  
+* `SCK/MOSI/MISO`: used for `SPI` communication but also can be used as `D25/D24/D23`  
+* `SDA/SCL`: used for `I2C` communication (which we'll talk about later) but also can be used as `D21/D22`; **these do not have pullup resistors so you'll need to add them!⚡️**  
+* Analog pins: these can also be used as digital inputs, using `D14–19` for `A0–5`
+
+While theoreticaly these all will work, you may have to experiment.
+
+**MUTLIPLEXING**  
+But if we only have a limited number of digital pins, you might start thinking about devices like computer keyboards and wondering how they handle so many buttons! Does your keyboard have a digital pin for each key? While that would work, it's really not practical. Instead, you can use a variety of different methods to get around this. The most common of these is something called [*multiplexing*](https://en.wikipedia.org/wiki/Multiplexing). Essentially, a little chip sits between your buttons and Feather board. Inside is a switch that reads the state of one button, then the next, etc. It does this really fast, so quickly that we don't notice (unless you do e-sports or something).
+
+The `CD74HC4067` multiplexing chip (what a mouthful!) is a great option and [Sparkfun has a nice breakout board](https://www.sparkfun.com/products/9056) to make using it even easier. This chip can be used for digital outputs too, so it's great for LEDs, and it can be chained together for even more buttons! It does require different code but is a super handy option for button-rich projects.
+
+**OTHER OPTIONS**  
+Of course there are other great and interesting solutions to this problem. You can run buttons together with resistors and read them as analog values. You can also make a keyboard matrix, where the buttons are connected in rows and columns. All of these require a lot of research and experimentation, though.
 
 ***
 
