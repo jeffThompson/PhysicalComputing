@@ -8,7 +8,7 @@ A great example is the [dedicated copy/paste keyboard](https://www.theverge.com/
 
 ### CONTENTS  
 
-* ⚡️ [Be careful!](#be-careful) ⚡️  
+* ⚡[Be careful!](#be-careful)  
 * [Basic setup](#basic-setup)  
 * [Planning things out](#planning-things-out)  
 * [Turning our script into code](#turning-our-script-into-code)  
@@ -26,9 +26,9 @@ A great example is the [dedicated copy/paste keyboard](https://www.theverge.com/
 ***
 
 ### BE CAREFUL!  
-This kind of automation is super fun, but it's worth pausing for a moment to add one word of caution. Once your key press code is triggered, it will continue to run as fast as possible and won't stop unless you unplug the Feather or hit the reset button!
+This kind of automation is super fun, but it's worth pausing for a moment to add one word of caution: once your key press code is triggered, it will continue to run as fast as possible and won't stop unless you unplug the Feather or hit the reset button!
 
-If you're doing anything that might delete data, send texts or emails, or otherwise do things you might regret, take extra care. Actually, you should be super careful no matter what you're doing: an innocuous keyboard shortcut in one program might have disaterous consequences in another.
+If you're doing anything that might delete data, send texts or emails, or otherwise do things you might regret, take extra care. Actually, you should be super careful no matter what you're doing: an innocuous keyboard shortcut in one program might have disaterous consequences in another 🙀
 
 With great power comes great responsibility!
 
