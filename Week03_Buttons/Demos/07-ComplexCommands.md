@@ -57,7 +57,9 @@ First, let's put together a little "script" of the steps involved:
 | (wait)            | While the page opens |
 | `k`               | Shortcut to play YouTube videos |
 
-Kind of complicated-looking but really just step-by-step of what we do normally! Keyboard shortcuts for various applications will be helpful here, since we don't have mouse input.
+Kind of complicated-looking but really just step-by-step of what we would do normally! 
+
+Keyboard shortcuts for various applications will be helpful here, since we don't have mouse input. You can start with the menus in your app, but you might find more by looking in the Help menu or online reference.
 
 ***
 
@@ -104,12 +106,14 @@ keyboard.press(Keycode.COMMAND, Keycode.C)
 
 This command would copy something to the clipboard, opening up a ton of possibilities for automated keyboard shortcuts!
 
+It took me quite a bit of trial-and-error to get this working right, so I'd suggest adding a little bit and trying it before adding more.
+
 ***
 
 ### CONTROLLING MEDIA KEYS  
-In addition to the usual keys, most keyboards today come with media keys to control audio and video: play/pause, volume control, etc. We can control those too!
+In addition to the usual keys, most keyboards today come with media keys to control audio and video: play/pause, volume, etc. We can control those too!
 
-Here's a simple example that simulates turning on the *increase volume* button ten times to max it out:
+Here's a simple example that simulates pressing the *increase volume* button ten times to max it out:
 
 ```python
 from adafruit_hid.consumer_control_code import ConsumerControlCode
@@ -138,6 +142,8 @@ from adafruit_debouncer import Debouncer
 
 # the extra library for the media keys
 from adafruit_hid.consumer_control_code import ConsumerControlCode
+
+url = 'https://www.youtube.com/watch?v=5G0zvL_VnGM'
 
 pin = digitalio.DigitalInOut(board.D5)
 pin.pull = digitalio.Pull.UP
