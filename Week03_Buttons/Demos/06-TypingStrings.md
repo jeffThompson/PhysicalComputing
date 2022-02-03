@@ -1,6 +1,6 @@
 # TYPING STRINGS
 
-Sending a single key when the button is pressed mimics a normal keyboard, but that's not all we can do! The `HID` library also lets us send strings (a set of characters, like a word or sentence) with only a single button.
+Sending a single key when the button is pressed mimics a normal keyboard, but that's not all we can do! The `HID` library also lets us send [strings](https://en.wikipedia.org/wiki/String_(computer_science)) (a set of characters, like a word or sentence) with only a single button. (Of course, we could do this using the previous example, but that would be super messy.)
 
 We'll need to use an additional library for this, but it's already included in the `HID` folder we added in the last example. The button setup is the same too, so we'll just jump into the code!
 
@@ -53,9 +53,9 @@ We also need to add this line:
 keyboard_layout = KeyboardLayoutUS(keyboard)
 ```
 
-This is required for us to send strings instead of individual key presses. Since keyboards for different languages (and even different regions) have different layouts, we need to tell the Feather which one to use so it sends the right keys. This example uses a US layout, since that's where I'm based. 
+This is required for us to send strings instead of individual key presses. Since keyboards for different languages (and even different regions) have [different layouts](https://en.wikipedia.org/wiki/Keyboard_layout), we need to tell the Feather which one to use so it sends the right keys. This example uses a US layout, since that's where I'm based. 
 
-What about other languages or countries? The library appears to work with other layouts too, but I don't have a good way to test this, sorry! You can [try following these instructions](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts). If you have success, please let me know and I can update this tutorial!
+> 🙋‍♀️ What about other languages or countries? The library appears to work with other layouts too, but I don't have a good way to test this, sorry! You can [try following these instructions](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts). If you have success, please let me know and I can update this tutorial!
 
 ***
 
