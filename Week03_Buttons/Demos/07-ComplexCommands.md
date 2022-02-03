@@ -1,6 +1,6 @@
 # COMPLEX COMMANDS
 
-Sending a few keystrokes or some text is cool, but with a little planning we can have a single button trigger a whole series of events on your computer! You could create custom keyboard shortcut button, automate complex processes, or create (nice) pranks to play on your friends.
+Sending a few keystrokes or some text is cool, but with a little planning you can have a single button trigger a whole series of events on your computer! You could create custom keyboard shortcut button, automate complex processes, or create (kind-hearted) pranks to play on your friends.
 
 A great example is the [dedicated copy/paste keyboard](https://www.theverge.com/22761188/stack-overflow-the-key-copy-paste-review-price-release-date-keyboard) put out by the code Q&A site Stack Overflow. It started out as a joke, but now is an actual product! Not only does it do just one task, it's quite nicely designed too.
 
@@ -8,7 +8,7 @@ A great example is the [dedicated copy/paste keyboard](https://www.theverge.com/
 
 ### CONTENTS  
 
-* [Be careful!](#be-careful)  
+* ⚡️ [Be careful!](#be-careful) ⚡️  
 * [Basic setup](#basic-setup)  
 * [Planning things out](#planning-things-out)  
 * [Turning our script into code](#turning-our-script-into-code)  
