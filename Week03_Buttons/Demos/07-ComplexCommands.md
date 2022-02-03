@@ -35,7 +35,7 @@ With great power comes great responsibility!
 ***
 
 ### BASIC SETUP  
-Just like the last two examples, we'll use a button and the `HID` library. If you haven't gotten that all ready yet, check the `BasicKeyboardInput` example first!
+Just like the last two examples, we'll use a button and the `HID` library. If you haven't gotten that all ready yet, check the [`BasicKeyboardInput` example](05-BasicKeyboardInput.md) first!
 
 ***
 
@@ -44,10 +44,10 @@ If we want to do something more complex, we'll want to first figure out all the 
 
 First, let's put together a little "script" of the steps involved:
 
-| ACTION            | NOTES |
+| ACTION            | WHAT IT DOES |
 | ------------------| ----------- |
 | `Command + space` | Open Spotlight |
-| `Firefox.app`     | Types the name of the browser |
+| `Firefox.app`     | Type the name of the browser |
 | (wait)            | A slight delay so Firefox can be found |
 | `Return`          | Open Firefox |
 | (wait)            | Let Firefox open |
