@@ -55,7 +55,7 @@ keyboard_layout = KeyboardLayoutUS(keyboard)
 
 This is required for us to send strings instead of individual key presses. Since keyboards for different languages (and even different regions) have [different layouts](https://en.wikipedia.org/wiki/Keyboard_layout), we need to tell the Feather which one to use so it sends the right keys. This example uses a US layout, since that's where I'm based. 
 
-> 🙋‍♀️ What about other languages or countries? The library appears to work with other layouts too, but I don't have a good way to test this, sorry! You can [try following these instructions](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts). If you have success, please let me know and I can update this tutorial!
+> 🙋‍♀️ What about other languages or countries? The library appears to work with other layouts too, but I don't have a good way to test this, sorry! You can [try following these instructions](https://github.com/Neradoc/Circuitpython_Keyboard_Layouts). If you have success, please let me know and I will update this tutorial!
 
 ***
 
@@ -71,6 +71,7 @@ We don't need the `release_all()` command after, since the library handles all t
 ```python
 while True:
   button.update()
+  
   if button.rose:
     led.value = False
   
@@ -82,8 +83,8 @@ while True:
     keyboard.press(Keycode.RETURN)
     keyboard.release_all()
     
-    # then write something else
-    # and then delete it
+    # then write something else, feel
+    # sheepish, then delete it
     keyboard_layout.write('farts')
     
     # add some delays throughout to 
@@ -95,7 +96,7 @@ while True:
         keyboard.release_all()
 ```
 
-If you push the button, you should see the word `hello` appear, then your cursor will go down to a new line by sending the return key. After that it prints a word, then deletes it letter-by-letter. All these commands happen super quick, but we can use `time.sleep()` to simulate a person typing.
+If you push the button, you should see the word `hello` appear, then your cursor will go down to a new line by sending the return key. After that it prints a word then deletes it letter-by-letter. All these commands happen super quick, but we can use `time.sleep()` to simulate a person typing.
 
 ***
 
@@ -155,5 +156,5 @@ while True:
 ### CHALLENGES  
 
 1. Can you find a poem or song lyrics that you like and have it type out when the button is pressed? Can you add delays (or even randomized ones!) to simulate a person typing?  
-2. Sending strings to a text editor is pretty fine, but can you think of other places where typing text would be helpful or fun? Think about all the ways you use your keyboard on a regular basis  
+2. Sending strings to a text editor is pretty alright, but can you think of other places where typing text would be helpful or fun? Think about all the ways you use your keyboard on a regular basis  
 
