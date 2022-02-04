@@ -91,7 +91,7 @@ while True:
     led.value = False
 ```
 
-When the button is pressed, we first call the `press()` command using the keyboard object. The library uses a set of variables for each key, including the letters and numbers but also the spacebar and all other keys too. A full list of the key codes used in the library can be found on the [Circuit Python `HID` reference](https://circuitpython.readthedocs.io/projects/hid/en/latest/api.html#adafruit-hid-keycode-keycode) or in this [cheat sheet I've put together for you](KeyCodes.csv).
+When the button is pressed, we first call the `press()` command using the keyboard object. The library uses a set of variables for each key, including the letters and numbers but also the spacebar and all other keys too. A full list of the key codes used in the library can be found on the [Circuit Python `HID` reference](https://circuitpython.readthedocs.io/projects/hid/en/latest/api.html#adafruit-hid-keycode-keycode).
 
 But we also need to let go of the key! Otherwise, we'd see `xxxxxxxx...` over and over forever. `release_all()` will release any key that's being pressed by our software. Generally, any time you trigger a key press you should immediately use `release_all()`.
 
