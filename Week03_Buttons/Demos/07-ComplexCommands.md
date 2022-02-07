@@ -8,7 +8,7 @@ A great example is the [dedicated copy/paste keyboard](https://www.theverge.com/
 
 ### CONTENTS  
 
-* ⚡[Be careful!](#be-careful)  
+* [Be careful!](#be-careful) ☠️  
 * [Basic setup](#basic-setup)  
 * [Planning things out](#planning-things-out)  
 * [Turning our script into code](#turning-our-script-into-code)  
