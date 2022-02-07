@@ -47,7 +47,7 @@ First, let's put together a little "script" of the steps involved:
 | ACTION            | WHAT IT DOES |
 | ------------------| ----------- |
 | `Command + space` | Open Spotlight |
-| `Firefox.app`     | Type the name of the browser |
+| *Firefox.app*     | Type the name of the browser |
 | (wait)            | A slight delay so Firefox can be found |
 | `Return`          | Open Firefox |
 | (wait)            | Let Firefox open |
@@ -55,7 +55,7 @@ First, let's put together a little "script" of the steps involved:
 | (send URL)        | Using the `write()` command |
 | `Return`          | To open the URL |
 | (wait)            | While the page opens |
-| `k`               | Shortcut to play YouTube videos |
+| *k*               | Shortcut to play YouTube videos |
 
 Kind of complicated-looking but really just step-by-step of what we would do normally! 
 
