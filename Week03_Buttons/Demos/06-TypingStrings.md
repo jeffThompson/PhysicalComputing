@@ -1,6 +1,6 @@
 # TYPING STRINGS
 
-Sending a single key when the button is pressed mimics a normal keyboard, but that's not all we can do! The `HID` library also lets us send [strings](https://en.wikipedia.org/wiki/String_(computer_science)) (a set of characters, like a word or sentence) with only a single button. (Of course, we could do this using the previous example, but that would be super messy.)
+Sending a single key when the button is pressed mimics a normal keyboard, but that's not all we can do! The `HID` library also lets us send [strings](https://en.wikipedia.org/wiki/String_(computer_science)) (a set of characters, like a word or sentence) with only a single button. (Of course, we could do this letter-by-letter using the previous example, but that would be super messy.)
 
 We'll need to use an additional library for this, but it's already included in the `HID` folder we added in the last example. The button setup is the same too, so we'll just jump into the code!
 
