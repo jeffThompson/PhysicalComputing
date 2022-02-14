@@ -20,9 +20,9 @@ Your assignment is wide open, with two requirements: it must use at least one an
 ***
 
 ### FOR MARCH 1  
-> **Reminder, Tuesday, February 22 is a Monday schedule – we won't meet that week!**
+**Reminder, Tuesday, February 22 is a Monday schedule – we won't meet that week!**
 
-To kick off our project, this week will be all about coming up with ideas. This can be the hardest part, staring at a blank sketchbook page or file. To help overcome this, we'll start with some quick drawings.
+To kick off our project, this week will be all about coming up with ideas. This can be the hardest part, staring at a blank sketchbook page or file. To help overcome this, we'll start with some quick drawings. Look at the sensors you have and think about ways you could use them. Spend about 20 minutes writing down (or doodling) as many ideas as you can. Don't edit yourself and feel free to "riff" on an idea, thinking up multiple iterations. No one will see these: they're just about getting your brain working.
 
 With some ideas kicking around, pick one you're most excited about. Using very limited supplies, you should make a horrible prototypes of that idea.
 
@@ -39,5 +39,5 @@ Think of your prototype as serving two purposes: it lets you see the thing you w
 
 ***
 
-(More details coming soon.)
+More details coming soon 😜
 
