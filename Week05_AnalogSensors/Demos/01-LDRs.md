@@ -1,6 +1,6 @@
 # LIGHT-DEPENDENT RESISTORS (LDRs)
 
-Potentiometers are super easy, so let's try another analog sensor! Light-dependent resistors (LDRs) are basically little solar cells. Their resistance changes depending on the intensity of light falling on them, just like when you turn the knob.
+Potentiometers are super easy, so let's try another analog sensor! Light-dependent resistors (LDRs) are basically little solar cells. Their resistance changes depending on the intensity of light falling on them, just like when you turn a knob.
 
 To use an LDR, we'll need a few extra steps, but the ideas covered here will apply to lots of other analog sensors.
 
@@ -29,15 +29,15 @@ To use an LDR, we'll need a few extra steps, but the ideas covered here will app
 
 ### VOLTAGE DIVIDER  
 
-In the last example, we saw how to read the analog value from a potentiometer. It was super easy but LDRs and many other analog sensors will require some measuring, a bit of math, and a resistor.
+In the last example, we saw how to read the analog value from a potentiometer. It was super easy but LDRs (and many other analog sensors) will require some measuring, a bit of math, and a resistor.
 
-Let's think back to the potentiometer for a minute. The left leg is connected to `3.3V` and the right to `GND`, just like before. The center leg is connected to an analog pin and the voltage on that leg changes as we rotate the knob.
+Let's think back to the potentiometer for a minute. The left leg is connected to `3.3V` and the right to `GND`. The center leg is connected to an analog pin and the voltage on that leg changes as we rotate the knob.
 
 To understand how this works (and what we're going to do next) it will be helpful to see what's happening inside a pot:
 
 ![](Images/PotInternals.png)
 
-As you can see, the center leg is connected to the *wiper* of the pot. This is made of a resistive material such as graphite, plastic impregnated with carbon, or a ceramic. As the knob turns, it changes the amount of that material the electricity flows through, varying its resistance! Whatever electricity doesn't flow through to the center leg goes to ground, completing the circuit.
+As you can see, the center leg is connected to the *wiper* of the pot. This is made of a resistive material such as graphite, plastic impregnated with carbon, or a ceramic. As the knob turns, it connects to the material in a different location, changing the amount of that material the electricity flows through and varying its resistance! Whatever electricity doesn't flow through to the center leg goes to ground, completing the circuit.
 
 This splitting is called a [*voltage divider*](https://learn.sparkfun.com/tutorials/voltage-dividers) and is a key concept for working with analog sensors! Here's our potentiometer drawn as a *schematic*, a symbolic way of drawing circuits:
 
@@ -51,9 +51,7 @@ For many analog sensors, we'll need to add a second resistor (`R2` in the schema
 
 ### MEASURING LDR RESISTANCE  
 
-Our first step in this process is measure the resistance of the LDR under different conditions. To do this, we'll use a multimeter. Connect the leads from the multimeter to both legs on the LDR (orientation doesn't matter):
-
-![](Images/MeasuringTheLDR.png)
+Our first step in this process is measure the resistance of the LDR under different conditions. To do this, we'll use a multimeter. Connect the leads from the multimeter to both legs on the LDR (orientation doesn't matter).
 
 Write down the resistance you get when the LDR is covered, under normal light, and under bright light. Your phone's flashlight is great for this. For mine, I get the following values:
 
@@ -69,7 +67,7 @@ You'll notice the values jump around a bit. That's ok, approximations will work 
 
 ### PICKING A RESISTOR (THE EASY WAY)  
 
-With the sensor values in hand, we now can figure out the best choice for the second resistor. Let's update the schematic above to show the LDR:
+With the light readings in hand, we now can figure out the best choice for the second resistor. Let's update the schematic above to show the LDR:
 
 ![](Images/LDR-VoltageDividerSchematic.png)
 
