@@ -1,6 +1,6 @@
 # POTENTIOMETER
 
-We can buy all kinds of fancy analog sensors, but the humble potentiometer (aka "knob") is not only super useful in projects, it's also really easy to use! I like using them to control parameters in a project without having to go into code, such as controlling the brightness of an indicator LED, the speed of a motor, etc.
+We can buy all kinds of fancy analog sensors, but the humble potentiometer (aka a *knob* or *pot*) is not only super useful in projects, it's also really easy to use! I like using them to control parameters in a project without having to go into code, such as controlling the brightness of an indicator LED, the speed of a motor, etc.
 
 ***
 
@@ -24,13 +24,11 @@ We can buy all kinds of fancy analog sensors, but the humble potentiometer (aka 
 ***
 
 ### WHAT IS A POTENTIOMETER?  
-A [potentiometer](https://en.wikipedia.org/wiki/Potentiometer) (also called a *pot* or *knob*) is essentially a variable resistor!
-
-Because pots are resistors, they come in a range of values, such as 10k- or 100k-ohms. But, because of the way we'll be using them, all resistance values will work the same so we don't have to worry about this!
+A [potentiometer](https://en.wikipedia.org/wiki/Potentiometer) is really just a variable resistor! Pots come in a range of values, such as 10k- or 100k-ohms. But, because of the way we'll be using them, all resistance values will work the same so we don't have to worry about this! Any pot should work for what we're up to.
 
 Pots also come in a variety of physical formats:  
 * "Normal": like the ones in your kit, which are intended to be mounted via the threaded part to an enclosure  
-* Slide: linear pot, like those used in an audio mixer  
+* Slide: a pot in linear form, like those used in an audio mixer  
 * Trim: tiny little ones, usually soldered onto a circuit board and used for adjusting things  
 
 Lastly, pots can have two different resistance curves: *linear* and *logarithmic* (aka *audio*). If we have our pot controlling the brightness of an LED, the different tapers will affect the way that LED changes in brightness as the knob is turned. This is hard to explain verbally, but can perhaps be better seen in this chart:  
