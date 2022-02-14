@@ -1,6 +1,6 @@
 # POTENTIOMETER
 
-We can buy all kinds of fancy analog sensors, but the humble potentiometer (aka "knob") is not only super useful in projects, it's also really easy to use! I really like using them to control parameters in a project without having to go into code, such as controlling the brightness of an indicator LED.
+We can buy all kinds of fancy analog sensors, but the humble potentiometer (aka "knob") is not only super useful in projects, it's also really easy to use! I like using them to control parameters in a project without having to go into code, such as controlling the brightness of an indicator LED, the speed of a motor, etc.
 
 ***
 
@@ -26,18 +26,20 @@ We can buy all kinds of fancy analog sensors, but the humble potentiometer (aka 
 ### WHAT IS A POTENTIOMETER?  
 A [potentiometer](https://en.wikipedia.org/wiki/Potentiometer) (also called a *pot* or *knob*) is essentially a variable resistor!
 
-Because pots are resistors, they come in a range of values, such as 10k- or 100k-ohms. But, because of the way we'll be using them, all values will work the same, so we don't have to worry about this!
+Because pots are resistors, they come in a range of values, such as 10k- or 100k-ohms. But, because of the way we'll be using them, all resistance values will work the same so we don't have to worry about this!
 
-Pots also come in a variety of formats:  
+Pots also come in a variety of physical formats:  
 * "Normal": like the ones in your kit, which are intended to be mounted via the threaded part to an enclosure  
 * Slide: linear pot, like those used in an audio mixer  
 * Trim: tiny little ones, usually soldered onto a circuit board and used for adjusting things  
 
-Lastly, pots can have two different resistance curves: *linear* and *logarithmic* (aka *audio*). If we have our pot controlling the brightness of an LED, the different tapers will affect the way that LED changes in brightness as the knob is turned. This is hard to explain, but can perhaps be better seen in this chart:  
+Lastly, pots can have two different resistance curves: *linear* and *logarithmic* (aka *audio*). If we have our pot controlling the brightness of an LED, the different tapers will affect the way that LED changes in brightness as the knob is turned. This is hard to explain verbally, but can perhaps be better seen in this chart:  
 
 ![](Images/PotTaper.webp)
 
 *Image via [EEPower](https://eepower.com/resistor-guide/resistor-types/potentiometer-taper/#), which also includes a table showing the marking codes used to note different pot tapers*
+
+The linear taper increases at the exact same rate as the knob is turned. The logarithmic taper starts off slowly, then increases quickly. This gives a nice even ramp to volume or brightness control.
 
 ***
 
@@ -53,11 +55,11 @@ Instead of measuring just on/off states, these pins give us a variable reading d
 ***
 
 ### BASIC SETUP  
-Wiring up our pot is super easy, especially if we use ones designed to fit in a breadboard. The outer legs get connected to `3.3V` and `GND` (either way is fine), and the center leg should be connected to an analog pin.
+Wiring up our pot is super easy, especially if we use ones designed to fit in a breadboard. The outer legs get connected to `3.3V` and `GND` (either orientation is fine), and the center leg should be connected to an analog pin.
 
 ![](Images/Potentiometer.png)
 
-Optionally, you can add an LED on `D13` though we can also just use the built-in LED too.
+Optionally, for this example you can add an LED on `D13` though we can also just use the built-in LED too.
 
 ***
 
@@ -80,7 +82,7 @@ led = pwmio.PWMOut(
 )
 ```
 
-To read out pot, we need to import one more library. This one is built-in, so no need to add any files to your board.
+To read out pot, we need to import one more library. This one is built in, so no need to add any files to your board.
 
 ```python
 import analogio
@@ -103,7 +105,7 @@ while True:
 
 Try turning the knob and see the values that print onscreen! You probably notice two things. The first is that the values are between `0–65535`. That range should ring a bell: it's the same as the range of [PWM values for adjusting the brightness of an LED](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week02_LEDs/Demos/06-FadingWithPWM.md). This will come in handy in the next step!
 
-The other thing you might notice is that the numbers go up when you turn the knob one way and down in the other direction. We're used to clockwise being higher and counter-clockwise being lower, like a volume control. But what if it's backwards?! Luckily, the fix is incredibly easy: swap the `3.3V` and `GND` pins and *voila*! The knob now changes values in the opposite direction.
+The other thing you might notice is that the numbers go up when you turn the knob one way and down in the other direction. We're used to clockwise being higher and counter-clockwise being lower, like a volume control knob. But what if it's backwards?! Luckily, the fix is incredibly easy: swap the `3.3V` and `GND` pins and *voila*! The knob now changes values in the opposite direction.
 
 ***
 
