@@ -37,7 +37,7 @@ To understand how this works (and what we're going to do next) it will be helpfu
 
 ![](Images/PotInternals.png)
 
-As you can see, the center leg is connected to the *wiper* of the pot. This is made of a resistive material such as graphite, plastic impregnated with carbon, or a ceramic. As the knob turns, it connects to the material in a different location, changing the amount of that material the electricity flows through and varying its resistance! Whatever electricity doesn't flow through to the center leg goes to ground, completing the circuit.
+As you can see, the center leg is connected to the *wiper* of the pot. This is made of a resistive material such as graphite, plastic impregnated with carbon, or a ceramic. As the knob turns, it connects to the material in a different location, changing the amount of that material the electricity flows through to the middle pin! Whatever electricity doesn't flow through to the center leg goes to ground, completing the circuit.
 
 This splitting is called a [*voltage divider*](https://learn.sparkfun.com/tutorials/voltage-dividers) and is a key concept for working with analog sensors! Here's our potentiometer drawn as a *schematic*, a symbolic way of drawing circuits:
 
