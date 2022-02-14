@@ -35,7 +35,7 @@ Pots also come in a variety of physical formats:
 
 Lastly, pots can have two different resistance curves: *linear* and *logarithmic* (aka *audio*). If we have our pot controlling the brightness of an LED, the different tapers will affect the way that LED changes in brightness as the knob is turned. This is hard to explain verbally, but can perhaps be better seen in this chart:  
 
-![](Images/PotTaper.webp)
+![](Images/PotTaper.png)
 
 *Image via [EEPower](https://eepower.com/resistor-guide/resistor-types/potentiometer-taper/#), which also includes a table showing the marking codes used to note different pot tapers*
 
