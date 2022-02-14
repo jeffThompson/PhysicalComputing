@@ -277,7 +277,7 @@ As the light gets brighter, the flashing should be faster!
 1. What other things can you map the LDR sensor readings to?  
 2. The blink code isn't ideal: since `time.sleep()` pauses our entire program, the speed can't update until a full on/off blink is finished. Can you create a timer to blink without pausing the program? (Hint: use `time.monotonic()`)
 
-**BONUS MEGA-CHALLENGE!**
+**BONUS MEGA-CHALLENGE!**  
 With a bit more math, we can actually read the voltage coming into our Feather from the LDR!
 
 ```python
