@@ -284,9 +284,7 @@ With a bit more math, we can actually read the voltage coming into our Feather f
 voltage = (ldr.value * 3.3) / 65536
 ```
 
-That means, if we know the value of `R2`, we can reverse engineer the resistance we're getting. This means we can make our own multimeter!
-
-...sort of. The main limitations here are the reliability of the `3.3V` coming from the Feather and the accuracy of `R2`. Multimeters use expensive components to ensure the readings are accurate. But, as a mega-challenge, can you make this work?
+That means, if we know the value of `R2`, we can reverse engineer the resistance we're getting. We can make our own multimeter! ...Sort of. The main limitations here are the reliability of the `3.3V` coming from the Feather and the accuracy of `R2`. Multimeters use expensive components to ensure the readings are accurate. But, as a mega-challenge, can you make this work?
 
 (Hint: be sure to read the value of `R2` with a good quality multimeter and maybe verify the `3.3V` supply too.)
 
