@@ -31,13 +31,11 @@ To use an LDR, we'll need a few extra steps, but the ideas covered here will app
 
 In the last example, we saw how to read the analog value from a potentiometer. It was super easy but LDRs (and many other analog sensors) will require some measuring, a bit of math, and a resistor.
 
-Let's think back to the potentiometer for a minute. The left leg is connected to `3.3V` and the right to `GND`. The center leg is connected to an analog pin and the voltage on that leg changes as we rotate the knob.
-
-To understand how this works (and what we're going to do next) it will be helpful to see what's happening inside a pot:
+Let's think back to the potentiometer for a minute. The left leg is connected to `3.3V` and the right to `GND`. The center leg is connected to an analog pin and the voltage on that leg changes as we rotate the knob. To understand how this works (and what we're going to do next) it will be helpful to see what's happening inside a pot:
 
 ![](Images/PotInternals.png)
 
-As you can see, the center leg is connected to the *wiper* of the pot. This is made of a resistive material such as graphite, plastic impregnated with carbon, or a ceramic. As the knob turns, it connects to the material in a different location, changing the amount of that material the electricity flows through to the middle pin! Whatever electricity doesn't flow through to the center leg goes to ground, completing the circuit.
+As you can see, the center leg is connected to the *wiper* of the pot. This connects to a ring made of a resistive material such as graphite, plastic impregnated with carbon, or a ceramic. As the knob turns, the wiper connects to the ring in a different location, changing the amount of that material the electricity flows through to the middle pin! Whatever electricity doesn't flow through to the center leg goes to ground, completing the circuit.
 
 This splitting is called a [*voltage divider*](https://learn.sparkfun.com/tutorials/voltage-dividers) and is a key concept for working with analog sensors! Here's our potentiometer drawn as a *schematic*, a symbolic way of drawing circuits:
 
