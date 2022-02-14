@@ -20,7 +20,7 @@ Your assignment is wide open, with two requirements: it must use at least one an
 ***
 
 ### FOR MARCH 1  
-**Reminder! Tuesday, February 22 is a Monday schedule – we won't meet that week!** 
+> **Reminder, Tuesday, February 22 is a Monday schedule – we won't meet that week!**
 
 To kick off our project, this week will be all about coming up with ideas. This can be the hardest part, staring at a blank sketchbook page or file. To help overcome this, we'll start with some quick drawings.
 
