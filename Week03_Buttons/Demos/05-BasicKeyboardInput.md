@@ -88,7 +88,7 @@ while True:
   if button.fell:
     keyboard.press(Keycode.X)
     keyboard.release_all()
-    led.value = False
+    led.value = True
 ```
 
 When the button is pressed, we first call the `press()` command using the keyboard object. The library uses a set of variables for each key, including the letters and numbers but also the spacebar and all other keys too. A full list of the key codes used in the library can be found on the [Circuit Python `HID` reference](https://circuitpython.readthedocs.io/projects/hid/en/latest/api.html#adafruit-hid-keycode-keycode).
@@ -138,7 +138,7 @@ while True:
   if button.fell:
     keyboard.press(Keycode.X)
     keyboard.release_all()
-    led.value = False
+    led.value = True
 ```
 
 ***
