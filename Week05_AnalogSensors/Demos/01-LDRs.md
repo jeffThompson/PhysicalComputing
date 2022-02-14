@@ -49,15 +49,13 @@ For many analog sensors, we'll need to add a second resistor (`R2` in the schema
 
 ### MEASURING LDR RESISTANCE  
 
-Our first step in this process is measure the resistance of the LDR under different conditions. To do this, we'll use a multimeter. Connect the leads from the multimeter to both legs on the LDR (orientation doesn't matter).
-
-Write down the resistance you get when the LDR is covered, under normal light, and under bright light. Your phone's flashlight is great for this. For mine, I get the following values:
+Our first step in this process is measure the resistance of the LDR under different conditions. To do this, we'll use a multimeter. Connect the leads from the multimeter to both legs on the LDR (orientation doesn't matter). Write down the resistance you get when the LDR is covered, under normal light, and under bright light. Your phone's flashlight is great for this. For mine, I get the following values:
 
 | CONDITION | RESISTANCE |
 | --------- | ---------- |
 | Dark      | 5k-ohm     |
 | Normal    | 1k-ohm     |
-| Bright    | 100 ohm    |
+| Bright    | 100-ohm    |
 
 You'll notice the values jump around a bit. That's ok, approximations will work just fine.
 
@@ -78,8 +76,6 @@ From the readings we did earlier, that gives us:
     R2 = (100 ohms + 5000 ohms) / 2 ≅ 2500 ohms
 
 Resistors don't come in every value and total accuracy isn't critical here: looking in the resistor assortment we have 2.2k-ohm and 2.7k-ohm, both of which would work.
-
-This is the quick-and-dirty, easy way! We'll take a look at how this actual gets calculated in a bit.
 
 ***
 
@@ -106,7 +102,7 @@ while True:
 
 Use your finger to cover the sensor and/or a flashlight and see the values. They should go up when in the dark and down when exposed to light!
 
-If you're interested in more of the theory behind this and a formula you can use to calculate `R2`, check out [this article from Sparkfun](https://learn.sparkfun.com/tutorials/voltage-dividers). It includes a calculator and lots more info, but for our purposes this should work well enough!
+This is the quick-and-dirty, easy way! If you're interested in more of the theory behind this and a formula you can use to calculate `R2`, check out [this article from Sparkfun](https://learn.sparkfun.com/tutorials/voltage-dividers). It includes a calculator and lots more info, but our method should work well enough for our purposes!
 
 ***
 
@@ -280,4 +276,17 @@ As the light gets brighter, the flashing should be faster!
 
 1. What other things can you map the LDR sensor readings to?  
 2. The blink code isn't ideal: since `time.sleep()` pauses our entire program, the speed can't update until a full on/off blink is finished. Can you create a timer to blink without pausing the program? (Hint: use `time.monotonic()`)
+
+**BONUS MEGA-CHALLENGE!**
+With a bit more math, we can actually read the voltage coming into our Feather from the LDR!
+
+```python
+voltage = (ldr.value * 3.3) / 65536
+```
+
+That means, if we know the value of `R2`, we can reverse engineer the resistance we're getting. This means we can make our own multimeter!
+
+...sort of. The main limitations here are the reliability of the `3.3V` coming from the Feather and the accuracy of `R2`. Multimeters use expensive components to ensure the readings are accurate. But, as a mega-challenge, can you make this work?
+
+(Hint: be sure to read the value of `R2` with a good quality multimeter and maybe verify the `3.3V` supply too.)
 
