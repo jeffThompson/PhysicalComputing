@@ -2,10 +2,10 @@
 
 ### TLDR  
 * Due March 22  
-  * Feb 22: **Monday schedule, no class!**  
+  * **Feb 22: Monday schedule, no class!**  
   * For Mar 1: Horrible prototypes  
   * For Mar 8: Work-in-progress, part ready for laser  
-  * Mar 15: **Spring break, no class!**  
+  * **Mar 15: Spring break, no class!**  
   * For Mar 22: Finished project due  
 * Make something using at least one analog sensor  
 * Must include the laser-cutter in some way  
@@ -16,8 +16,6 @@
 Digital inputs, like buttons, only have on/off states which is a serious limitation! But analog sensors, which are the focus of this project, give us a range of values. This is great for getting input from the world into your project: things like temperature, light, humidity, even the distance to objects!
 
 Your assignment is wide open, with two requirements: it must use at least one analog sensor and you need to use the laser-cutter for something. You're welcome to use buttons and LEDs too, and you can include more than one analog sensor. The media, intention, and level of usefulness is up to you!
-
-> 🙋‍♀️ 
 
 ***
 
