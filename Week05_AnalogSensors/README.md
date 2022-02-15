@@ -8,7 +8,6 @@
   * **Mar 15: Spring break, no class!**  
   * For Mar 22: Finished project due  
 * Make something using at least one analog sensor  
-* Must include the laser-cutter in some way  
 
 ***
 
