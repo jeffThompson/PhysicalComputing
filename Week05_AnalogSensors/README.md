@@ -27,7 +27,7 @@ With some ideas kicking around, pick one you're most excited about. Using very l
 
 Your supplies are limited to:  
 * Copy/printer paper  
-* Cardstock (optional)  
+* Cardstock and/or cardboard (optional)  
 * Pencil, pen, and markers  
 * Scissors and/or knife  
 * Ruler and/or compass  
