@@ -1,6 +1,6 @@
 # PIEZO "KNOCK" SENSOR  
 
-Many of the analog sensors we're using take advantage of the special properties of certain materials. A really fun, super cheap example of this is a piezo disc. These are [normally used as speakers](https://en.wikipedia.org/wiki/Piezoelectric_speaker) in cheap electronics such as toys, and we can in fact use them that way with the Feather too, but they can be reversed and used as vibration or "knock" sensors!
+Many of the analog sensors we're using take advantage of the special properties of certain materials. A really fun, super cheap example of this is a piezo disc. These are [normally used as speakers](https://en.wikipedia.org/wiki/Piezoelectric_speaker) in inexpensive electronics such as toys, but we can also used them with the Feather too! We'll reverse them, turning these little brass-and-ceramic discs into vibration or "knock" sensors.
 
 This example is based on a [demo by David Cuartielles/Tom Igoe](https://docs.arduino.cc/built-in-examples/sensors/Knock).
 
@@ -27,9 +27,7 @@ This example is based on a [demo by David Cuartielles/Tom Igoe](https://docs.ard
 
 ### WHAT IS A PIEZO DISC?  
 
-The disc is made of two parts: a copper disc and a ceramic coating. The coating is [piezoelectric](https://en.wikipedia.org/wiki/Piezoelectricity)), meaning it will generate electricity when deformed and deform when subjected to electricity!
-
-The "deformation" here is microscopic. As we'll see, these devices are super sensitive and tapping on the table will cause an input to the Feather. It's the tiny vibrations from the surface that are causing this signal.
+A piezo is made of two parts: a copper disc and a ceramic coating. The coating is [piezoelectric](https://en.wikipedia.org/wiki/Piezoelectricity), meaning it will generate electricity when deformed and deform when subjected to electricity! The "deformation" here is microscopic. As we'll see, these devices are super sensitive and tapping on the table will cause an input to the Feather. It's the tiny vibrations from the surface that are causing this signal.
 
 ![](Images/PiezoBending.svg)  
 
