@@ -33,7 +33,7 @@ A piezo is made of two parts: a copper disc and a ceramic coating. The coating i
 
 *A diagram, showing how (in a highly-exaggerated way) that deforming the disc creates electricity, via [Wikipedia](https://en.wikipedia.org/wiki/Piezoelectric_speaker#/media/File:PiezoBendingPrinciple.svg).* 
 
-Other materials exhibit piezoelectricity, including crystals and even bones and DNA! Amber was an ancient source of electricity, leading to the Greek name *piezein elektron*, or *squeeze/press* and *amber*. You can [grow your own piezo](http://materiability.com/piezoelectric-crystals/) crystals at home using cream of tartar and baking soda! I've had mixed results but it's super fun.
+Other materials exhibit piezoelectricity, including crystals and even bones and DNA! Amber was an ancient source of piezoelectricity, leading to the Greek name *piezein elektron*, or *squeeze/press* and *amber*. You can [grow your own piezo](http://materiability.com/piezoelectric-crystals/) crystals at home using cream of tartar and baking soda! I've had mixed results but it's super fun.
 
 ***
 
