@@ -16,7 +16,7 @@ Digital inputs, like buttons, only have on/off states which is a serious limitat
 
 Your assignment is wide open, with two requirements: it must use at least one analog sensor ~and you need to use the laser-cutter for something~. You're welcome to use buttons and LEDs too, and you can include more than one analog sensor. The media, intention, and level of usefulness is up to you!
 
-(Sadly, the laser is still out of order, as seem to be all other laser cutters on campus... super bummer. You're welcome to use any other tools we have though: 3D printers, vinyl cutter, sewing machine, inkjet printer, etc. Hopefully the laser will be back in action soon and we can use it!)
+> (Sadly, the laser is still out of order, as seem to be all other laser cutters on campus... super bummer. You're welcome to use any other tools we have though: 3D printers, vinyl cutter, sewing machine, inkjet printer, etc. Hopefully the laser will be back in action soon and we can use it!)
 
 ***
 
