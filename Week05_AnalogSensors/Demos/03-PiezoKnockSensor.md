@@ -148,6 +148,6 @@ while True:
 
 ### CHALLENGES  
 
-1. 
-2. 
+1. Experiment with different objects and see how the sensor responds. Do you notice that certain materials are better than others? Can you put the sensor under an object, like a tabeltop, and still get it to work?  
+2. Similar to other examples we've looked at, can you add a potentiometer to tune the threshold (ie sensitivity) of the sensor, so you don't have to adjust it in code?  
 
