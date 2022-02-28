@@ -33,20 +33,20 @@ Please note this is subject to change – be sure to check Canvas, this page, an
 
 * Jan 18: [Hello, getting supplies](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week01_GettingSupplies)  
 * Jan 25: [LEDs](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week02_LEDs)  
-* Feb 1: Buttons 1  
-* Feb 8: Buttons 2  
+* Feb 1: [Buttons 1](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week03_Buttons)  
+* Feb 8: [Buttons 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week03_Buttons)  
   * **All parts needed by next week!** :warning:  
-* Feb 15: Analog sensors 1  
+* Feb 15: [Analog sensors 1](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week05_AnalogSensors)  
 * **Feb 22: Monday schedule, no class!**  
-* Mar 1: Analog sensors 2  
-* Mar 8: Analog sensors 3, project documentation  
+* Mar 1: [Analog sensors 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week05_AnalogSensors)  
+* Mar 8: [Analog sensors 3](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week05_AnalogSensors)  
 * **Mar 15: Spring break, no class!**  
-* Mar 22: Sound  
+* Mar 22: Sound, project documentation  
 * Mar 29: Motors 1  
 * Apr 5: Motors 2  
 * Apr 12: Motors 3  
 * Apr 19: Final project 1  
 * Apr 26: Final project 2  
 * May 3: Final project 3  
-* Exam period: Final crit, date TBA  
+* Exam period (May 12, 9–11am): Final critique  
 
