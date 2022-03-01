@@ -74,7 +74,7 @@ led.direction = digitalio.Direction.OUTPUT
 Like with the LDR, you will want to see the average values you're getting with your piezo and surface. We can use that value to set a threshold, turning on the LED when the sensor's value is above that threshold.
 
 ```python
-threshold = 6000
+threshold = 800
 ```
 
 Then, in the loop, let's toggle the LED:
@@ -118,7 +118,7 @@ import digitalio
 # above this, turn on the LED
 # (this value will vary depending on your
 # piezo and the object it's attached to)
-threshold = 6000
+threshold = 800
 
 # piezo wired to A5
 piezo = analogio.AnalogIn(board.A5)
