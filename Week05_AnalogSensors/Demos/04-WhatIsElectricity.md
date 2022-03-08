@@ -42,7 +42,7 @@ The big plastic brick attached to the power cable for your laptop or the little 
 The most common term you'll hear when talking about electricity is *voltage*. This property of electricity is named after Alessandro Volta (who also invented one of the first chemical batteries) and measured in *volts*.
 
 | VOLTAGE | USES |  
-+---------+------+
+------------------
 | 1.5V    | AA battery |
 | 3.3V    | Digital circuits, like our Feather board! |
 | 5V      | Also used in digital circuits, USB power, charging your phone |
