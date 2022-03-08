@@ -85,21 +85,21 @@ That said, it's unlikely you'll need to worry about power for our projects.
 ***
 
 ### SELECTING A POWER SUPPLY  
-With the basic ideas of voltage and current, we can put these to use! A common reason we'd need this information is if you wanted to run your Feather on an external power supply.
+With the basic ideas of voltage and current, we can put these to use! A common reason we'd need this information is if you wanted to run a device (like your Feather and some sensors) on an external power supply.
 
-**⚠️ Note! Adafruit specifically says the Feather shouldn't be powered like this, only via USB or a battery. We'll just use this as an example here. A better solution would be a USB power supply, embedded in your project.**
+**⚠️ Note! Adafruit specifically says the Feather shouldn't be powered like this, only via USB or a battery. We'll just use this as an example here. A safer solution would be a USB power supply, embedded in your project.**
 
-First, we need to grab some data about the Feather from the [documentation](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/power-management):
+First, we need to [grab some data about the Feather from the documentation](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/power-management):
 
 * Runs on DC power  
 * Can accept 3.3 volts  
 * Will pull a max of 500mA  
 
-We also need to know the source of power we'll be using, in this case a wall outlet. Here in the USA, that means:
+We also need to know the source of electricity we'll be using, in this case a wall outlet. Here in the USA, that means:
 
 * Provides AC power  
 * Approx 120 volts (varies a bit but we don't need to worry about that)  
-* Current won't be an issue here, only for the power supply we choose  
+* Current won't be an issue here, only for the output of the power supply we choose  
 
 If you look at a power adapter, you should see all this info listed! Sometimes it's super tiny or in really light ink (looking at you, Apple). The text should list the input voltage and type, and the output voltage, type, and current.
 
@@ -119,9 +119,9 @@ There's so much stuff here! But if we look closely, we can find on the left side
 * AC input: 100–240V~ (and some other info we don't need)  
 * DC output: +12.1V=, 14.88A  
 
-This means it will give 12V DC power at a whopping 14 amps! Since a power supply can always be rated for more current than we need, we're all good.
+This means it will give 12V DC power at a whopping 14 amps! Since a power supply can always be rated for more current than we need, we're all good for anything up to that.
 
-> 🙋‍♀️ Woah why such a huge input voltage range? Some adapters, like this one, will list a range of input voltages, for example 100–240VAC. This means the input can be anything in this range but will still work the same: you can even bring this to Europe or other places that run on higher voltage without an extra adapter... sweet!
+> 🙋‍♀️ Woah why such a huge input voltage range? Some adapters, like this one, will list a range of input voltages, for example 100–240VAC. This means the input can be anything in this range but will still work the same: you can even bring this to Europe or other places that run on higher voltage using only an outlet adapter... sweet!
 
 ***
 
