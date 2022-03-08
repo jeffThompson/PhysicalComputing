@@ -12,6 +12,8 @@ Jump ahead to the info you need...
 
 If we think beyond LEDs, sensors, microcontrollers, and code, physical computing is really all about electricity. But other than knowing it does useful stuff and maybe getting zapped from time to time by a sweater in the winter, we can't see or touch electricity. This, coupled with the fact that electricity and circuits are also super complex and mathy subjects, can make it really hard to understand. Lucky for us, some knowledge this subject will be helpful but we don't have to go too deep.
 
+> Robert Moog, the famous electronic instrument inventor, talks about how he could feel the flow of electricity through a circuit by looking at it. Needless to say, he was an amazing and highly unusual person!
+
 When talking about electricity, there are two main terms that we need to understand: voltage and current. Often, these different aspects of electricity are described using the metaphor of water pipes, but that doesn't always make sense. Instead, we'll focus here on the basic terms and how they relate to the kinds of things we're making.
 
 ***
