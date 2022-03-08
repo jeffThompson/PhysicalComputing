@@ -52,7 +52,7 @@ The most common term you'll hear when talking about electricity is *voltage*. Th
 
 We can think of voltage as the amount of electricity getting pushed out from the power supply into your circuit.
 
-**WHY DOES VOLTAGE MATTER?**
+**WHY DOES VOLTAGE MATTER?**  
 If the voltage we provide a circuit is too low, it may still work but may also just not power on or may work unreliably. Too much voltage can fry your circuit.
 
 ***
