@@ -46,7 +46,8 @@ The most common term you'll hear when talking about electricity is *voltage*. Th
 | 1.5V    | AA battery |
 | 3.3V    | Digital circuits, like our Feather board! |
 | 5V      | Also used in digital circuits, USB power, charging your phone |
-| 12V     | Car battery, desktop computers, larger LEDs | 120V    | Standard wall power in the United States |
+| 12V     | Car battery, desktop computers, larger LEDs |
+| 120V    | Standard wall power in the United States |  
 | 220V    | Large tools like welders or washing machines |
 
 We can think of voltage as the amount of electricity getting pushed out from the power supply into your circuit.
