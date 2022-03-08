@@ -39,7 +39,7 @@ The big plastic brick attached to the power cable for your laptop or the little 
 ***
 
 ### VOLTAGE  
-The most common term you'll hear when talking about electricity is *voltage* and is measured in *volts*. This property of electricity is named after Alessandro Volta, who also invented one of the first chemical batteries. We can think of voltage as the amount of electricity getting pushed out from the power supply into your circuit.
+The most common term you'll hear when talking about electricity is *voltage* and is measured in *volts*. This property of electricity is named after Alessandro Volta, who also invented one of the first chemical batteries. **We can think of voltage as the amount of electricity getting pushed out from the power supply into your circuit.**
 
 | VOLTAGE | USES |  
 |---------|------|  
@@ -56,7 +56,7 @@ If the voltage we provide a circuit is too low, it may still work but may also j
 ***
 
 ### CURRENT  
-The other main concept in electricity we need to consider is [*current*](https://en.wikipedia.org/wiki/Electric_current), measured in [*amps*](https://en.wikipedia.org/wiki/Ampere) or *milliamps* (a thousandth of an amp), named after André-Marie Ampère. If voltage is the power supply pushing out electricity, current is how much energy (at a set voltage) your device is sucking from the power source.
+The other main concept in electricity we need to consider is [*current*](https://en.wikipedia.org/wiki/Electric_current), measured in [*amps*](https://en.wikipedia.org/wiki/Ampere) or *milliamps* (a thousandth of an amp), named after André-Marie Ampère. If voltage is the power supply pushing out electricity, **current is how much energy (at a set voltage) your device is sucking from the power source.**
 
 A good way to think of this is your phone. We know that phones charge over 5-volt DC power through the USB cable. This energy gets stored in the battery. And we know that our phones die more quickly when looking at videos online than when we're just sending a text. Both of these tasks use the same voltage (otherwise our phone would be damaged) but some suck more current from the battery than others.
 
