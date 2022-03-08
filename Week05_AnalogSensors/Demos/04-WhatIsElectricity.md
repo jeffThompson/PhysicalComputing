@@ -10,38 +10,36 @@ Jump ahead to the info you need...
 
 ***
 
-If we think beyond LEDs, sensors, microcontrollers, and code, physical computing is really all about electricity. But other than knowing it does useful stuff and maybe getting zapped from time to time by a sweater in the winter, we can't see or touch electricity. This, coupled with the fact that electricity and circuits are also super complex and mathy subjects, can make it really hard to understand. Lucky for us, some knowledge this subject will be helpful but we don't have to go too deep.
+If we think beyond LEDs, sensors, microcontrollers, and code, physical computing is really all about electricity. But other than knowing it does useful stuff and maybe getting zapped from time to time by a sweater in the winter, we can't see or touch electricity. This, coupled with the fact that electricity and circuits are also super complex and mathy subjects, can make it really hard to understand.
 
 > Robert Moog, the famous electronic instrument inventor, talks about how he could feel the flow of electricity through a circuit by looking at it. Needless to say, he was an amazing and highly unusual person!
 
-When talking about electricity, there are two main terms that we need to understand: voltage and current. Often, these different aspects of electricity are described using the metaphor of water pipes, but that doesn't always make sense. Instead, we'll focus here on the basic terms and how they relate to the kinds of things we're making.
+Lucky for us, some knowledge this subject will be helpful but we don't have to go too deep. When talking about electricity, there are two main terms that we need to understand: *voltage* and *current*. Often, these different aspects of electricity are described using the metaphor of water pipes, but that doesn't always make sense. Instead, we'll focus here on the basic terms and how they relate to the kinds of things we're making.
 
 ***
 
 ### ELECTRICITY AND CIRCUITS
 "What is electricity?" is a suuuper complicated question and can be answered a bunch of different ways, depending on what field you're in. For our purposes, we can think of electricity as the flow of electrons through a conductive material, like a piece of copper wire. That's an ultra-simiplified answer, but just about all we need! (If you want to read more, a good place to start is the [Wikipedia article](https://en.wikipedia.org/wiki/Electricity).)
 
-A circuit what happend when we put that flow of electrons to work, a lot like the way a water wheel on a river can power a sawmill! The different parts of a circuit modify that flow in different ways, resulting in everything from lightbulbs to guitar amps to computers.
+A circuit is what happens when we put that flow of electrons to work, a lot like the way a water wheel on a river can power a sawmill! The different parts of a circuit modify that flow in different ways, resulting in everything from lightbulbs to guitar amps to computers.
 
-The other requirement for a circuit is that the electricity be able to flow in, do some work, and then flow back out. While it's a simplification, we can think of electricity as flowing from positive (like the `3.3V` pin on our Feather) to negative (like the `GND` pin). (Though technically it's the reverse!) However, we never want electricity to just go straight from positive to negative: that would result in a short circuit, which can damage your board!
+The other requirement for a circuit is that the electricity be able to flow in, do some work, and then flow back out. While it's a simplification, we can think of electricity as flowing from positive, like the `3.3V` pin on our Feather, to negative, like the `GND` pin. (Though technically it's the reverse!) However, we never want electricity to just go straight from positive to negative: that would result in a short circuit, which can damage your board!
 
 ***
 
 ### AC/DC  
-No, not the band. Broadly, the electricity we use comes in two forms: [alternating current](https://en.wikipedia.org/wiki/Alternating_current) (AC) and [direct current](https://en.wikipedia.org/wiki/Direct_current) (DC). Computers and the kinds of circuits we'll be making this semester all run on DC power, so we won't talk about this topic much. AC power is what comes out of the wall socket. AC power flips back-and-forth in the wire, going from positive to negative and back again. In the United States, this happens 60 times per second. AC on it's own isn't dangerous but the power coming from the wall is, so we'll leave that alone!
+No, not the band. Broadly, the electricity we use comes in two forms: [alternating current](https://en.wikipedia.org/wiki/Alternating_current) (AC) and [direct current](https://en.wikipedia.org/wiki/Direct_current) (DC). Computers and the kinds of circuits we'll be making this semester all run on DC power, so we won't talk about this topic much. AC power is what comes out of the wall socket; it flips back-and-forth in the wire, going from positive to negative and back again. In the United States, this happens 60 times per second. AC on it's own isn't dangerous but the power coming from the wall is, so we'll leave that alone!
 
 On the other hand, DC flows continuously in one direction. We find DC power in almost all consumer electronics, especially things like computers and phones. DC can be dangerous, but we'll only be working in ranges that are relatively safe.
 
-> As the United States was starting to run electricity to people's homes, a huge debate over AC/DC raged in the late 1880s and into the 1890s. This lead to the ["current wars"](https://en.wikipedia.org/wiki/War_of_the_currents), mostly lead by Thomas Edison and George Westinghouse. This, and Nicola Tesla's amazing (and scary) experiments in NYC make for some wild stories about the early days of electricity!
+> As the United States was starting to run electricity to people's homes, a huge debate over AC/DC raged in the late 1880s and into the 1890s. This lead to the ["current wars"](https://en.wikipedia.org/wiki/War_of_the_currents), mostly spurred by Thomas Edison and George Westinghouse. This, and Nicola Tesla's amazing (and sometimes scary) experiments in NYC make for some wild stories about the early days of electricity!
 
 The big plastic brick attached to the power cable for your laptop or the little one for charging your phone are AC/DC adapters: these convert AC power from the wall into DC power we can use. (More on selecting power supplies below.)
 
 ***
 
 ### VOLTAGE  
-The most common term you'll hear when talking about electricity is *voltage* and is measured in *volts*. This property of electricity is named after Alessandro Volta, who also invented one of the first chemical batteries.
-
-We can think of voltage as the amount of electricity getting pushed out from the power supply into your circuit.
+The most common term you'll hear when talking about electricity is *voltage* and is measured in *volts*. This property of electricity is named after Alessandro Volta, who also invented one of the first chemical batteries. We can think of voltage as the amount of electricity getting pushed out from the power supply into your circuit.
 
 | VOLTAGE | USES |  
 |---------|------|  
