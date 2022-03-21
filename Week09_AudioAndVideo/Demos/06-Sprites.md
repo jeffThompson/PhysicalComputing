@@ -161,7 +161,7 @@ Ok! Next, let's make them walk forward. To do this, all we need to do is update 
 walker.x += direction
 ```
 
-Nice! But the figure walks offscreen. To fix that, we can flip the `direction` variable when they hit either side of the screen.
+Nice... but the figure walks offscreen. Let's fix that:
 
 ```python
 if walker.x < 0:
@@ -189,6 +189,7 @@ import time
 import adafruit_displayio_sh1107
 import adafruit_imageload
 
+# variables for the sprite
 sprite_filename = 'WalkCycle-42x64px.bmp'
 sprite_width =    42
 sprite_height =   64
@@ -197,6 +198,7 @@ num_frames =      17
 width =           128
 height =          64
 
+# setup the display
 displayio.release_displays()
 i2c = board.I2C()
 display_bus = displayio.I2CDisplay(i2c, device_address=0x3C)
@@ -223,6 +225,7 @@ def background(color):
 
 background(0xFFFFFF)
 
+# load the sprite
 sprite_file, palette = adafruit_imageload.load(
   sprite_filename,
   bitmap = displayio.Bitmap,
@@ -242,16 +245,22 @@ walker.x = 0
 walker.y = 0
 direction = 1
 
-
+# make them walk!
 index = 0
 while True:
+  # set which frame of the animation to draw
   walker[0] = index
+  
+  # update which frame will be onscreen
+  # next and loop if we've reached the end
   index += 1
   if index == num_frames:
     index = 0
 
+  # move the person forward
   walker.x += direction
 
+  # have them reverse when they hit the edges
   if walker.x < 0:
     walker.flip_x = False
     direction *= -1
