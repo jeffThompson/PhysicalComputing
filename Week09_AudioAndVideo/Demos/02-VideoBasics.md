@@ -170,7 +170,8 @@ def line(x0, y0, x1, y1, color):
   return l
 ```
 
-Two important things to note!
+**Two important things to note!**  
+
 1. All coordinates and sizes need to be listed as integers. That's because you can't have something at `x: 1.5`!  
 2. The helper functions all assume you have a variable called `frame` that you created at the top. If you named your Group something else, use that instead  
 
