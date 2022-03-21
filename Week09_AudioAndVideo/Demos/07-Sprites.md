@@ -8,7 +8,10 @@ We've seen how to create shapes, load images, and even access individual pixels.
 
 ### CONTENTS  
 
-* 
+* [Prepare your sprite sheet](#prepare-your-sprite-sheet)  
+* [Basic setup](#basic-setup)  
+* [Load the sprite sheet](#load-the-sprite-sheet)  
+* [Make it move!](#make-it-move)  
 * [Full code example](#full-code-example)  
 * [Challenges](#challenges)
 
@@ -154,11 +157,11 @@ Nice! But the figure walks offscreen. To fix that, we can flip the `direction` v
 
 ```python
 if walker.x < 0:
-    walker.flip_x = False
-    direction *= -1
-  elif walker.x > width-sprite_width:
-    walker.flip_x = True
-    direction *= -1
+  walker.flip_x = False
+  direction *= -1
+elif walker.x > width-sprite_width:
+  walker.flip_x = True
+  direction *= -1
 ```
 
 Two things are happening here:
@@ -171,12 +174,6 @@ Two things are happening here:
 ### FULL CODE EXAMPLE  
 
 ```python
-
-'''
-walk animation via a modified version of: 
-https://stock.adobe.com/hk/images/business-man-walk-cycle-sprite-sheet-animation-frames-silhouette-loop-animation/183196051
-'''
-
 import board
 import displayio
 import time
@@ -263,5 +260,5 @@ while True:
 
 ### CHALLENGES  
 
-1. 
+1. Can you make the figure walk the other direction when a button is pressed?  
 
