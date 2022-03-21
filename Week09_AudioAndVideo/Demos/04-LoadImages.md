@@ -2,6 +2,10 @@
 
 Generating our own graphics is sweet, but what about more complex images like photos? We can easily do that! The image we're using is a (heavily cropped) version of [this wonderful pixel-art image](https://www.reddit.com/r/PixelArt/comments/mdtbwb/this_is_my_first_1_bit_piece_i_call_it_the_seeing/), created by Reddit user Kalamazoostarship.
 
+When we're done, you should end up with an image that looks like this:
+
+![](Images/ImageWithEyeball.png)
+
 > 🎨 There's one major caveat to consider: our display is only monochrome, meaning it's pixels can only be black or white, no grayscale or color! Some images will translate better than others to this context... just something to keep in mind.
 
 ***

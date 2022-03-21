@@ -2,6 +2,10 @@
 
 We've seen how to create shapes, load images, and even access individual pixels. For our last example, let's take a look at how we can load and display animations!
 
+When we're done, you should end up with an animation that looks like this:
+
+![](Images/Sprite.png)
+
 [*Sprites*](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) are a simple but very effective way of creating animations. A sprite is a single frame of an animation – for example: a person walking – which are shown one after another to create the illusion of movement. Sprites can be stored as separate images, but often all the frames are combined into a single image, called a *sprite sheet.* When loaded, the software slices up the sprite sheet into individual sprites.
 
 ***

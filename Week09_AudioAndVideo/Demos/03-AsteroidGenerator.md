@@ -2,6 +2,10 @@
 
 Having seen how to connect our display and draw some shapes, let's make something! In this simple example, we'll draw randomized ["asteroid"](https://en.wikipedia.org/wiki/Asteroids_(video_game)) shapes when a button is pressed.
 
+When we're done, you should end up with an image that looks like this:
+
+![](Images/Asteroid.png)
+
 This demo, like all the ones that follow it, will assume you already understand how to hook up your display using I2C and how to use the helper functions for drawing shapes. If you need a refresher, check out [the previous demo](02-VideoBasics.md).
 
 ***

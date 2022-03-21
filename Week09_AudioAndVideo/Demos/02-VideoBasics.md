@@ -4,6 +4,10 @@ We've seen how a simple LED can communicate a lot, but video screens open up ton
 
 > 🙀 This is a loooong demo, mostly because there's a lot of code required. Don't worry though, once you understand the basics the next few demos will all build on what we do here.
 
+When we're done, you should end up with an image that looks like this:
+
+![](Images/BasicShapes.png)
+
 If you want to read more about the libraries used here, check out:  
 
 * [`displayio`](https://docs.circuitpython.org/en/7.2.x/shared-bindings/displayio/), used to drive the display  

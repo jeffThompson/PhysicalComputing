@@ -2,7 +2,9 @@
 
 We've seen how to draw all kinds of shapes and even images, but what about pixel-level drawing? It's actually quite easy! This method isn't very fast, however, so forget about realtime filters or anything like that. 
 
-Instead, we'll generate a white noise pattern, updated when a button is pressed.
+Instead, we'll generate a white noise pattern, updated when a button is pressed. When we're done, you should end up with an image that looks like this:
+
+![](Images/WhiteNoise.png)
 
 ***
 
