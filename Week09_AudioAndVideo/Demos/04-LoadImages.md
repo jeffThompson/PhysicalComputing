@@ -86,7 +86,7 @@ Your file should be ready to display!
 
 ### LOAD AND DISPLAY THE IMAGE  
 
-With everything ready, let's see it! First, let's create a variable with the filename at the top – this ways it's easier to change later:
+With everything ready, let's see it! First, let's create a variable with the filename at the top (this ways it's easier to change later):
 
 ```python
 filename = 'Images/EyeAndDoor-Kalamazoostarship-NoPupil.bmp'
@@ -128,7 +128,7 @@ from adafruit_display_shapes.circle import Circle
 from adafruit_display_shapes.rect import Rect
 ```
 
-And creating the shapes. The sizes and positions are based on experimentation.
+And creating the shapes. The sizes and positions are based on experimentation, so don't feel bad if it takes a few tries to get everything in the right place.
 
 ```python
 pupil = Circle(
@@ -148,7 +148,7 @@ highlight = Rect(
 frame.append(highlight)
 ```
 
-You should now see the pupil and highlight show up! We could make them move side-to-side using a bunch of different methods, but we can use `sin()` to give us some nice easing on both ends. To make this work, we'll need a variable that keeps track of the current frame count:
+You should now see the pupil and highlight show up! We could make them move side-to-side using a bunch of different methods, but we can use `sin()` to give us some nice [easing](https://easings.net) on both ends. To make this work, we'll need a variable that keeps track of the current frame count:
 
 ```python
 i = 0
@@ -163,7 +163,7 @@ while True:
 
 This looks super confusing, so let's break it down:
 
-* `height/2 - 2`: the center of movement: this is offset by 2-pixels to center the pupil in the eye  
+* `height/2 - 2`: the center of movement. This is offset by 2-pixels to center the pupil in the eye  
 * `sin(i)`: gives us a value between `–1` and `1`  
 * `* 6`: the maximum distance the eye should move; multiplied by `sin(i)` so it goes back-and-forth  
 * `int(...)`: converts the result to an integer, which is required for positioning the circle  
@@ -204,6 +204,7 @@ filename = 'EyeAndDoor-Kalamazoostarship-NoPupil.bmp'
 width =  128
 height = 64
 
+# create the display
 displayio.release_displays()
 i2c = board.I2C()
 display_bus = displayio.I2CDisplay(i2c, device_address=0x3C)
@@ -216,6 +217,7 @@ display = adafruit_displayio_sh1107.SH1107(
 frame = displayio.Group()
 display.show(frame)
 
+# load the image
 file = displayio.OnDiskBitmap(filename)
 image = displayio.TileGrid(
   file, 
@@ -223,6 +225,7 @@ image = displayio.TileGrid(
 )
 frame.append(image)
 
+# create the shapes for the pupil
 pupil = Circle(
   32, int(height/2),
   3,
@@ -242,8 +245,13 @@ frame.append(highlight)
 
 i = 0
 while True:
+  # each frame, move the eye offset from
+  # the center using sin()
   pupil.y = int(height/2 - 2 + sin(i) * 6)
   highlight.y = pupil.y + 4
+  
+  # update variable for eye
+  # try changing this value!
   i += 0.15
 
   time.sleep(0.05)
@@ -253,5 +261,5 @@ while True:
 
 ### CHALLENGES  
 
-1. 
+1. Could you use a joystick or potentiometer to move the eye?  
 
