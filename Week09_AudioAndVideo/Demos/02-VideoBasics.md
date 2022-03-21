@@ -119,9 +119,9 @@ white = 0xFFFFFF
 black = 0x000000
 ```
 
-These values are listed in [*hexadecimal* format](https://en.wikipedia.org/wiki/Hexadecimal). You might be used to seeing black as `rgb(0,0,0)` and white as `rgb(255,255,255)` – this is the same, just written in another way! (And, since our screen is only monochrome, this is all we need.)
+These values are listed in [*hexadecimal* format](https://en.wikipedia.org/wiki/Hexadecimal). You might be used to seeing black as `rgb(0,0,0)` and white as `rgb(255,255,255)`... this is the same, just written in another way! (And, since our screen is only monochrome, this is all we need.)
 
-To make things easier, I've gone ahead and built a bunch of helper functions that you can just copy/paste into your project! Paste this function into your code, somewhere above where you're going to use it:
+To make things easier, I've gone ahead and built a bunch of helper functions that you can just copy/paste into your project! Add this function into your code, somewhere above where you're going to use it:
 
 ```python
 def background(color):
@@ -137,7 +137,9 @@ def background(color):
   frame.append(bg)
 ```
 
-This creates a *bitmap*, really just a list of pixels, and adds that to our frame. To change the color of those pixels, we can just call the `background()` function!
+This creates a *bitmap*, really just a list of pixels, and adds that to our frame. (You don't have to worry about what's going on in this function!)
+
+To change the color of those pixels, we can just call the `background()` function:
 
 ```python
 background(white)
@@ -159,7 +161,7 @@ from adafruit_display_shapes.polygon import Polygon
 from adafruit_display_shapes.roundrect import RoundRect
 ```
 
-The library is great, but is still kind of messy. I've gone ahead and made these a bit more simple. Let's start by adding the `line()` function to our project:
+The library is great, but is still kind of messy. Like with the `background()` command above, I've gone ahead and made functions for everything. Let's start by adding the `line()` function to our project:
 
 ```python
 def line(x0, y0, x1, y1, color):
@@ -168,7 +170,9 @@ def line(x0, y0, x1, y1, color):
   return l
 ```
 
-**NOTE! These all assume you have a variable called `frame` that you created at the top. If you named your Group something else, use that instead.**
+Two important things to note!
+1. All coordinates and sizes need to be listed as integers. That's because you can't have something at `x: 1.5`!  
+2. The helper functions all assume you have a variable called `frame` that you created at the top. If you named your Group something else, use that instead  
 
 Now we can go ahead and draw some shapes! If you've used `p5.js` or Processing before, the syntax will look very similar. First, we can draw some lines – they require four values, making up the x/y coordinates of the two endpoints:
 
