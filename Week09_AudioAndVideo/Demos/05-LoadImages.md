@@ -194,10 +194,6 @@ The `+4` here is also the result of testing to find the right offset.
 ### FULL CODE EXAMPLE  
 
 ```python
-'''
-image (cropped heavily) via: https://www.reddit.com/r/PixelArt/comments/mdtbwb/this_is_my_first_1_bit_piece_i_call_it_the_seeing/
-'''
-
 import board
 import displayio
 from math import sin

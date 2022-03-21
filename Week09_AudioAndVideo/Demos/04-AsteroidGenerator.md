@@ -16,7 +16,7 @@ This demo, like all the ones that follow it, will assume you already understand 
 
 ### STUFF YOU'LL NEED  
 
-* 128x64 monochrome OLED display
+* 128x64 monochrome OLED display  
 * Jumper wires  
 * Feather board  
 * USB cable  
