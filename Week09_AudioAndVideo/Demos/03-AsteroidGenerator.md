@@ -1,8 +1,8 @@
 # ASTEROID GENERATOR  
 
-Having seen how to connect our display and draw some shapes, let's make something! In this simple example, we'll draw randomized "asteroid" shapes when a button is pressed.
+Having seen how to connect our display and draw some shapes, let's make something! In this simple example, we'll draw randomized ["asteroid"](https://en.wikipedia.org/wiki/Asteroids_(video_game)) shapes when a button is pressed.
 
-This demo, like all the ones that follow it, will assume you already understand how to hook up your display using I2C and how to use the helper functions for drawing shapes. If you need a refresher, check out [the previous demo](03-VideoBasics.md).
+This demo, like all the ones that follow it, will assume you already understand how to hook up your display using I2C and how to use the helper functions for drawing shapes. If you need a refresher, check out [the previous demo](02-VideoBasics.md).
 
 ***
 
@@ -25,7 +25,7 @@ This demo, like all the ones that follow it, will assume you already understand 
 
 ### BASIC SETUP  
 
-We can start by importing the libraries that we'll need:
+We can start by importing the (many) libraries that we'll need:
 
 ```python
 import board
@@ -39,14 +39,6 @@ import adafruit_displayio_sh1107
 from adafruit_display_shapes.polygon import Polygon
 
 from adafruit_debouncer import Debouncer
-```
-
-We'll be using one of the built-in buttons on the display board, so let's set that up too:
-
-```python
-pin = digitalio.DigitalInOut(board.D5)
-pin.pull = digitalio.Pull.UP
-button = Debouncer(pin)
 ```
 
 Let's also connect the display:
@@ -94,6 +86,8 @@ def polygon(points, outline):
   return p
 ```
 
+***
+
 ### GENERATE AN ASTEROID  
 
 In the last example, we looked at various basic shapes. But what about making a randomized asteroid-like shape? Luckily, with a little math and Adafruit's `display-shapes` library we can make complex polygons. We'll make a function for this, since we want to be able to generate new asteroids when the button is pressed:
@@ -119,6 +113,7 @@ Now we can set the background to black and generate an asteroid:
 
 ```python
 background(black)
+
 asteroid = generate_asteroid(
   width/2, height/2,   # x/y of center
   20,                  # radius
@@ -138,7 +133,21 @@ while True:
 
 ### NEW ASTEROID ON BUTTON PRESS  
 
-The OLED display also includes three buttons, which we can put to good use! Let's make the `C` button generate a new asteroid. To make that work, all we need to do is update the while-loop:
+The OLED display also includes three buttons, which we can put to good use! Let's make the `C` button generate a new asteroid. 
+
+First, let's wire up the button on `D5`:
+
+![](Images/OLED_WithButton.png)
+
+And add it to our code:
+
+```python
+pin = digitalio.DigitalInOut(board.D5)
+pin.pull = digitalio.Pull.UP
+button = Debouncer(pin)
+```
+
+Now all we need to do is update the while-loop:
 
 ```python
 while True:
@@ -258,5 +267,6 @@ while True:
 
 ### CHALLENGES  
 
-1. 
+1. Can you do two asteroids side-by-side?  
+2. What other kinds of shapes can you draw with a polygon?  
 
