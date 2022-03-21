@@ -4,7 +4,7 @@ Generating our own graphics is sweet, but what about more complex images like ph
 
 > 🙄 There's one major caveat to consider: our display is only monochrome, meaning it's pixels can only be black or white, no grayscale or color! Some images will translate better than others to this context... just something to keep in mind.
 
-The image we're using is a (heavily cropped) version of [this wonderful pixel-art image, found on Reddit](https://www.reddit.com/r/PixelArt/comments/mdtbwb/this_is_my_first_1_bit_piece_i_call_it_the_seeing/).
+The image we're using is a (heavily cropped) version of [this wonderful pixel-art image, created by Reddit user Kalamazoostarship](https://www.reddit.com/r/PixelArt/comments/mdtbwb/this_is_my_first_1_bit_piece_i_call_it_the_seeing/).
 
 ***
 
