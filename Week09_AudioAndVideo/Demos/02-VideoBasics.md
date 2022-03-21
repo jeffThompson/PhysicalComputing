@@ -175,7 +175,7 @@ def line(x0, y0, x1, y1, color):
 1. All coordinates and sizes need to be listed as integers. That's because you can't have something at `x: 1.5`!  
 2. The helper functions all assume you have a variable called `frame` that you created at the top. If you named your Group something else, use that instead  
 
-Now we can go ahead and draw some shapes! If you've used `p5.js` or Processing before, the syntax will look very similar. First, we can draw some lines – they require four values, making up the x/y coordinates of the two endpoints:
+Now we can go ahead and draw some lines! If you've used `p5.js` or Processing before, the syntax will look very similar: the command requires four values, making up the x/y coordinates of the two endpoints, plus the color we'd like to use:
 
 ```python
 l1 = line(0,0, width,height, black)
@@ -207,11 +207,11 @@ def rect(x, y, w, h, fill, outline, center=False):
   return r
 
 player = rect(
-  0, 0,
-  10, 10,
-  fill = black,
-  outline = black,
-  center = True
+  0, 0,             # x/y position
+  10, 10,           # width and height
+  fill = black,     # fill color
+  outline = black,  # outline color
+  center = True     # put x/y at the center?
 )
 ```
 
@@ -228,12 +228,10 @@ Let's also add the `scale()` and `constrain()` functions we used previously:
 
 ```python
 def scale(n, in_min, in_max, out_min, out_max):
-  # scale values from one range to another
   val = (((n - in_min) * (out_max - out_min)) / (in_max - in_min)) + out_min
   return val
 
 def constrain(val, min_val, max_val):
-  # keep numbers within range
   return min(max_val, max(min_val, val))
 ```
 
@@ -244,7 +242,7 @@ joystick_y = analogio.AnalogIn(board.A5)
 joystick_x = analogio.AnalogIn(board.A4)
 ```
 
-Finally, let's read the values from the joystick in our while-loop, scaling them to the screen's dimensions:
+Finally, let's read the values from the joystick in our while-loop, scaling them to the screen's dimensions. We can then modify the player's x/y position to match:
 
 ```python
 while True:
@@ -612,5 +610,5 @@ while True:
 
 ### CHALLENGES  
 
-1. 
+1. Can you have the player's rectangle change color when it crosses the middle of the screen? (Hint: change `player.fill` to be either `black` or `white`)  
 
