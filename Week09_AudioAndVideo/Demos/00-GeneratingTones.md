@@ -1,7 +1,10 @@
-# AUDIO OUTPUT
+# GENERATING TONES
 
+So far, the only output device we've looked as has been LEDs. And while we'll get to motors soon, the next few examples walk you through how to generate audio (and later video) right from your Feather board!
 
-You can read more about tone-generation here:
+To get us started, we'll look at how to create basic tones (aka notes of varying frequencies). The nice thing is that this makes a super loud signal so we don't need any kind of amplification. The tradeoff is way less control over how it sounds, loudness, etc.
+
+You can read more about audio output and the libraries used here:
 
 * [Audio output](https://learn.adafruit.com/circuitpython-essentials/circuitpython-audio-out)  
 * The [`simpleio` library](https://docs.circuitpython.org/projects/simpleio/en/latest/api.html#module-simpleio)  
@@ -105,10 +108,10 @@ Not too shabby, but very robotic. That's because the duration of the notes was a
 ```python
 notes = [ 
   (293.66, 0.2),
-  (293.66, 0.2),
+  (293.66, 0.1),
   (329.63, 0.4),
   (293.66, 0.4),
-  (392.0, 0.4),
+  (392.00, 0.4),
   (369.99, 0.8) 
 ]
 ```
@@ -142,11 +145,11 @@ button_pin.pull = digitalio.Pull.UP
 button = Debouncer(button_pin)
 
 notes = [ 
-  (293.66, 0.1),
+  (293.66, 0.2),
   (293.66, 0.1),
   (329.63, 0.4),
   (293.66, 0.4),
-  (392.0, 0.4),
+  (392.00, 0.4),
   (369.99, 0.8) 
 ]
 
