@@ -1,6 +1,6 @@
 # VIDEO BASICS
 
-We've seen how a simple LED can communicate a lot, but video screens open up tons of possibilities: interactive menus, easter eggs, little animations, all kinds of stuff! This demo assumes you're using a 124x64-pixel [organic LED](https://en.wikipedia.org/wiki/OLED) (OLED) screen from Adafruit. This device is monochrome, so it can only produce black or white pixels, but it's cheap and we can doa  lot with it.
+We've seen how a simple LED can communicate a lot, but video screens open up tons of possibilities: interactive menus, easter eggs, little animations, all kinds of stuff! This demo assumes you're using a 124x64-pixel [organic LED](https://en.wikipedia.org/wiki/OLED) (OLED) screen from Adafruit. This device is monochrome, so it can only produce black or white pixels, but it's cheap and we can do a lot of cool stuff with it.
 
 > 🙀 This is a loooong demo, mostly because there's a lot of code required. Don't worry though, once you understand the basics the next few demos will all build on what we do here.
 
@@ -52,13 +52,13 @@ Copy everything to your Feather's `lib` folder.
 ***
 
 ### CONNECT THE DISPLAY USING I2C  
-To communicate with our display, we'll be using a protocol called *I2C* (usually pronounced "eye squared see"). This uses only two wires for communication, plus power and ground, which is great when we also want to include sensors and other components! I2C has some other great features, like allowing us to chain multiple devices, but we won't get into that here.
+To communicate with our display, we'll be using a protocol called [*I2C*](https://en.wikipedia.org/wiki/I%C2%B2C) (usually pronounced "eye squared see"). This uses only two wires for communication, plus power and ground, which is great when we also want to include sensors and other components! I2C has some other fantastic features, like allowing us to chain multiple devices.
 
 Connect up the `3V` and `GND` to the Feather, followed by wires going from `SCL` and `SDA` (the pins specifically for I2C) to the display, like this:  
 
 ![](Images/DisplayWiringI2C.png)  
 
-If you power on your Feather, you should see the REPL text that normally appears in the console. Easy!
+If you power on your Feather, you should see the REPL text that normally appears in the console.
 
 ***
 
@@ -71,14 +71,14 @@ import board
 import displayio
 ```
 
-Next, let's define some variables that we'll need. First is the size of the diplay in pixels:
+Next, let's define some variables that we'll need. First is the size of the diplay in pixels. We'll use that later to position elements onscreen.
 
 ```python
 width =  128
 height = 64
 ```
 
-Before actually starting up the display, we want to get rid of any settings/connections that might have persisted since the last time we used it:
+Before actually starting up the display, we want to get rid of any settings or connections that might have persisted since the last time we used it:
 
 ```python
 displayio.release_displays()
@@ -103,18 +103,16 @@ We don't have to worry too much about what's going on here, except that we're cr
 ***
 
 ### CHANGING THE BACKGROUND COLOR  
-The way these little displays work is kind of an engineering marvel: with super minimal power and only two wires, we can make very fast graphics. The tradeoff for this is that the display uses a really funky way of organizing everything. 
+The way these little displays work is kind of an engineering marvel: with super minimal power and only two wires, we can make very fast graphics. The tradeoff for this is that the display uses a really funky way of organizing everything. The [Adafruit `displayio` guide goes over this is detail](https://learn.adafruit.com/circuitpython-display-support-using-displayio/library-overview), but it's tremendously confusing so you shouldn't need to look at it unless you're interested in how this all works.
 
-First, we're going to create a *group*, which we can think of as a collection of all the stuff we're going to show onscreen. I'm calling mine "frame."
+First, we're going to create a *group*, which we can think of as a collection of all the stuff we're going to show onscreen. I'm calling mine "frame" and will do the same throughout all the upcoming demos.
 
 ```python
 frame = displayio.Group()
 display.show(frame)
 ```
 
-We can actually have more than one group, but you likely won't need to worry about that. The [Adafruit `displayio` guide goes over this is detail](https://learn.adafruit.com/circuitpython-display-support-using-displayio/library-overview), but it's tremendously confusing so you shouldn't need to look at it unless you're interested in how this all works.
-
-To make things easier, I've gone ahead and built a bunch of helper functions that you can just copy/paste into your project! The first change we'll make is the background color – to make this easier, let's define some colors as variables:
+The first change we'll make is the background color. To make this easier, let's define some colors as variables:
 
 ```python
 white = 0xFFFFFF
@@ -123,7 +121,7 @@ black = 0x000000
 
 These values are listed in [*hexadecimal* format](https://en.wikipedia.org/wiki/Hexadecimal). You might be used to seeing black as `rgb(0,0,0)` and white as `rgb(255,255,255)` – this is the same, just written in another way! (And, since our screen is only monochrome, this is all we need.)
 
-With our colors ready, paste this function into your code, somewhere above where you're going to use it:
+To make things easier, I've gone ahead and built a bunch of helper functions that you can just copy/paste into your project! Paste this function into your code, somewhere above where you're going to use it:
 
 ```python
 def background(color):
@@ -145,7 +143,7 @@ This creates a *bitmap*, really just a list of pixels, and adds that to our fram
 background(white)
 ```
 
-If we add a while-loop below, you should see the screen fill with white!
+If we add a while-loop at the bottom, you should see the screen fill with white!
 
 ***
 
