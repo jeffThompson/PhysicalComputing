@@ -76,7 +76,7 @@ This will open a window with some options: choose `Colors: 2` to create a monoch
 
 ![](Images/IndexedColorSettings.png)  
 
-Then go to `File > Save As...` and select `bmp`:
+Then go to `File → Save As...` and select `bmp`:
 
 ![](Images/SaveAsBMP.png)
 
