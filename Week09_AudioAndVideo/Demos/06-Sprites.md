@@ -2,7 +2,7 @@
 
 We've seen how to create shapes, load images, and even access individual pixels. For our last example, let's take a look at how we can load and display animations!
 
-[*Sprites*](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) are a simple but very effective way of creating animations. A sprite is a single frame of an animation – for example: a person walking – which are shown one after another to create the illusion of movement. Sprites can be stored as separate images, but often all the frames are combined into a single image, called a *sprite sheet.*
+[*Sprites*](https://en.wikipedia.org/wiki/Sprite_(computer_graphics)) are a simple but very effective way of creating animations. A sprite is a single frame of an animation – for example: a person walking – which are shown one after another to create the illusion of movement. Sprites can be stored as separate images, but often all the frames are combined into a single image, called a *sprite sheet.* When loaded, the software slices up the sprite sheet into individual sprites.
 
 ***
 
@@ -26,11 +26,15 @@ We've seen how to create shapes, load images, and even access individual pixels.
 
 ### PREPARE YOUR SPRITE SHEET  
 
-For this example, we'll use a modified version of [this walk cycle animation](https://stock.adobe.com/hk/images/business-man-walk-cycle-sprite-sheet-animation-frames-silhouette-loop-animation/183196051). I downloaded it, moved everything around so the frames are centered, and exported it as a single BMP file. (If you need a reminder how to do that, see the [Load Images](05-LoadImages.md) example.) I've also included the tile size (the dimensions of each frame) in the filename, so I don't have to open the file and figure it out.
+For this example, we'll use a modified version of [this walk cycle animation](https://stock.adobe.com/hk/images/business-man-walk-cycle-sprite-sheet-animation-frames-silhouette-loop-animation/183196051). I downloaded it, moved everything around so the frames are centered, and exported it as a single BMP file. (If you need a reminder how to do that, see the [Load Images](04-LoadImages.md) example.) I've also included the tile size (the dimensions of each frame) in the filename, so I don't have to open the file and figure it out.
 
 The final sprite sheet looks like this:
 
 ![](Images/WalkCycle-42x64px.bmp)
+
+But we can think of it as being made of 17 separate images, each 42x64 pixels.
+
+![](Images/WalkCycle-Grid.png)
 
 ***
 
@@ -84,7 +88,7 @@ background(0xFFFFFF)
 
 ### LOAD THE SPRITE SHEET  
 
-Now we can load the sprites! Let's first define some parameter – we'll need these to properly load and animate the sprite:
+Now we can load the sprites! Let's first define some parameters. We'll need these to properly load and animate the sprite later:
 
 ```python
 sprite_filename = 'Images/WalkCycle-42x64px.bmp'
@@ -93,7 +97,7 @@ sprite_height =   64
 num_frames =      17
 ```
 
-Then let's load it! Adafruit's library does a great job of smiplifying this process. First we load the file:
+Then let's load it! Adafruit's library does a great job of simplifying this process. First we load the file:
 
 ```python
 sprite_file, palette = adafruit_imageload.load(
@@ -103,7 +107,7 @@ sprite_file, palette = adafruit_imageload.load(
 )
 ```
 
-Then create a variable (I'm calling this `walker` since it's someone walking) and split the loaded image into frames:
+Then create a variable (I'm calling this `walker` since it's someone walking) and split the main image into frames:
 
 ```python
 walker = displayio.TileGrid(
@@ -147,7 +151,11 @@ while True:
   time.sleep(0.05)
 ```
 
-Save this to your board. You should see the character walking in place! Next, let's make them walk forward. To do this, all we need to do is update the `x` position each frame, right after we update which frame is displayed:
+Save this to your board. You should see the character walking in place! 
+
+> 🙋‍♀️ Why `walker[0]`? This is part of the weird way graphics are handled on these boards. In this case, the first element in `walker` is the sprite that's being displayed, with all the other ones hidden away. We tell the display which frame to show by setting `walker[0]`. Confusing for sure...
+
+Ok! Next, let's make them walk forward. To do this, all we need to do is update the `x` position each frame, right after we update which frame is displayed:
 
 ```python
 walker.x += direction

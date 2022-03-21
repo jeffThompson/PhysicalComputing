@@ -1,6 +1,8 @@
 # PIXEL ACCESS
 
-We've seen how to draw all kinds of shapes and even images, but what about pixel-level drawing? It's actually quite easy! This method isn't very fast, however, so forget about realtime filters or anything like that. Instead, we'll generate a white noise pattern, updated when a button is pressed.
+We've seen how to draw all kinds of shapes and even images, but what about pixel-level drawing? It's actually quite easy! This method isn't very fast, however, so forget about realtime filters or anything like that. 
+
+Instead, we'll generate a white noise pattern, updated when a button is pressed.
 
 ***
 
@@ -78,7 +80,7 @@ def create_pixels():
 pixels = create_pixels()
 ```
 
-This is a lot like the `background()` command we used earlier, but here we specify two different colors (black and white) to be used.
+This is a lot like the `background()` command we used earlier, but here we specify two different colors to be used: black, noted from here on out as `0`, and white, noted as `1`.
 
 ***
 
@@ -128,10 +130,12 @@ from adafruit_debouncer import Debouncer
 width =  128
 height = 64
 
+# button input
 pin = digitalio.DigitalInOut(board.D5)
 pin.pull = digitalio.Pull.UP
 button = Debouncer(pin)
 
+# display setup
 displayio.release_displays()
 i2c = board.I2C()
 display_bus = displayio.I2CDisplay(i2c, device_address=0x3C)
@@ -144,6 +148,7 @@ display = adafruit_displayio_sh1107.SH1107(
 frame = displayio.Group()
 display.show(frame)
 
+# give us an array of pixels we can manipulate
 def create_pixels():
   pixels = displayio.Bitmap(width, height, 2)
   palette = displayio.Palette(2)
@@ -155,6 +160,7 @@ def create_pixels():
   display.show(group)
   return pixels 
 
+# randomly assign black or white pixels
 def noise():
   for y in range(0, height):
     for x in range(0, width):
@@ -177,5 +183,5 @@ while True:
 
 ### CHALLENGES  
 
-1. 
+1. Can you create a function that draws a square onscreen at a specified location using only the pixel access? What other shapes can you draw?
 

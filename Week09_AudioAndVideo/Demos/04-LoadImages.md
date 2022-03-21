@@ -242,7 +242,6 @@ highlight = Rect(
 )
 frame.append(highlight)
 
-
 i = 0
 while True:
   # each frame, move the eye offset from
