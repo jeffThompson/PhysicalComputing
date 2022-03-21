@@ -1,6 +1,6 @@
 # LOAD IMAGES
 
-Generating our own graphics is sweet, but what about more complex images like photos? We can easily do that! The image we're using is a (heavily cropped) version of [this wonderful pixel-art image, created by Reddit user Kalamazoostarship](https://www.reddit.com/r/PixelArt/comments/mdtbwb/this_is_my_first_1_bit_piece_i_call_it_the_seeing/).
+Generating our own graphics is sweet, but what about more complex images like photos? We can easily do that! The image we're using is a (heavily cropped) version of [this wonderful pixel-art image](https://www.reddit.com/r/PixelArt/comments/mdtbwb/this_is_my_first_1_bit_piece_i_call_it_the_seeing/), created by Reddit user Kalamazoostarship.
 
 > 🎨 There's one major caveat to consider: our display is only monochrome, meaning it's pixels can only be black or white, no grayscale or color! Some images will translate better than others to this context... just something to keep in mind.
 
@@ -54,8 +54,6 @@ frame = displayio.Group()
 display.show(frame)
 ```
 
-All set!
-
 ***
 
 ### PREPARE YOUR IMAGE  
@@ -66,7 +64,7 @@ Because of the Feather's hardware limitations, we can only load images that are 
 * Indexed color (no RGB, etc)  
 * Monochrome (2-color)  
 
-Let's walk through how to do this in Photoshop. First, open your image and crop/resize it to the screen's dimensions:
+Let's walk through how to do this in Photoshop. First, open your image and crop/resize it to the screen's dimensions. Use `Nearest Neighbor (hard edges)` to get the best results.
 
 ![](Images/ProperImageSize.png)  
 
