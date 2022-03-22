@@ -2,8 +2,8 @@
 
 ### TLDR  
 * Due April 5  
-  * For March 29:  
-  * For April 5:  
+  * For March 29: breadboard prototype, add money to your Metrocard  
+  * For April 5: finish the project  
 * Make something using sound and/or video  
 * Can be interactive, but that's not required  
 
