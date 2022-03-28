@@ -39,11 +39,11 @@ Please note this is subject to change – be sure to check Canvas, this page, an
 * Mar 1: [Analog sensors 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week05_AnalogSensors)  
 * Mar 8: [Analog sensors 3](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week05_AnalogSensors)  
 * **Mar 15: Spring break, no class!**  
-* Mar 22: [Sound (and/or) Video 1](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week09_AudioAndVideo)  
-* Mar 29: [Sound (and/or) Video 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week09_AudioAndVideo), visit Bitforms gallery  
-* Apr 5: Motors 1  
-* Apr 12: Motors 2  
-* Apr 19: Motors 3/Final project 1  
+* Mar 22: ~Sound (and/or) Video~ take a week off!  
+* Mar 29: [Motors 1](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors), visit Bitforms gallery  
+* Apr 5: [Motors 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors)
+* Apr 12: [Motors 3](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors)
+* Apr 19: [Motors 4](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors)/Final project 1  
 * Apr 26: Final project 2  
 * May 3: Final project 3  
 * Exam period (May 12, 9–11am): Final critique  
