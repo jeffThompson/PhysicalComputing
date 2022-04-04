@@ -1,8 +1,8 @@
 # SERVO MOTOR
 
-There are *lots* of different types of motors out there, all of which have their uses. But for this project, we'll focus on the two kinds of servo motor: *standard* and *continuous*.
+There are lots of different types of motors out there: super fast and tiny DC motors in toys, 50 horsepower AC motors to run massive machines, geared motors to move your windshield wipers, bonkers battery-powered motors in drones, steppers for super-accurate CNC control... All of which have their uses. But for this project, we'll focus on the two kinds of servo motor: *standard* and *continuous*.
 
-If you're interested in a deep-dive into servo motors and all the other types, see [this great post from Adafruit](https://learn.adafruit.com/adafruit-motor-selection-guide).
+Servo motors are a good balance: they provide accuracy and control, don't require any extra circuitry, and can be powered right from the Feather. If you're interested in a deep-dive into servo motors and all the other types, see [this great post from Adafruit](https://learn.adafruit.com/adafruit-motor-selection-guide).
 
 ***
 
@@ -26,7 +26,7 @@ If you're interested in a deep-dive into servo motors and all the other types, s
 ### CONNECTING THE SERVO  
 Unlike DC or stepper motors, servos are super easy to hook up! They don't require any additional parts, unless you want to use a bunch of them (see [`Multiple Servos`](#multiple-servos) below).
 
-Servos have three wires:  
+Servos all have three wires:  
 * Black (or dark red): ground  
 * Red (or orange): 5V  
 * White (or yellow): control  
@@ -40,7 +40,7 @@ Hook up your servo to your board like this:
 ***
 
 ### MAKING THE SERVO MOVE  
-With the motor wired, let's write some code to make it move. First, we need to import some libraries:
+With the motor wired, let's write some code to make it move. First, we need to import a few libraries:
 
 ```python
 import board
@@ -65,7 +65,7 @@ pin = pwmio.PWMOut(
 motor = servo.Servo(pin)
 ```
 
-> 🙋‍♀️ What's the deail with `duty_cycle` and `frequency`? TLDR: don't worry about it! The value `2**15` is a fancy way of writing `32,768`, or two to the power of 15. Astute folks might recognize that number as 1/2 the resolution of the analog pins! This means that the pin's duty cycle will be 50%. A frequency of `50` means 50Hz, which is what the motors expect. We don't have to worry about (or modify) these values unless under really unusual circumstances!
+> 🙋‍♀️ What's the deail with `duty_cycle` and `frequency`? TLDR: don't worry about it! The value `2**15` is a fancy way of writing `32,768`, or two to the power of 15. Astute folks might recognize that number as 1/2 the resolution of the analog pins! This means that the pin's [duty cycle](https://en.wikipedia.org/wiki/Duty_cycle) will be 50%. A frequency of `50` means 50Hz, which is what the motors expect. We don't have to worry about (or modify) these values unless under really unusual circumstances!
 
 With our motor connected, let's make it move! A "normal" servo like this can be given a specific angle and it will move to that position:
 
@@ -83,16 +83,16 @@ for angle in range(30, 150, 5):
   time.sleep(0.01)
 ```
 
-This moves from 30º to 150º in 5º increments with a very short delay in between. By changing the delay time, we can speed up or slow down the motion!
+This moves from 30º to 150º in 5º increments with a very short delay in between. By changing the delay time, we can speed up or slow down the motion! If you make this too slow, you'll notice the motion gets kind of jerky. This is a limitation of the servo: it just doesn't have enough resolution to go really slowly. (A stepper motor would be a better, more precise choice here or a geared DC motor, if you want a set speed.)
 
 ***
 
 ### MULTIPLE SERVOS  
-One motor is cool, but what about *lots* of motors? At first, this seems super easy: we have [17 PWM-capable pins](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts#logic-pins-2994682-7) on the Feather! The problem we'll quickly run into however is power.
+One motor is cool, but what about *lots* of motors? At first, this seems super easy: we have [17 PWM-capable pins](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts#logic-pins-2994682-7) on the Feather! The problem we'll quickly run into however is power. The USB connection can provide up to `500mA` of current at `5V`. This is fine for powering a keyboard or charging your phone, but not enough for more than a motor or two.
 
-The USB connection can provide up to `500mA` (1/2 of an amp) of current at `5V`. To review the [`What Is Electricity?`](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week05_AnalogSensors/Demos/04-WhatIsElectricity.md#current) demo, current is the way parts of our circuit sucks electricity from the power supply. If the power supply has an excess of current available, it's no problem. But if our project tries to pull more current than the supply can provide, it will cause weird bugs or can damage the power supply.
+To review the [`What Is Electricity?`](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week05_AnalogSensors/Demos/04-WhatIsElectricity.md#current) demo, electrical current is the way parts of our circuit sucks electricity from the power supply. If the power supply has an excess of current available, it's no problem. But if our project tries to pull more current than the supply can provide, it will cause weird bugs or can damage the power supply. (Think about a pizza buffet: the kitchen is ok if you don't eat all the pizza they can make, but if you try to eat pizza faster they can cook them, bad things will start to happen!)
 
-Motors require a lot more current than the sensors and other parts we've used so far. If we want to use more than two servos, the only solution is an external power supply. The servos can run on anything between `4.5–7V` of DC power, so that gives you some wiggle-room. See the [`Selecting a Power Supply`](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week05_AnalogSensors/Demos/04-WhatIsElectricity.md#selecting-a-power-supply) section for more info.
+Motors require a lot more current than the sensors and other parts we've used so far. If we want to use more than two servos, the only solution is an external power supply. The servos can run on anything between `4.5–7V` of DC power, so that gives you some wiggle-room. See the [`Selecting a Power Supply`](https://github.com/jeffThompson/PhysicalComputing/blob/master/Week05_AnalogSensors/Demos/04-WhatIsElectricity.md#selecting-a-power-supply) demo for more info.
 
 With a suitable power supply in hand, wiring it up is pretty easy! Instead of connecting to `USB` on the board, we'll connect the positive side of the power supply to the motors. Ground should be connected to the Feather's ground: this helps prevent communication problems. The control pin is connected to the board as usual!
 

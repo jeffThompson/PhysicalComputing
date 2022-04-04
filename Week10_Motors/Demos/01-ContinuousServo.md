@@ -47,11 +47,11 @@ To rotate the servo, we give it a value called `throttle` between `–1 and 1`:
 
 | THROTTLE | DIRECTION         | SPEED |
 |----------|-------------------|-------|
-| `1`      | Clockwise         | 100%  |
-| `0.5`    | "                 | 50%   |
-| `0`      | Stopped           | n/a   |
-| `-0.5`   | Counter-clockwise | 50%   |
-| `-1`     | Counter-clockwise | 100%  |
+| 1        | Clockwise         | 100%  |
+| 0.5      | "                 | 50%   |
+| 0        | Stopped           | n/a   |
+| -0.5     | Counter-clockwise | 50%   |
+| -1       | "                 | 100%  |
 
 We can combine this with `time.sleep()` to set the speed and how long it should rotate for. For example:
 
@@ -69,7 +69,7 @@ motor.throttle = -0.25
 time.sleep(2.0)
 ```
 
-Getting exact position using a continuous servo will be ~difficult~ basically impossible. Think about this more like the wheel of a car: you don't count rotations or duration to figure out how far you've gone!
+Getting exact position using a continuous servo will be ~difficult~ basically impossible. Think about this more like the wheel of a car: you don't count rotations or duration to figure out how far you've gone! Instead, think about additional ways of figuring out the position such as a photo-interrupt or hall effect sensor.
 
 ***
 
