@@ -33,7 +33,9 @@ Next week we'll do demos as needed but mostly have work time. Bring all your stu
 ***
 
 ### FOR APRIL 12  
-\[ coming soon \]
+For next week, please work on a prototype of your project. This should include all the major elements, including code and the physical elements you plan to use. Your prototype can be rough around the edges (buggy code, things you still need help with, etc) but the major parts should be present: think about "show, not tell"!
+
+Please also start thinking about what you might like to make for your final project. This is totally open-ended, so long as it involves electronics and code in some way.
 
 ***
 
@@ -45,6 +47,7 @@ Next week we'll do demos as needed but mostly have work time. Bring all your stu
 ### INSPIRATION  
 * [My favorite alarm clock](https://www.youtube.com/watch?v=lEjn2gtFqfw), which is sadly like $$$$  
 * [Zimoun](https://www.zimoun.net/), the master of simple but incredible kinetic sound work  
+* [Rachel Youn's](https://rachelyoun.com/) sculptural kinetic work  
 * Rebecca Horn's *Concert for Buchenwald*  
 * [Survival Research Lab's](https://srl.org/machines.html) huge, scary art machines  
 * [Billy Whiskers](https://vimeo.com/281605331) animatronic cat  
