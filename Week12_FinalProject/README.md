@@ -2,7 +2,8 @@
 
 ### TLDR  
 * Due May 12  
-  * For April 26: project pitch, gather supplies  
+  * For April 19: project pitch, gather supplies  
+  * For April 26: WIP  
   * For May 3: WIP  
   * For May 12: final critique (9–11am)  
 * Make something amazing using electronics and code  
@@ -24,7 +25,7 @@ The two goals for this project should be that you make something polished and re
 
 ***
 
-### FOR APRIL 26  
+### FOR APRIL 19  
 For next week, your main assignment is to finish your `Motors` piece, but you should also start thinking about what you'd like to make for your final project. You're welcome to work intuitively and figure out the details as you go, but some planning now will be very helpful.
 
 Please write up a short "pitch" for your final project that includes:  
@@ -37,6 +38,11 @@ Please write up a short "pitch" for your final project that includes:
 You're welcome to include additional info, if you want, such as a mood board, projects that inspire you, drawings, etc.
 
 Save your pitch as a `PDF` and upload to Canvas. Be sure to order any parts or supplies that you might need too!
+
+***
+
+### FOR APRIL 26  
+\[ coming soon \]
 
 ***
 
