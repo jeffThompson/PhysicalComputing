@@ -43,8 +43,8 @@ Please note this is subject to change – be sure to check Canvas, this page, an
 * Mar 29: [Motors 1](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors), visit Bitforms gallery  
 * Apr 5: [Motors 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors)
 * Apr 12: [Motors 3](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors)
-* Apr 19: [Motors 4](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors)/Final project 1  
-* Apr 26: Final project 2  
-* May 3: Final project 3  
+* Apr 19: [Motors 4](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors) / [Final project 1](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week12_FinalProject)  
+* Apr 26: [Final project 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week12_FinalProject)  
+* May 3: [Final project 3](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week12_FinalProject)  
 * Exam period (May 12, 9–11am): Final critique  
 

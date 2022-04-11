@@ -40,7 +40,9 @@ Please also start thinking about what you might like to make for your final proj
 ***
 
 ### FOR APRIL 19  
-\[ coming soon \]
+For next week, please finish up your project! We'll take a look at them next week, followed by some demos on sound and video.
+
+Please also write up a [short pitch for your final project](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week12_FinalProject). More info in that assignment.
 
 ***
 
