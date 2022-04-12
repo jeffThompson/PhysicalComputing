@@ -47,6 +47,7 @@ Please also write up a [short pitch for your final project](https://github.com/j
 ***
 
 ### INSPIRATION  
+* Yuichiro Katsumoto's [*Robotype* experiments](https://www.katsumotoy.com/research/robotype.html)  
 * [My favorite alarm clock](https://www.youtube.com/watch?v=lEjn2gtFqfw), which is sadly like $$$$  
 * [Zimoun](https://www.zimoun.net/), the master of simple but incredible kinetic sound work  
 * [Rachel Youn's](https://rachelyoun.com/) sculptural kinetic work  
