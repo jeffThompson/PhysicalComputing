@@ -3,7 +3,7 @@
 ### TLDR  
 * Due May 12  
   * For April 19: project pitch, gather supplies  
-  * For April 26: WIP  
+  * For April 26: WIP, two things you need help with  
   * For May 3: WIP  
   * For May 12: final critique (9–11am)  
 * Make something amazing using electronics and code  
@@ -42,7 +42,11 @@ Save your pitch as a `PDF` and upload to Canvas. Be sure to order any parts or s
 ***
 
 ### FOR APRIL 26  
-\[ coming soon \]
+You should start working on your project with the goal of having a rough breadboard demo (or other prototype) finished by next week. Think about the idea an MVP document: what are the big, crucial things that need to get done first and what are the little details that can come later?
+
+Please also write down two (or more) things that you have questions about or need help with next week.
+
+No need to submit anything on Canvas, but please be ready to share your questions with the group – we'll chat through some of them as a group.
 
 ***
 
