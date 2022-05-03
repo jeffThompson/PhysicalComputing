@@ -5,7 +5,7 @@
   * For April 19: project pitch, gather supplies  
   * For April 26: WIP, two things you need help with  
   * For May 3: WIP  
-  * For May 12: final critique (9–11am)  
+  * For May 12: final critique (9.30–11am)  
   * See Canvas for drop-in help hours before the crit!
 * Make something amazing using electronics and code  
 
