@@ -6,6 +6,7 @@
   * For April 26: WIP, two things you need help with  
   * For May 3: WIP  
   * For May 12: final critique (9–11am)  
+  * See Canvas for drop-in help hours before the crit!
 * Make something amazing using electronics and code  
 
 ***
@@ -51,10 +52,10 @@ No need to submit anything on Canvas, but please be ready to share your question
 ***
 
 ### FOR MAY 3  
-\[ coming soon \]
+Next week will be a studio day: come ready to work and get help!
 
 ***
 
 ### FOR MAY 12 (9–11am)  
-\[ coming soon \]
+For the final critique, please finish your project and think about the best way to show it to us. We'll take a look at everything, chat, and record some video documentation together. If you have any late work (including your artist talk responses) please be sure to turn them in before the critique!
 
