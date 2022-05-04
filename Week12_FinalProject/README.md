@@ -59,3 +59,5 @@ Next week will be a studio day: come ready to work and get help!
 ### FOR MAY 12 (9–11am)  
 For the final critique, please finish your project and think about the best way to show it to us. We'll take a look at everything, chat, and record some video documentation together. If you have any late work (including your artist talk responses) please be sure to turn them in before the critique!
 
+No need to submit anything on Canvas.
+
