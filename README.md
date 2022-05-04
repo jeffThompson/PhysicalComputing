@@ -46,5 +46,5 @@ Please note this is subject to change – be sure to check Canvas, this page, an
 * Apr 19: [Motors 4](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week10_Motors) / [Final project 1](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week12_FinalProject)  
 * Apr 26: [Final project 2](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week12_FinalProject)  
 * May 3: [Final project 3](https://github.com/jeffThompson/PhysicalComputing/tree/master/Week12_FinalProject)  
-* Exam period (May 12, 9–11am): Final critique  
+* Exam period (May 12, 9.30–11am): Final critique  
 
